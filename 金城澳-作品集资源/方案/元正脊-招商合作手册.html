@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="元正脊招商合作手册——非医疗健康养护与生活方式管理合作方案。">
+  <meta name="theme-color" content="#f5f0e7">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23123e34'/%3E%3Cpath d='M32 11c-6 7-6 13 0 18s6 11 0 17-6 10 0 15M20 19c8 3 16 3 24 0M19 32c9 3 17 3 26 0M21 46c7 3 15 3 22 0' fill='none' stroke='%23e7b96f' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <title>元正脊｜招商合作手册</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f5f0e7;
+      --paper-2: #ebe2d4;
+      --card: rgba(255,255,255,.74);
+      --ink: #152c27;
+      --muted: #62716c;
+      --line: rgba(21,44,39,.13);
+      --jade: #123e34;
+      --jade-2: #1f6655;
+      --gold: #c78a38;
+      --gold-2: #e7b96f;
+      --red: #a44733;
+      --shadow: 0 22px 65px rgba(35,46,40,.12);
+      --shadow-sm: 0 10px 30px rgba(35,46,40,.08);
+      --radius: 24px;
+      --nav-h: 70px;
+    }
+
+    [data-theme="dark"] {
+      color-scheme: dark;
+      --paper: #0e1715;
+      --paper-2: #15221f;
+      --card: rgba(26,42,38,.78);
+      --ink: #eef4ef;
+      --muted: #a5b3ad;
+      --line: rgba(238,244,239,.13);
+      --jade: #97d7c3;
+      --jade-2: #5bb79d;
+      --gold: #e6b96f;
+      --gold-2: #f0cf96;
+      --red: #e1927e;
+      --shadow: 0 22px 65px rgba(0,0,0,.28);
+      --shadow-sm: 0 10px 30px rgba(0,0,0,.2);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 20px); overflow-x: clip; }
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 16% 6%, rgba(199,138,56,.12), transparent 25rem),
+        radial-gradient(circle at 84% 22%, rgba(31,102,85,.10), transparent 28rem),
+        var(--paper);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .24;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E");
+    }
+    button, input { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { color: inherit; }
+    a { color: inherit; }
+    img, svg { display: block; max-width: 100%; }
+    ::selection { color: #fff; background: var(--jade-2); }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    .skip-link {
+      position: fixed; left: 14px; top: -80px; z-index: 200;
+      padding: 10px 16px; border-radius: 12px; background: var(--ink); color: var(--paper);
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 12px; }
+    .progress-line {
+      position: fixed; inset: 0 auto auto 0; z-index: 160; height: 3px; width: 0;
+      background: linear-gradient(90deg,var(--gold),var(--gold-2));
+      box-shadow: 0 0 12px rgba(199,138,56,.55);
+    }
+    .topbar {
+      position: sticky; top: 0; z-index: 120; height: var(--nav-h);
+      display: flex; align-items: center;
+      backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+      background: color-mix(in srgb, var(--paper) 78%, transparent);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner {
+      width: min(1240px, calc(100% - 36px)); margin: auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 22px;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; white-space: nowrap; }
+    .brand-mark {
+      width: 34px; aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%;
+      color: #fff; background: var(--jade); box-shadow: inset 0 0 0 1px rgba(255,255,255,.2);
+    }
+    [data-theme="dark"] .brand-mark { color: #0e1715; }
+    .brand strong { font-family: "STKaiti", "KaiTi", serif; font-size: 1.28rem; letter-spacing: .12em; }
+    .brand small { display: block; margin-top: -5px; color: var(--muted); font-size: .62rem; letter-spacing: .16em; }
+    .desktop-nav { display: flex; align-items: center; gap: 4px; }
+    .desktop-nav a {
+      position: relative; padding: 8px 10px; border-radius: 12px; text-decoration: none;
+      color: var(--muted); font-size: .83rem; white-space: nowrap; transition: .2s ease;
+    }
+    .desktop-nav a:hover, .desktop-nav a.is-active { color: var(--ink); background: var(--card); }
+    .top-actions { display: flex; gap: 8px; }
+    .icon-btn {
+      width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 50%;
+      display: grid; place-items: center; background: var(--card); cursor: pointer; transition: .2s ease;
+    }
+    .icon-btn:hover { transform: translateY(-2px); border-color: color-mix(in srgb,var(--gold) 70%,var(--line)); }
+    .icon-btn svg { width: 18px; height: 18px; }
+    #menuBtn { display: none; }
+
+    .mobile-drawer {
+      position: fixed; inset: var(--nav-h) 0 auto auto; z-index: 115; width: min(340px, 88vw);
+      max-height: calc(100vh - var(--nav-h)); overflow: auto; padding: 18px;
+      background: var(--paper); border-left: 1px solid var(--line); border-bottom: 1px solid var(--line);
+      border-radius: 0 0 0 24px; box-shadow: var(--shadow); transform: translateX(105%); transition: transform .26s ease;
+    }
+    .mobile-drawer.is-open { transform: none; }
+    .mobile-drawer a { display: block; padding: 12px 14px; border-radius: 12px; text-decoration: none; color: var(--muted); }
+    .mobile-drawer a:hover { color: var(--ink); background: var(--card); }
+
+    .hero {
+      position: relative; min-height: calc(100vh - var(--nav-h)); display: grid; align-items: center;
+      padding: 76px 0 58px; isolation: isolate;
+    }
+    .hero::after {
+      content: "正"; position: absolute; right: max(2vw, calc((100vw - 1280px)/2)); top: 4%; z-index: -1;
+      font-family: "STKaiti", "KaiTi", serif; font-size: min(42vw, 520px); line-height: 1; color: var(--jade);
+      opacity: .035; transform: rotate(6deg); pointer-events: none;
+    }
+    .container { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: clamp(38px,6vw,88px); }
+    .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--gold); font-weight: 700; letter-spacing: .18em; font-size: .8rem; }
+    .eyebrow::before { content: ""; width: 36px; height: 1px; background: currentColor; }
+    .hero h1 { margin: 20px 0 16px; font-family: "STKaiti", "KaiTi", serif; font-weight: 700; line-height: 1.02; }
+    .hero h1 .main { display: block; font-size: clamp(4.8rem,12vw,9rem); letter-spacing: .12em; }
+    .hero h1 .sub { display: block; margin-top: 14px; font-family: inherit; font-size: clamp(1.55rem,3.4vw,2.5rem); letter-spacing: .12em; color: var(--jade-2); }
+    .hero-lead { max-width: 650px; margin: 0; color: var(--muted); font-size: clamp(1rem,1.8vw,1.18rem); }
+    .hero-lead strong { color: var(--ink); font-weight: 650; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .btn {
+      min-height: 48px; padding: 0 20px; border: 1px solid var(--line); border-radius: 999px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      text-decoration: none; font-weight: 700; cursor: pointer; background: var(--card); transition: .22s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .btn-primary { color: #fff; background: var(--jade); border-color: var(--jade); }
+    [data-theme="dark"] .btn-primary { color: #0e1715; }
+    .btn svg { width: 17px; height: 17px; }
+    .micro-trust { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 26px; color: var(--muted); font-size: .78rem; }
+    .micro-trust span { display: inline-flex; align-items: center; gap: 7px; }
+    .micro-trust i { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+
+    .spine-card {
+      position: relative; min-height: 520px; display: grid; place-items: center; overflow: hidden;
+      border: 1px solid rgba(255,255,255,.18); border-radius: 46% 46% 28px 28px;
+      background:
+        linear-gradient(160deg, rgba(255,255,255,.13), transparent 40%),
+        var(--jade);
+      box-shadow: var(--shadow); color: #f7f2e9;
+    }
+    [data-theme="dark"] .spine-card { color: #0e1715; background: #8bcbb7; }
+    .spine-card::before, .spine-card::after { content: ""; position: absolute; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; }
+    .spine-card::before { width: 350px; height: 350px; }
+    .spine-card::after { width: 260px; height: 260px; }
+    .spine-visual { width: 62%; filter: drop-shadow(0 18px 26px rgba(0,0,0,.18)); animation: float 6s ease-in-out infinite; }
+    .spine-note { position: absolute; inset: auto 28px 28px; padding: 12px 14px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); border: 1px solid rgba(255,255,255,.2); border-radius: 18px; background: rgba(255,255,255,.1); backdrop-filter: blur(8px); }
+    .spine-note b { min-height: 46px; padding: 0 3px; display: flex; align-items: center; justify-content: center; font-family: "STKaiti", "KaiTi", serif; font-size: clamp(.82rem,1.1vw,.98rem); line-height: 1.35; letter-spacing: .04em; text-align: center; white-space: nowrap; }
+    .spine-note b + b { border-left: 1px solid rgba(255,255,255,.2); }
+    @keyframes float { 50% { transform: translateY(-12px) rotate(1deg); } }
+
+    .chapter { padding: clamp(72px,10vw,126px) 0; border-top: 1px solid var(--line); }
+    .chapter-head { display: grid; grid-template-columns: 120px 1fr; gap: 28px; margin-bottom: 40px; }
+    .chapter-no { color: var(--gold); font-family: Georgia,serif; font-size: 1rem; letter-spacing: .12em; }
+    .chapter-no strong { display: block; font-size: 3.1rem; line-height: .9; font-weight: 400; }
+    .kicker { margin: 0 0 7px; color: var(--gold); font-size: .76rem; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+    .chapter h2 { margin: 0; font-family: "STKaiti", "KaiTi", serif; font-size: clamp(2rem,5vw,3.7rem); line-height: 1.16; letter-spacing: .03em; }
+    .chapter-intro { max-width: 800px; margin: 14px 0 0; color: var(--muted); font-size: 1.02rem; }
+    .chapter-intro strong { color: var(--ink); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+    .card {
+      position: relative; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius);
+      background: var(--card); box-shadow: var(--shadow-sm); overflow: hidden;
+    }
+    .card-number { color: var(--gold); font-family: Georgia,serif; font-size: .82rem; letter-spacing: .1em; }
+    .card h3 { margin: 9px 0 8px; font-size: 1.16rem; line-height: 1.42; }
+    .card p { margin: 0; color: var(--muted); }
+    .mini-source { display: inline-flex; margin-top: 16px; color: var(--jade-2); font-size: .76rem; text-underline-offset: 3px; }
+    .highlight-card { color: #f7f2e9; background: var(--jade); border-color: transparent; }
+    [data-theme="dark"] .highlight-card { color: #0e1715; }
+    .highlight-card p, .highlight-card .card-number { color: inherit; opacity: .78; }
+    .highlight-card::after { content: ""; position: absolute; width: 130px; height: 130px; right: -48px; top: -48px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; }
+
+    .text-btn { border: 0; padding: 8px 3px; color: var(--jade-2); background: none; cursor: pointer; font-weight: 700; font-size: .82rem; }
+    .accordion { border-top: 1px solid var(--line); }
+    .accordion-item { border-bottom: 1px solid var(--line); transition: background-color .24s ease; }
+    .accordion-trigger {
+      width: 100%; border: 0; padding: 22px 4px; display: grid; grid-template-columns: 54px 1fr auto;
+      gap: 14px; align-items: center; text-align: left; background: transparent; cursor: pointer;
+      transition: color .24s ease, background-color .24s ease;
+    }
+    .accordion-trigger:hover { background: color-mix(in srgb,var(--jade) 4%,transparent); }
+    .accordion-trigger[aria-expanded="true"] { color: var(--jade-2); }
+    .accordion-trigger .index {
+      width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%;
+      color: var(--gold); font-family: Georgia,serif;
+      transition: border-color .24s ease, background-color .24s ease;
+    }
+    .accordion-trigger[aria-expanded="true"] .index { border-color: var(--gold); background: color-mix(in srgb,var(--gold) 10%,transparent); }
+    .accordion-trigger b { font-size: 1.04rem; }
+    .accordion-trigger small { display: block; margin-top: 2px; color: var(--muted); font-size: .8rem; font-weight: 400; }
+    .accordion-icon { width: 28px; height: 28px; position: relative; border-radius: 50%; background: var(--card); }
+    .accordion-icon::before, .accordion-icon::after { content: ""; position: absolute; inset: 50% auto auto 50%; width: 11px; height: 1px; background: currentColor; transform: translate(-50%,-50%); transition: transform .24s ease; }
+    .accordion-icon::after { transform: translate(-50%,-50%) rotate(90deg); }
+    .accordion-trigger[aria-expanded="true"] .accordion-icon::after { transform: translate(-50%,-50%) rotate(0); }
+    .accordion-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease; }
+    .accordion-panel > div { overflow: hidden; }
+    .accordion-panel .panel-inner { padding: 0 60px 24px 72px; color: var(--muted); }
+    .accordion-trigger[aria-expanded="true"] + .accordion-panel { grid-template-rows: 1fr; }
+    .plain-list { margin: 10px 0 0; padding: 0; list-style: none; }
+    .plain-list li { position: relative; padding: 6px 0 6px 22px; }
+    .plain-list li::before { content: ""; position: absolute; left: 0; top: 1.05em; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+    .value-note { margin-top: 16px; padding: 14px 16px; border-left: 3px solid var(--gold); background: color-mix(in srgb,var(--gold) 8%,transparent); border-radius: 0 12px 12px 0; color: var(--ink); }
+
+    .pain-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+    .pain-card { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); transition: .22s ease; }
+    .pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-sm); }
+    .pain-card .icon { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 15px; color: var(--gold); background: color-mix(in srgb,var(--gold) 11%,transparent); }
+    .pain-card .icon svg { width: 22px; height: 22px; }
+    .pain-card h3 { margin: 18px 0 7px; font-size: 1.08rem; }
+    .pain-card p { margin: 0; color: var(--muted); font-size: .93rem; }
+    .diagnosis { margin-top: 22px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; border: 1px solid color-mix(in srgb,var(--red) 32%,var(--line)); border-radius: 18px; background: color-mix(in srgb,var(--red) 6%,var(--card)); }
+    .diagnosis strong { color: var(--red); white-space: nowrap; }
+
+    .module-layout { display: block; }
+    .module-summary { margin-bottom: 22px; padding: 24px 28px; display: grid; grid-template-columns: minmax(150px,.3fr) 1fr; gap: 28px; align-items: center; border-radius: var(--radius); color: #f7f2e9; background: var(--jade); }
+    [data-theme="dark"] .module-summary { color: #0e1715; }
+    .module-summary .summary-mark { padding-right: 28px; border-right: 1px solid rgba(255,255,255,.2); }
+    .module-summary .summary-mark span { font-size: .75rem; letter-spacing: .12em; }
+    .module-summary .big { margin-top: 6px; font-family: Georgia,serif; font-size: 3.8rem; line-height: .95; color: var(--gold-2); }
+    .module-summary h3 { margin: 0; font-size: 1.4rem; }
+    .module-summary p { max-width: 760px; margin: 8px 0 0; opacity: .8; }
+    .module-accordion { width: 100%; }
+
+    .course-overview-head { margin-bottom: 18px; display: flex; justify-content: space-between; align-items: flex-end; gap: 18px; }
+    .course-overview-head p { margin: 0; }
+    .course-overview-head .mini-source { flex: 0 0 auto; margin-top: 0; }
+    .course-preview-grid, .toolkit-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+    .course-preview-card, .toolkit-card { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: color-mix(in srgb,var(--paper) 35%,transparent); }
+    .course-preview-card .course-no { color: var(--gold); font-family: Georgia,serif; font-size: .78rem; letter-spacing: .1em; }
+    .course-preview-card h4, .toolkit-card h4 { margin: 8px 0; color: var(--ink); font-size: .96rem; line-height: 1.45; }
+    .course-preview-card p { margin: 0 0 10px; color: var(--muted); font-size: .8rem; }
+    .course-meta { display: grid; gap: 6px; }
+    .course-meta span { display: block; color: var(--muted); font-size: .75rem; }
+    .course-meta b { color: var(--ink); }
+    .delivery-standard { margin: 18px 0 0; padding: 16px 18px; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 10px; border-radius: 16px; background: color-mix(in srgb,var(--gold) 8%,transparent); }
+    .delivery-standard span { color: var(--muted); font-size: .78rem; }
+    .delivery-standard b { display: block; margin-bottom: 3px; color: var(--ink); font-size: .82rem; }
+    .toolkit-block { margin-top: 24px; }
+    .toolkit-block > h4 { margin: 0 0 12px; color: var(--ink); font-size: 1rem; }
+    .toolkit-card ul { margin: 10px 0 0; padding: 0; list-style: none; }
+    .toolkit-card li { padding: 5px 0; border-bottom: 1px dashed var(--line); color: var(--muted); font-size: .76rem; }
+    .toolkit-card li:last-child { border-bottom: 0; }
+
+    .embedded-syllabus { margin-top: 24px; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; background: color-mix(in srgb,var(--card) 92%,var(--paper)); }
+    .embedded-syllabus-head { padding: 22px 24px; border-bottom: 1px solid var(--line); background: color-mix(in srgb,var(--gold) 7%,transparent); }
+    .embedded-syllabus-head span { color: var(--gold); font-family: Georgia,serif; font-size: .72rem; font-weight: 700; letter-spacing: .14em; }
+    .embedded-syllabus-head h4 { margin: 7px 0 5px; color: var(--ink); font-size: 1.22rem; }
+    .embedded-syllabus-head p { margin: 0; font-size: .82rem; }
+    .syllabus-course { border-bottom: 1px solid var(--line); }
+    .syllabus-course:last-child { border-bottom: 0; }
+    .syllabus-course-trigger { width: 100%; padding: 19px 22px; display: grid; grid-template-columns: 52px minmax(0,1fr) 34px; gap: 14px; align-items: center; border: 0; background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+    .syllabus-course-trigger:hover { background: color-mix(in srgb,var(--gold) 5%,transparent); }
+    .syllabus-course-trigger:focus-visible, .syllabus-day-trigger:focus-visible { outline: 2px solid var(--gold); outline-offset: -3px; }
+    .syllabus-course-number { width: 46px; height: 46px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--gold); font-family: Georgia,serif; }
+    .syllabus-course-trigger b { display: block; font-size: .96rem; line-height: 1.45; }
+    .syllabus-course-trigger small { display: block; margin-top: 3px; color: var(--muted); font-size: .76rem; font-weight: 400; }
+    .syllabus-plus { width: 30px; height: 30px; position: relative; border-radius: 50%; background: var(--card); }
+    .syllabus-plus::before, .syllabus-plus::after { content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 1px; background: currentColor; transform: translate(-50%,-50%); transition: transform .24s ease; }
+    .syllabus-plus::after { transform: translate(-50%,-50%) rotate(90deg); }
+    .syllabus-course-trigger[aria-expanded="true"] { background: color-mix(in srgb,var(--gold) 8%,transparent); }
+    .syllabus-course-trigger[aria-expanded="true"] .syllabus-plus::after, .syllabus-day-trigger[aria-expanded="true"] .syllabus-plus::after { transform: translate(-50%,-50%) rotate(0); }
+    .syllabus-course-panel, .syllabus-day-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease; }
+    .syllabus-course-panel > div, .syllabus-day-panel > div { overflow: hidden; }
+    .syllabus-course-trigger[aria-expanded="true"] + .syllabus-course-panel, .syllabus-day-trigger[aria-expanded="true"] + .syllabus-day-panel { grid-template-rows: 1fr; }
+    .syllabus-course-inner { padding: 2px 22px 24px; }
+    .syllabus-meta-grid { margin: 16px 0 20px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 12px; }
+    .syllabus-meta-card { padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: color-mix(in srgb,var(--paper) 42%,transparent); }
+    .syllabus-meta-card > b { display: block; margin-bottom: 5px; color: var(--gold); font-size: .72rem; letter-spacing: .08em; }
+    .syllabus-meta-card p { margin: 0; color: var(--ink); font-size: .8rem; }
+    .syllabus-meta-card p + b { margin-top: 13px; }
+    .syllabus-objectives { margin: 0; padding-left: 20px; }
+    .syllabus-objectives li { padding: 3px 0; font-size: .78rem; }
+    .syllabus-section-label { margin: 20px 0 10px; color: var(--ink); font-size: .86rem; }
+    .syllabus-day { border-top: 1px solid var(--line); }
+    .syllabus-day:last-child { border-bottom: 1px solid var(--line); }
+    .syllabus-day-trigger { width: 100%; padding: 15px 4px; display: grid; grid-template-columns: 62px minmax(0,1fr) 30px; gap: 12px; align-items: center; border: 0; background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+    .syllabus-day-trigger:hover { color: var(--jade); }
+    .syllabus-day-index { color: var(--gold); font-family: Georgia,serif; font-size: .75rem; letter-spacing: .08em; }
+    .syllabus-day-trigger b { display: block; font-size: .9rem; }
+    .syllabus-day-trigger small { display: block; margin-top: 3px; color: var(--muted); font-size: .73rem; font-weight: 400; }
+    .syllabus-schedule { padding: 2px 0 14px; }
+    .syllabus-session { padding: 13px 0; display: grid; grid-template-columns: 86px minmax(140px,.65fr) minmax(230px,1.35fr) 80px; gap: 12px; align-items: start; border-top: 1px dashed var(--line); }
+    .syllabus-session:first-child { border-top: 0; }
+    .syllabus-session time { color: var(--gold); font-family: Georgia,serif; font-size: .73rem; white-space: nowrap; }
+    .syllabus-session h5 { margin: 0; color: var(--ink); font-size: .8rem; line-height: 1.45; }
+    .syllabus-session ul { margin: 0; padding-left: 17px; }
+    .syllabus-session li { padding: 1px 0; font-size: .73rem; }
+    .syllabus-session em { color: var(--muted); font-size: .7rem; font-style: normal; text-align: right; }
+    .syllabus-highlight-grid, .syllabus-tool-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+    .syllabus-highlight, .syllabus-tool { padding: 12px 13px; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb,var(--paper) 42%,transparent); font-size: .74rem; }
+    .syllabus-tool { display: flex; gap: 10px; align-items: flex-start; }
+    .syllabus-tool b { color: var(--gold); font-family: Georgia,serif; font-size: .65rem; white-space: nowrap; }
+
+    .timeline { position: relative; max-width: 900px; margin: auto; }
+    .timeline::before { content: ""; position: absolute; left: 24px; top: 24px; bottom: 24px; width: 1px; background: linear-gradient(var(--gold),var(--line)); }
+    .step { position: relative; padding: 0 0 26px 78px; }
+    .step:last-child { padding-bottom: 0; }
+    .step-dot { position: absolute; left: 0; top: 0; width: 49px; height: 49px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--jade); border: 5px solid var(--paper); box-shadow: 0 0 0 1px var(--line); font-family: Georgia,serif; }
+    [data-theme="dark"] .step-dot { color: #0e1715; }
+    .step-body { padding: 20px 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); }
+    .step-body header { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .step-body h3 { margin: 0; font-size: 1.02rem; }
+    .step-body time { color: var(--gold); font-size: .78rem; font-weight: 700; white-space: nowrap; }
+    .step-body p { margin: 7px 0 0; color: var(--muted); font-size: .9rem; }
+
+    .fit-shell { display: grid; grid-template-columns: 290px 1fr; min-height: 420px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--card); box-shadow: var(--shadow-sm); }
+    .fit-tabs { padding: 14px; border-right: 1px solid var(--line); background: color-mix(in srgb,var(--paper-2) 64%,transparent); }
+    .fit-tab { width: 100%; border: 0; padding: 14px 15px; border-radius: 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; text-align: left; background: transparent; cursor: pointer; color: var(--muted); }
+    .fit-tab span { font-weight: 700; }
+    .fit-tab small { font-family: Georgia,serif; opacity: .6; }
+    .fit-tab[aria-selected="true"] { color: #fff; background: var(--jade); box-shadow: var(--shadow-sm); }
+    [data-theme="dark"] .fit-tab[aria-selected="true"] { color: #0e1715; }
+    .fit-panel { padding: clamp(28px,5vw,60px); display: flex; flex-direction: column; justify-content: center; }
+    .fit-panel .tag { align-self: flex-start; padding: 6px 10px; border-radius: 999px; color: var(--gold); background: color-mix(in srgb,var(--gold) 10%,transparent); font-size: .74rem; font-weight: 700; }
+    .fit-panel h3 { margin: 18px 0 20px; font-family: "STKaiti", "KaiTi", serif; font-size: clamp(1.8rem,4vw,2.7rem); }
+    .fit-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .fit-pair div { padding: 18px; border-radius: 16px; background: color-mix(in srgb,var(--paper-2) 46%,transparent); }
+    .fit-pair b { display: block; margin-bottom: 6px; color: var(--gold); font-size: .78rem; letter-spacing: .1em; }
+    .fit-pair p { margin: 0; color: var(--muted); }
+
+    .compliance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .compliance-card { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+    .compliance-card h3 { display: flex; gap: 10px; align-items: center; margin: 0 0 16px; }
+    .compliance-card h3 i { width: 12px; height: 12px; border-radius: 50%; }
+    .yes h3 i { background: var(--jade-2); }
+    .no h3 i { background: var(--red); }
+    .compliance-card ul { margin: 0; padding: 0; list-style: none; }
+    .compliance-card li { position: relative; padding: 8px 0 8px 26px; border-bottom: 1px dashed var(--line); color: var(--muted); }
+    .compliance-card li:last-child { border: 0; }
+    .yes li::before { content: "✓"; position: absolute; left: 0; color: var(--jade-2); font-weight: 900; }
+    .no li::before { content: "×"; position: absolute; left: 2px; color: var(--red); font-weight: 900; }
+    .price-table { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--card); box-shadow: var(--shadow-sm); }
+    .price-table th, .price-table td { padding: 18px 20px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .price-table tr:last-child td { border-bottom: 0; }
+    .price-table th { color: var(--muted); background: color-mix(in srgb,var(--paper-2) 55%,transparent); font-size: .78rem; letter-spacing: .08em; }
+    .price-table td:first-child { font-weight: 750; }
+    .price-table td:last-child { color: var(--gold); font-weight: 800; white-space: nowrap; }
+    .calculator { margin-top: 30px; padding: clamp(22px,4vw,38px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: var(--shadow); }
+    .calc-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 18px; margin-bottom: 26px; }
+    .calc-head h3 { margin: 0; font-size: 1.28rem; }
+    .calc-head p { margin: 4px 0 0; color: var(--muted); font-size: .86rem; }
+    .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 34px; }
+    .field label { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 8px; font-size: .82rem; font-weight: 700; }
+    .field output { color: var(--gold); }
+    .field input[type="range"] { width: 100%; accent-color: var(--jade-2); }
+    .calc-results { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 28px; }
+    .result { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: color-mix(in srgb,var(--paper-2) 50%,transparent); }
+    .result small { display: block; color: var(--muted); font-size: .72rem; }
+    .result strong { display: block; margin-top: 4px; font-family: Georgia,serif; font-size: clamp(1.25rem,3vw,1.8rem); color: var(--jade-2); }
+    .result.emphasis { color: #fff; background: var(--jade); border-color: var(--jade); }
+    [data-theme="dark"] .result.emphasis { color: #0e1715; }
+    .result.emphasis small, .result.emphasis strong { color: inherit; }
+    .calc-disclaimer { margin: 15px 0 0; color: var(--muted); font-size: .75rem; }
+
+    .vision { position: relative; padding: clamp(40px,8vw,86px); border-radius: 34px; overflow: hidden; color: #f7f2e9; background: var(--jade); box-shadow: var(--shadow); }
+    [data-theme="dark"] .vision { color: #0e1715; }
+    .vision::after { content: "元"; position: absolute; right: -10px; bottom: -75px; font-family: "STKaiti", "KaiTi", serif; font-size: 19rem; line-height: 1; opacity: .06; }
+    .vision blockquote { position: relative; z-index: 1; max-width: 850px; margin: 0; font-family: "STKaiti", "KaiTi", serif; font-size: clamp(1.4rem,3vw,2rem); line-height: 1.8; }
+    .vision footer { margin-top: 28px; color: var(--gold-2); font-weight: 700; letter-spacing: .15em; }
+
+    .cta { text-align: center; padding-bottom: clamp(80px,12vw,150px); }
+    .cta-box { padding: clamp(42px,8vw,86px) 24px; border: 1px solid var(--line); border-radius: 36px; background: var(--card); box-shadow: var(--shadow); }
+    .cta h2 { margin: 0; font-family: "STKaiti", "KaiTi", serif; font-size: clamp(2.2rem,6vw,4.6rem); line-height: 1.16; }
+    .cta .lead { margin: 16px auto 0; max-width: 640px; color: var(--muted); }
+    .contact-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; max-width: 920px; margin: 34px auto 0; }
+    .contact { padding: 16px; border: 1px solid var(--line); border-radius: 16px; text-align: left; }
+    .contact small { display: block; color: var(--muted); font-size: .7rem; }
+    .contact b { display: block; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .86rem; }
+    .cta-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+    .sources { padding: 32px 0 50px; border-top: 1px solid var(--line); color: var(--muted); font-size: .74rem; }
+    .sources-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+    .sources h3 { margin: 0 0 10px; color: var(--ink); font-size: .82rem; }
+    .sources ol { margin: 0; padding-left: 18px; }
+    .sources a { text-underline-offset: 3px; }
+    .footer-brand { margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; }
+    .footer-brand strong { color: var(--ink); font-family: "STKaiti", "KaiTi", serif; font-size: 1.35rem; letter-spacing: .12em; }
+
+    .back-top { position: fixed; right: 22px; bottom: 22px; z-index: 90; opacity: 0; pointer-events: none; transform: translateY(10px); transition: .2s ease; }
+    .back-top.is-visible { opacity: 1; pointer-events: auto; transform: none; }
+    .toast { position: fixed; left: 50%; bottom: 28px; z-index: 200; max-width: calc(100% - 32px); padding: 12px 18px; border-radius: 999px; color: #fff; background: var(--ink); box-shadow: var(--shadow); opacity: 0; transform: translate(-50%,16px); pointer-events: none; transition: .25s ease; font-size: .86rem; }
+    [data-theme="dark"] .toast { color: #0e1715; }
+    .toast.is-show { opacity: 1; transform: translate(-50%,0); }
+
+    .search-dialog { width: min(620px,calc(100% - 30px)); padding: 0; border: 1px solid var(--line); border-radius: 24px; color: var(--ink); background: var(--paper); box-shadow: 0 32px 90px rgba(0,0,0,.28); }
+    .search-dialog::backdrop { background: rgba(5,16,13,.55); backdrop-filter: blur(5px); }
+    .search-bar { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+    .search-bar svg { width: 20px; }
+    .search-bar input { width: 100%; border: 0; outline: 0; color: var(--ink); background: transparent; font-size: 1rem; }
+    .kbd { padding: 3px 7px; border: 1px solid var(--line); border-radius: 7px; color: var(--muted); background: var(--card); font-size: .7rem; }
+    .search-results { max-height: 420px; overflow: auto; padding: 10px; }
+    .search-result { width: 100%; border: 0; padding: 13px 14px; border-radius: 13px; display: flex; justify-content: space-between; gap: 12px; text-align: left; background: transparent; cursor: pointer; }
+    .search-result:hover, .search-result:focus { background: var(--card); }
+    .search-result b { font-size: .88rem; }
+    .search-result span { color: var(--muted); font-size: .74rem; }
+    .search-empty { padding: 34px 20px; text-align: center; color: var(--muted); }
+
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .58s ease, transform .58s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    @media (max-width: 1080px) {
+      .desktop-nav { display: none; }
+      #menuBtn { display: grid; }
+      .hero-grid { grid-template-columns: 1fr .72fr; }
+      .contact-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 820px) {
+      :root { --nav-h: 64px; }
+      .topbar-inner, .container { width: min(100% - 28px,1160px); }
+      .hero { min-height: auto; padding-top: 52px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-copy { text-align: center; }
+      .eyebrow, .hero-actions, .micro-trust { justify-content: center; }
+      .hero-lead { margin-inline: auto; }
+      .spine-card { min-height: 360px; border-radius: 28px; }
+      .spine-visual { width: 42%; }
+      .chapter-head { grid-template-columns: 1fr; gap: 12px; }
+      .chapter-no { display: flex; align-items: baseline; gap: 6px; }
+      .chapter-no strong { font-size: 2rem; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .module-summary { grid-template-columns: 1fr; gap: 14px; padding: 22px; }
+      .module-summary .summary-mark { padding: 0 0 14px; display: flex; align-items: center; gap: 12px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.2); }
+      .module-summary .big { margin: 0; font-size: 2.8rem; }
+      .course-preview-grid, .toolkit-grid { grid-template-columns: 1fr; }
+      .delivery-standard { grid-template-columns: 1fr 1fr; }
+      .syllabus-meta-grid { grid-template-columns: 1fr; }
+      .syllabus-session { grid-template-columns: 76px minmax(130px,.7fr) 1.3fr; }
+      .syllabus-session em { grid-column: 2/-1; text-align: left; }
+      .fit-shell { grid-template-columns: 1fr; }
+      .fit-tabs { display: flex; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); scrollbar-width: none; }
+      .fit-tabs::-webkit-scrollbar { display: none; }
+      .fit-tab { min-width: 160px; }
+      .calc-results { grid-template-columns: 1fr 1fr; }
+      .result.emphasis { grid-column: 1/-1; }
+      .sources-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 580px) {
+      .brand small { display: none; }
+      .hero h1 .main { font-size: 4.3rem; }
+      .hero h1 .sub { font-size: 1.38rem; }
+      .spine-card { min-height: 320px; }
+      .pain-grid, .grid-2, .compliance-grid, .calc-grid, .fit-pair { grid-template-columns: 1fr; }
+      .accordion-trigger { grid-template-columns: 44px 1fr auto; gap: 8px; }
+      .accordion-trigger .index { width: 36px; height: 36px; }
+      .accordion-panel .panel-inner { padding: 0 4px 22px 52px; }
+      .course-overview-head { align-items: flex-start; flex-direction: column; }
+      .delivery-standard { grid-template-columns: 1fr; }
+      .embedded-syllabus-head { padding: 18px; }
+      .syllabus-course-trigger { padding: 16px 14px; grid-template-columns: 42px minmax(0,1fr) 30px; gap: 10px; }
+      .syllabus-course-number { width: 38px; height: 38px; }
+      .syllabus-course-inner { padding: 2px 14px 20px; }
+      .syllabus-day-trigger { grid-template-columns: 52px minmax(0,1fr) 28px; gap: 8px; }
+      .syllabus-session { padding: 12px 0; grid-template-columns: 1fr; gap: 5px; }
+      .syllabus-session em { grid-column: auto; text-align: left; }
+      .syllabus-highlight-grid, .syllabus-tool-grid { grid-template-columns: 1fr; }
+      .diagnosis { align-items: flex-start; flex-direction: column; gap: 4px; }
+      .step { padding-left: 62px; }
+      .step-body header { display: block; }
+      .step-dot { width: 44px; height: 44px; }
+      .timeline::before { left: 21px; }
+      .price-table { display: block; overflow-x: auto; }
+      .price-table th, .price-table td { min-width: 118px; padding: 14px; }
+      .calc-head { align-items: flex-start; flex-direction: column; }
+      .calc-results { grid-template-columns: 1fr; }
+      .result.emphasis { grid-column: auto; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-brand { align-items: flex-start; flex-direction: column; }
+      .top-actions .icon-btn:nth-child(2) { display: none; }
+      .back-top { display: none; }
+    }
+    @media (max-width: 380px) {
+      .spine-note { grid-template-columns: 1fr; }
+      .spine-note b { min-height: 29px; white-space: normal; }
+      .spine-note b + b { border-left: 0; border-top: 1px solid rgba(255,255,255,.2); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media print {
+      :root { --paper:#fff; --ink:#152c27; --muted:#52625c; --line:rgba(21,44,39,.16); --card:#fff; }
+      body { background: #fff; }
+      body::before, .topbar, .progress-line, .hero-actions, .micro-trust, .back-top, .toast, .cta-actions, .search-dialog { display: none !important; }
+      .hero { min-height: 100vh; page-break-after: always; }
+      .hero-grid { grid-template-columns: 1fr .75fr; }
+      .chapter { padding: 38px 0; break-before: page; }
+      .chapter-head { margin-bottom: 22px; }
+      .chapter h2 { font-size: 2.3rem; }
+      .card, .pain-card, .step-body, .calculator, .vision, .fit-shell { box-shadow: none; break-inside: avoid; }
+      .accordion-panel { display: block !important; grid-template-rows: none !important; }
+      .accordion-panel > div { overflow: visible !important; }
+      .accordion-panel .panel-inner { padding-bottom: 18px; }
+      .syllabus-course-panel, .syllabus-day-panel { display: block !important; grid-template-rows: none !important; }
+      .syllabus-course-panel > div, .syllabus-day-panel > div { overflow: visible !important; }
+      .fit-tabs { display: none; }
+      .fit-shell { display: block; min-height: 0; }
+      .fit-panel { padding: 28px; }
+      .module-summary { position: static; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      a { text-decoration: none; }
+      .sources { break-before: page; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="progress-line" id="progressLine" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="返回封面">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 6c-3 4-3 7 0 10s3 6 0 9-3 6 0 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M13 10c4 1 10 1 14 0M12 18c5 1 11 1 16 0M12 26c5 1 11 1 16 0M14 33c4 1 8 1 12 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </span>
+        <span><strong>元正脊</strong><small>招商合作手册</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="章节导航">
+        <a href="#opportunity">市场</a><a href="#pain">痛点</a><a href="#solution">体系</a><a href="#path">路径</a><a href="#fit">适配</a><a href="#compliance">合规</a><a href="#investment">投入</a><a href="#contact">合作</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" id="searchBtn" type="button" aria-label="搜索手册" title="搜索（/）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        </button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="切换深浅模式" title="切换深浅模式">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn" id="menuBtn" type="button" aria-label="打开章节菜单" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-drawer" id="mobileDrawer" aria-label="移动端章节导航">
+    <a href="#opportunity">02 市场窗口</a><a href="#pain">03 门店痛点</a><a href="#solution">04 交付体系</a><a href="#path">05 合作路径</a><a href="#fit">06 机构适配</a><a href="#compliance">07 合规边界</a><a href="#investment">08 合作投入</a><a href="#vision">10 品牌愿景</a><a href="#contact">11 立即咨询</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero" id="top" data-search-title="封面｜元正脊招商合作手册">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">招商合作手册 · 2026</div>
+          <h1><span class="main">元正脊</span><span class="sub">做国民的非医疗健康管家</span></h1>
+          <p class="hero-lead">从“根本”出发，以“正”为本，护“脊”安康。聚焦<strong>痛症养护场景与慢病生活方式陪伴</strong>，为合作门店补齐服务、运营与客户承接能力。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#solution">查看合作体系
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+            <a class="btn" href="#calculator">打开营收测算器</a>
+          </div>
+          <div class="micro-trust" aria-label="手册特点"><span><i></i>非医疗服务边界</span><span><i></i>五大交付模块</span><span><i></i>持续运营陪跑</span></div>
+        </div>
+        <div class="spine-card reveal" aria-label="元正脊品牌视觉">
+          <svg class="spine-visual" viewBox="0 0 260 460" fill="none" aria-hidden="true">
+            <path d="M130 28c-21 30-22 54-3 78 23 28 25 54 3 81-20 24-21 50-1 76 21 27 21 52 1 78-17 22-18 47-2 80" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+            <g stroke="currentColor" stroke-width="2" opacity=".78">
+              <path d="M96 55c21 8 47 8 68 0l-9 24c-16 6-34 6-50 0z"/><path d="M91 102c24 9 52 9 76 0l-10 25c-18 7-38 7-56 0z"/>
+              <path d="M92 151c23 9 51 9 74 0l-9 25c-18 7-39 7-56 0z"/><path d="M94 201c22 8 49 8 71 0l-9 25c-17 6-37 6-54 0z"/>
+              <path d="M94 251c22 9 50 9 72 0l-10 25c-17 7-37 7-54 0z"/><path d="M96 301c21 8 47 8 68 0l-9 25c-16 6-35 6-51 0z"/>
+              <path d="M99 349c19 8 43 8 62 0l-8 24c-15 6-31 6-46 0z"/><path d="M104 395c16 7 36 7 52 0l-7 22c-12 5-26 5-38 0z"/>
+            </g>
+            <path d="M78 26c-28 43-36 99-20 149M181 27c29 47 35 104 18 158M69 249c-14 58-2 116 34 164M189 249c14 57 2 116-33 163" stroke="currentColor" stroke-width="1" opacity=".28"/>
+          </svg>
+          <div class="spine-note"><b>让痛症有养护</b><b>让慢病有陪跑</b><b>让健康有依托</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="origin" data-search-title="01 一元复始，正脊安身">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>01</strong></div>
+          <div><p class="kicker">Brand origin</p><h2>一元复始，正脊安身</h2><p class="chapter-intro">元正脊，从“根本”出发，以“正”为本，护“脊”安康。我们希望做的，是让门店多一项可持续的服务能力，让家庭多一份触手可及的健康支持。</p></div>
+        </header>
+        <div class="grid-3 reveal">
+          <article class="card"><span class="card-number">元 · ROOT</span><h3>从需求根本出发</h3><p>关注高频、日常、可持续的身体养护与生活方式管理需求。</p></article>
+          <article class="card"><span class="card-number">正 · STANDARD</span><h3>以标准建立信任</h3><p>通过培训、流程、话术和服务边界，让团队执行更一致。</p></article>
+          <article class="card highlight-card"><span class="card-number">脊 · SUPPORT</span><h3>让健康有依托</h3><p>以社区门店为服务触点，提供非医疗养护与长期健康陪伴。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="opportunity" data-search-title="02 市场窗口｜生活方式管理需求增长">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>02</strong></div>
+          <div><p class="kicker">Market opportunity</p><h2>三大趋势交汇，窗口正在打开</h2><p class="chapter-intro">不夸大单一数据，用更清晰的需求变化判断机会：<strong>身体不适年轻化、慢病管理日常化、健康服务社区化。</strong></p></div>
+        </header>
+        <div class="grid-3 reveal">
+          <article class="card"><span class="card-number">TREND 01</span><h3>脊柱痛症爆发式增长</h3><p>《中国退行性脊柱健康报告》显示，我国颈腰椎潜在患病人群已超 2 亿，其中 20–40 岁占 64%。年轻人腰不行了，这是最大的健康焦虑，也是最大的消费机会。</p></article>
+          <article class="card"><span class="card-number">TREND 02</span><h3>慢病管理走向日常生活</h3><p>国家卫生健康委 2024 年文件强调营养、运动等非药物措施，以及慢病自我管理意识。日常陪伴与医疗诊疗应各守边界、相互衔接。</p><a class="mini-source" href="https://www.nhc.gov.cn/ylyjs/gzdt/202407/256b4eb8398440a8811344c7be50a333.shtml" target="_blank" rel="noopener">查看国家卫健委原文 ↗</a></article>
+          <article class="card highlight-card"><span class="card-number">TREND 03</span><h3>健康服务走向社区触点</h3><p>离家近、易坚持、有记录的服务，更适合融入会员制门店。元正脊的角色，是补齐非医疗服务体系与运营能力。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="pain" data-search-title="03 四大门店痛点诊断">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>03</strong></div>
+          <div><p class="kicker">Store diagnosis</p><h2>你的收入，是不是这样漏掉的？</h2><p class="chapter-intro">不少健康与生活方式门店并非没有客户，而是缺少<strong>专业承接、标准执行、内容获客与持续复购</strong>的完整链路。</p></div>
+        </header>
+        <div class="pain-grid reveal">
+          <article class="pain-card"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20v-1a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v1"/><circle cx="12" cy="7" r="4"/></svg></span><h3>01｜人才难招、能力难留</h3><p>想增加养护项目，却难以持续找到能力稳定、表达专业、服务规范的人才。</p></article>
+          <article class="pain-card"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><h3>02｜培训零散、没有 SOP</h3><p>知识东拼西凑、手法因人而异，客户体验不稳定，管理者也无法检查与复盘。</p></article>
+          <article class="pain-card"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17l4-4 3 3 6-7 3 3"/><path d="M4 20h16"/></svg></span><h3>03｜内容在发、流量不来</h3><p>平台开了不少，内容却没有选题逻辑与到店链路，投入和成交之间缺少可追踪指标。</p></article>
+          <article class="pain-card"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M8 12h8M13 8l4 4-4 4"/></svg></span><h3>04｜需求到了、门店接不住</h3><p>会员提出肩颈腰背不适或生活方式管理需求时，员工不会评估、不会解释，也不知何时应建议就医。</p></article>
+        </div>
+        <div class="diagnosis reveal"><strong>门店诊断</strong><span>若以上命中两项及以上，你需要的通常不是再买一个单品，而是补齐“人员—服务—运营—复盘”的完整系统。</span></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="solution" data-search-title="04 五大交付模块｜培训 SOP 下店 运营 设备工具">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>04</strong></div>
+          <div><p class="kicker">Full-stack solution</p><h2>五大模块，一套门店落地全案</h2><p class="chapter-intro">从团队会做、门店会卖，到运营能复盘、设备工具能配齐。不是单次培训，而是一套围绕落地的合作交付。</p></div>
+        </header>
+        <div class="module-layout">
+          <aside class="module-summary reveal"><div class="summary-mark"><span>DELIVERY SYSTEM</span><div class="big">5</div></div><div><h3>从学会，到用起来</h3><p>培训打底、SOP 固化、老师下店、运营赋能、设备工具配送，组成一条可执行的服务链。</p></div></aside>
+          <div class="module-accordion reveal">
+            <div class="accordion" data-accordion-group>
+              <article class="accordion-item" data-search-title="3天2晚特训 三大核心课程 中医馆 运动表现 产后形体 工具包">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="module1"><span class="index">01</span><span><b>3 天线下集训 · 三大核心课程</b><small>针对三类合作机构定制的 3 天 2 晚实战特训</small></span><span class="accordion-icon" aria-hidden="true"></span></button>
+                <div class="accordion-panel" id="module1"><div><div class="panel-inner">
+                  <div class="course-overview-head"><p>围绕技术手法、评估诊断、销售转化与运营落地，形成三条机构适配课程线。课程完整课纲已整合在本页，可按课程与天次逐级展开。</p></div>
+                  <div class="course-preview-grid">
+                    <article class="course-preview-card"><span class="course-no">COURSE 01</span><h4>中医馆痛症管理与业绩倍增实战班</h4><p>从“按得舒服”到“按得有效”</p><div class="course-meta"><span><b>目标机构：</b>中医馆 / 推拿店</span><span><b>培训对象：</b>老板、店长、核心理疗师 / 推拿师</span></div></article>
+                    <article class="course-preview-card"><span class="course-no">COURSE 02</span><h4>运动表现提升与肌骨疼痛管理实战班</h4><p>从体能训练到功能康复的升维</p><div class="course-meta"><span><b>目标机构：</b>运动康复馆 / 健身房</span><span><b>培训对象：</b>健身教练、康复师、普拉提老师、门店店长</span></div></article>
+                    <article class="course-preview-card"><span class="course-no">COURSE 03</span><h4>产后形体重塑与功能修复实战班</h4><p>产后全周期形体重塑与功能修复</p><div class="course-meta"><span><b>目标机构：</b>月子中心 / 产康店</span><span><b>培训对象：</b>产康师、瑜伽 / 普拉提老师、护理人员、门店店长</span></div></article>
+                  </div>
+                  <div class="delivery-standard"><span><b>3 天 2 晚</b>封闭式实战特训</span><span><b>全链路覆盖</b>技术 + 评估 + 话术 + 运营</span><span><b>随课赠送</b>标准化 SOP 与专业工具包</span><span><b>持续陪跑</b>老师下店指导落地</span></div>
+                  <section class="embedded-syllabus" aria-labelledby="embeddedSyllabusTitle">
+                    <header class="embedded-syllabus-head"><span>FULL COURSE SYLLABUS</span><h4 id="embeddedSyllabusTitle">三大课程完整课纲</h4><p>点击课程查看定位、目标与完整日程；进入课程后，再展开 Day 1 / Day 2 / Day 3。</p></header>
+                    <div id="embeddedCourses"></div>
+                  </section>
+                  <div class="toolkit-block"><h4>三大课程配套工具包</h4><div class="toolkit-grid">
+                    <article class="toolkit-card"><h4>中医馆痛症管理</h4><ul><li>《中医馆痛症评估表》</li><li>《11 项服务标准 SOP 手册》</li><li>《常见疼痛话术应答 Q&amp;A》</li><li>《居家康复指导视频素材库》</li></ul></article>
+                    <article class="toolkit-card"><h4>运动表现提升</h4><ul><li>《常见运动损伤风险评估表》模板</li><li>《术后康复许可确认书》模板</li><li>《肌内效贴扎图谱（电子版）》</li><li>《运动康复课程销售话术 SOP》</li></ul></article>
+                    <article class="toolkit-card"><h4>产后形体重塑</h4><ul><li>《产后体态健康档案模板》</li><li>《产后分阶段训练方案库》</li><li>《母婴客户话术应答 Q&amp;A》</li><li>《居家康复指导视频素材库》</li></ul></article>
+                  </div></div>
+                  <div class="value-note"><b>核心价值：</b>不是一套课覆盖所有门店，而是按机构类型匹配课程、工具包与落地路径。</div>
+                </div></div></div>
+              </article>
+              <article class="accordion-item" data-search-title="标准化 SOP 体系">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="module2"><span class="index">02</span><span><b>标准化 SOP 体系</b><small>把经验变成门店每天都能执行的流程</small></span><span class="accordion-icon" aria-hidden="true"></span></button>
+                <div class="accordion-panel" id="module2"><div><div class="panel-inner"><ul class="plain-list"><li><b>客户接待 SOP：</b>从进门、需求了解、风险告知到离店回访</li><li><b>服务前评估 SOP：</b>5 分钟完成基础信息与禁忌事项筛查</li><li><b>服务流程 SOP：</b>明确项目时长、动作顺序与注意事项</li><li><b>合规沟通 SOP：</b>不诊断、不承诺疗效；清楚说明适用范围与就医建议</li></ul><div class="value-note"><b>核心价值：</b>让服务可学习、可检查、可复盘，减少体验波动。</div></div></div></div>
+              </article>
+              <article class="accordion-item" data-search-title="老师下店 内拓启动">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="module3"><span class="index">03</span><span><b>老师下店 · 内拓启动</b><small>在真实门店场景里完成第一轮落地</small></span><span class="accordion-icon" aria-hidden="true"></span></button>
+                <div class="accordion-panel" id="module3"><div><div class="panel-inner"><ul class="plain-list"><li>现场带教，校正服务动作与沟通细节</li><li>陪同完成首批客户服务，建立可复盘样板</li><li>策划老会员唤醒与体验活动</li><li>根据门店条件安排 3–7 天集中启动</li></ul><div class="value-note"><b>核心价值：</b>缩短从培训到实际经营的磨合期；具体下店天数、人员与交付物以合同为准。</div></div></div></div>
+              </article>
+              <article class="accordion-item" data-search-title="运营策划 流量全案">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="module4"><span class="index">04</span><span><b>运营策划 + 流量全案</b><small>把内容、活动与到店转化连成一条线</small></span><span class="accordion-icon" aria-hidden="true"></span></button>
+                <div class="accordion-panel" id="module4"><div><div class="panel-inner"><div class="grid-2"><div><b>线上流量包</b><ul class="plain-list"><li>短视频与图文选题、脚本和发布节奏</li><li>账号基础搭建与首批内容</li><li>本地生活套餐与投放建议</li><li>公域—私域—到店承接流程</li></ul></div><div><b>线下运营包</b><ul class="plain-list"><li>开业、节日、会员日活动方案</li><li>老带新裂变机制</li><li>异业合作沟通模板</li><li>月度数据复盘与优化</li></ul></div></div><div class="value-note"><b>核心价值：</b>提供可直接执行的文案、脚本、活动表与复盘框架；不承诺特定流量或成交结果。</div></div></div></div>
+              </article>
+              <article class="accordion-item" data-search-title="全套设备工具配送 开店就绪">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="module5"><span class="index">05</span><span><b>全套设备工具配送</b><small>无需额外采购，培训结束即可衔接门店落地</small></span><span class="accordion-icon" aria-hidden="true"></span></button>
+                <div class="accordion-panel" id="module5"><div><div class="panel-inner"><ul class="plain-list"><li>按合作方案配置相应设备与基础工具</li><li>与 3 天集训、标准化 SOP 和下店启动同步衔接</li><li>提供到货核对、基础使用与日常维护说明</li><li>减少门店自行选品、采购与组合适配的时间成本</li></ul><div class="value-note"><b>核心价值：</b>把“学会技术”与“工具就绪”同时交付，让门店更快进入服务和运营阶段。</div></div></div></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="path" data-search-title="05 六步合作路径｜咨询 考察 定制 签约 落地 陪跑">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>05</strong></div>
+          <div><p class="kicker">Cooperation path</p><h2>从了解，到落地的六步路径</h2><p class="chapter-intro">先了解、再验证、后签约。最快 7 天进入启动阶段，实际周期取决于排期、设备、人员与门店准备情况。</p></div>
+        </header>
+        <div class="timeline reveal">
+          <article class="step"><span class="step-dot">1</span><div class="step-body"><header><h3>咨询了解</h3><time>DAY 1</time></header><p>沟通机构类型、现有业务、目标客群与主要需求，初步判断合作适配度。</p></div></article>
+          <article class="step"><span class="step-dot">2</span><div class="step-body"><header><h3>实地考察</h3><time>DAY 2–3</time></header><p>参观总部、体验课程片段、核对师资与交付样例，充分了解后再作决定。</p></div></article>
+          <article class="step"><span class="step-dot">3</span><div class="step-body"><header><h3>方案定制</h3><time>DAY 4–5</time></header><p>结合门店面积、团队人数、现有项目与目标客群，明确服务范围和落地节奏。</p></div></article>
+          <article class="step"><span class="step-dot">4</span><div class="step-body"><header><h3>签约合作</h3><time>DAY 5–6</time></header><p>以书面合同确认费用、交付清单、设备明细、下店安排、售后及双方责任。</p></div></article>
+          <article class="step"><span class="step-dot">5</span><div class="step-body"><header><h3>落地运营</h3><time>DAY 7 起</time></header><p>按约定启动培训、督导、内拓活动与内容运营，建立首轮数据基线。</p></div></article>
+          <article class="step"><span class="step-dot">6</span><div class="step-body"><header><h3>持续陪跑</h3><time>每月</time></header><p>复盘客户、服务与经营数据，根据实际情况迭代活动、内容与团队执行。</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="fit" data-search-title="06 六类机构合作适配">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>06</strong></div>
+          <div><p class="kicker">Partner fit</p><h2>六类机构，找到你的嫁接方式</h2><p class="chapter-intro">点击机构类型，查看对应的典型缺口与合作方向。</p></div>
+        </header>
+        <div class="fit-shell reveal">
+          <div class="fit-tabs" role="tablist" aria-label="合作机构类型">
+            <button class="fit-tab" role="tab" aria-selected="true" data-fit="yoga"><span>瑜伽 / 普拉提馆</span><small>01</small></button>
+            <button class="fit-tab" role="tab" aria-selected="false" data-fit="postpartum"><span>产后康复中心</span><small>02</small></button>
+            <button class="fit-tab" role="tab" aria-selected="false" data-fit="beauty"><span>医美 / 美容院</span><small>03</small></button>
+            <button class="fit-tab" role="tab" aria-selected="false" data-fit="clinic"><span>综合门诊部</span><small>04</small></button>
+            <button class="fit-tab" role="tab" aria-selected="false" data-fit="wellness"><span>养生馆</span><small>05</small></button>
+            <button class="fit-tab" role="tab" aria-selected="false" data-fit="fitness"><span>健身工作室</span><small>06</small></button>
+          </div>
+          <div class="fit-panel" id="fitPanel" role="tabpanel" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="compliance" data-search-title="07 非医疗合规边界｜可做与不可做">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>07</strong></div>
+          <div><p class="kicker">Compliance first</p><h2>经营的前提，是守住安全边界</h2><p class="chapter-intro">非医疗机构可提供养生保健与健康咨询类服务，但<strong>不能从事诊疗、使用禁止技术或宣传治疗作用</strong>。实际经营范围还应以当地监管要求和证照为准。</p></div>
+        </header>
+        <div class="compliance-grid reveal">
+          <article class="compliance-card yes"><h3><i></i>可在合规条件下开展</h3><ul><li>非医疗性按摩、刮痧、常规拔罐、非瘢痕非发泡艾灸、熏洗等</li><li>健康状态信息了解、一般性咨询指导与生活方式管理</li><li>姿态观察、非诊断性体态评估与安全锻炼指导</li><li>依法办理经营范围及许可后的预包装食品销售</li></ul></article>
+          <article class="compliance-card no"><h3><i></i>不得触碰的红线</h3><ul><li>诊断疾病、开具处方、宣称治疗或保证效果</li><li>针刺、瘢痕灸、发泡灸、牵引、扳法及其他侵入性或危险技术</li><li>在非医疗机构的项目名称和宣传中使用“治疗”、疾病名称等医疗术语</li><li>对急症、外伤、神经症状等需要医疗判断的情况继续服务而不建议就医</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="investment" data-search-title="08 合作报价与营收测算器">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>08</strong></div>
+          <div><p class="kicker">Investment model</p><h2>合作投入，先把账算清楚</h2><p class="chapter-intro">以下为原始方案中的意向报价。商务口径存在未明确项，签约前需把计费基数、服务期限、交付数量和退出机制写入合同。</p></div>
+        </header>
+        <div class="reveal">
+          <table class="price-table">
+            <thead><tr><th>合作项目</th><th>主要内容</th><th>意向价格</th></tr></thead>
+            <tbody>
+              <tr><td>商业全案</td><td>3 天集训 + SOP 体系 + 设备配送 + 老师下店 + 流量全案 + 持续陪跑</td><td>¥69,800</td></tr>
+              <tr><td>下单报单</td><td>“每单”的定义、计费基数与结算周期待书面确认</td><td>¥1,000 + 40%</td></tr>
+              <tr><td>运营全案 + 流量</td><td>月度运营策划与流量代运营；投放费用是否包含待确认</td><td>¥3,000 + 20%</td></tr>
+              <tr><td>技术培训（单报）</td><td>3 天线下集训；差旅、食宿、复训政策待确认</td><td>¥12,800</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="calculator reveal" id="calculator" data-search-title="互动营收测算器">
+          <div class="calc-head"><div><h3>门店新增营收情景测算</h3><p>拖动参数，查看不同客户基数与转化情景。</p></div><button class="text-btn" id="resetCalc" type="button">恢复示例值</button></div>
+          <div class="calc-grid">
+            <div class="field"><label for="customers">现有客户基数 <output id="customersOut">200 人</output></label><input id="customers" type="range" min="20" max="1000" step="10" value="200"></div>
+            <div class="field"><label for="rate">需求转化率 <output id="rateOut">30%</output></label><input id="rate" type="range" min="5" max="80" step="1" value="30"></div>
+            <div class="field"><label for="unitPrice">套餐客单价 <output id="unitPriceOut">¥2,980</output></label><input id="unitPrice" type="range" min="500" max="10000" step="20" value="2980"></div>
+            <div class="field"><label for="coopFee">合作费用 <output id="coopFeeOut">¥69,800</output></label><input id="coopFee" type="range" min="10000" max="150000" step="100" value="69800"></div>
+          </div>
+          <div class="calc-results">
+            <div class="result"><small>预计转化客户</small><strong id="convertedResult">60 人</strong></div>
+            <div class="result emphasis"><small>预计新增营收</small><strong id="revenueResult">¥178,800</strong></div>
+            <div class="result"><small>覆盖合作费所需客户</small><strong id="breakEvenResult">24 人</strong></div>
+          </div>
+          <p class="calc-disclaimer">重要：这是营收情景演算，不是利润或回本承诺；未扣除人工、房租、耗材、投流、平台抽佣、税费、退款及分成等成本。转化率须用真实门店数据验证。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="vision" data-search-title="10 品牌愿景｜健康常青">
+      <div class="container">
+        <header class="chapter-head reveal">
+          <div class="chapter-no">PAGE <strong>10</strong></div>
+          <div><p class="kicker">Our vision</p><h2>元正脊，健康常青</h2></div>
+        </header>
+        <div class="vision reveal"><blockquote>我们期待这样一个未来：每一个社区，都有值得信赖的日常健康服务触点；每一位被身体不适和生活方式问题困扰的人，都能在离家更近的地方，获得专业、克制、长期的非医疗健康陪伴；每一位合作伙伴，也能在清晰边界和持续能力中，经营一份有价值、有尊严、可持续的事业。</blockquote><footer>让每一根“脊梁”，挺立如初，生机常在。</footer></div>
+      </div>
+    </section>
+
+    <section class="chapter cta" id="contact" data-search-title="11 立即咨询｜联系方式">
+      <div class="container">
+        <div class="cta-box reveal">
+          <p class="kicker">Start a conversation</p>
+          <h2>先看清，再选择；<br>选择后，一起把门店做扎实。</h2>
+          <p class="lead">欢迎预约了解课程、交付样例与合作方案。正式发布前，请将下方占位信息替换为真实联系方式。</p>
+          <div class="contact-grid">
+            <div class="contact"><small>咨询热线</small><b>[你的电话]</b></div>
+            <div class="contact"><small>微信联系</small><b>[你的微信号]</b></div>
+            <div class="contact"><small>总部地址</small><b>[你的总部地址]</b></div>
+            <div class="contact"><small>官方网站</small><b>[你的网址]</b></div>
+          </div>
+          <div class="cta-actions"><button class="btn btn-primary" id="copyInquiry" type="button">复制咨询话术</button><button class="btn" type="button" onclick="window.print()">打印 / 导出 PDF</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sources">
+    <div class="container">
+      <div class="sources-grid">
+        <div><h3>公开依据</h3><ol><li><a href="https://www.nhc.gov.cn/ylyjs/gzdt/202407/256b4eb8398440a8811344c7be50a333.shtml" target="_blank" rel="noopener">国家卫生健康委：高血压等慢性病营养和运动指导原则（2024 年版）</a></li><li><a href="https://www.natcm.gov.cn/zxyjhyssmzyys/gongzuodongtai/2023-05-06/30455.html" target="_blank" rel="noopener">国家中医药管理局：中医养生保健服务规范（试行）</a></li><li><a href="https://www.natcm.gov.cn/fajiansi/zhengcewenjian/2018-03-24/2600.html" target="_blank" rel="noopener">关于中医推拿按摩等活动管理中有关问题的通知</a></li></ol></div>
+      </div>
+      <div class="footer-brand"><strong>元正脊 · 非医疗健康管家</strong><span>让痛症有养护，让慢病有陪跑，让健康有依托。</span></div>
+    </div>
+  </footer>
+
+  <button class="icon-btn back-top" id="backTop" type="button" aria-label="返回顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 15 6-6 6 6"/></svg></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="search-dialog" id="searchDialog">
+    <div class="search-bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg><input id="searchInput" type="search" placeholder="搜索章节、服务或关键词…" autocomplete="off"><button class="text-btn" id="closeSearch" type="button"><span class="kbd">ESC</span></button></div>
+    <div class="search-results" id="searchResults"></div>
+  </dialog>
+
+  <script>
+    (() => {
+      'use strict';
+      const $ = (s, root = document) => root.querySelector(s);
+      const $$ = (s, root = document) => [...root.querySelectorAll(s)];
+      const root = document.documentElement;
+      const toast = $('#toast');
+      let toastTimer;
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add('is-show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove('is-show'), 2200);
+      }
+
+      // Theme
+      const savedTheme = localStorage.getItem('yzj-theme');
+      const preferredDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      root.dataset.theme = savedTheme || (preferredDark ? 'dark' : 'light');
+      $('#themeBtn').addEventListener('click', () => {
+        root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('yzj-theme', root.dataset.theme);
+        document.querySelector('meta[name="theme-color"]').content = root.dataset.theme === 'dark' ? '#0e1715' : '#f5f0e7';
+      });
+
+      // Reading progress / back to top
+      function updateScrollUI() {
+        const scrollable = document.documentElement.scrollHeight - innerHeight;
+        const percent = scrollable > 0 ? (scrollY / scrollable) * 100 : 0;
+        $('#progressLine').style.width = percent + '%';
+        $('#backTop').classList.toggle('is-visible', scrollY > 650);
+      }
+      addEventListener('scroll', updateScrollUI, { passive: true });
+      updateScrollUI();
+      $('#backTop').addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+
+      // Mobile menu
+      const menuBtn = $('#menuBtn');
+      const drawer = $('#mobileDrawer');
+      function closeMenu() { drawer.classList.remove('is-open'); menuBtn.setAttribute('aria-expanded','false'); }
+      menuBtn.addEventListener('click', () => {
+        const open = !drawer.classList.contains('is-open');
+        drawer.classList.toggle('is-open', open);
+        menuBtn.setAttribute('aria-expanded', String(open));
+      });
+      $$('#mobileDrawer a').forEach(a => a.addEventListener('click', closeMenu));
+      document.addEventListener('click', e => { if (!drawer.contains(e.target) && !menuBtn.contains(e.target)) closeMenu(); });
+
+      // Reveal & active section
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('is-visible'); revealObserver.unobserve(entry.target); }
+        }), { threshold: .08 });
+        $$('.reveal').forEach(el => revealObserver.observe(el));
+
+        const navObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          $$('.desktop-nav a').forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + entry.target.id));
+        }), { rootMargin: '-35% 0px -55% 0px' });
+        $$('main section[id]').forEach(section => navObserver.observe(section));
+      } else {
+        $$('.reveal').forEach(el => el.classList.add('is-visible'));
+      }
+
+      // Embedded course syllabus data
+      const syllabusCourses = [
+        {
+          id:'course-tcm', no:'01', name:'中医馆痛症管理与业绩倍增实战班', position:'从“按得舒服”到“按得有效”',
+          institution:'中医馆 / 推拿店', audience:'中医馆老板、店长、核心理疗师 / 推拿师',
+          objectives:['统一语言：将传统推拿升级为标准化的“痛症管理 SOP”。','提升客单：通过评估和组合拳（推拿 + 设备 + 热敷），将单次消费提升至套餐消费。','合规避险：明确非医疗红线，安全开展脊柱与疼痛调理。'],
+          days:[
+            {title:'认知重塑与核心技术标准化',theme:'从“按得舒服”到“按得有效”',sessions:[
+              ['09:00–10:30','开营与趋势',['为什么中医馆越来越难做：门店痛点分析','元正脊模式：非医疗健康管理的新风口','合规红线：什么能做，什么绝对不能碰'],'讲授 + 案例'],
+              ['10:40–12:00','精准评估 SOP',['望闻问切现代化：5 分钟判断疼痛来源（肌肉 / 骨骼 / 神经）','体态评估实操：高低肩、骨盆前倾、脊柱侧弯的视觉化诊断'],'实操 + 互评'],
+              ['13:30–15:30','手法升级：深度推拿',['分层施治：从表皮渗透到深层筋膜','痛点定点：激痛点（Trigger Points）寻找与处理','配合拔罐 / 刮痧的时机选择'],'拆解 + 练习'],
+              ['15:40–17:30','脊柱专项调理（上）',['颈椎问题与胸椎、肩胛骨的关系','颈椎专项调理 SOP：理筋 + 轻柔手法 + 穴位点按'],'演示 + 分组练'],
+              ['19:00–21:00','晚课：复盘与答疑',['白天手法考核','学员痛点答疑'],'考核']
+            ]},
+            {title:'特色项目植入与组合拳设计',theme:'打造高利润爆品',sessions:[
+              ['09:00–10:30','脊柱专项调理（下）',['腰椎间盘突出的保守调理思路：急性期与缓解期','骨盆修复与产后腰痛：兼顾久坐人群'],'实操演练'],
+              ['10:40–12:00','设备与外治法的增效',['中药热敷在颈腰痛服务中的配合方式','经络疏通设备：降低技师体力消耗、提高翻台率'],'体验 + 话术'],
+              ['13:30–15:30','高客单价组合拳设计',['引流款：30min 推拿 + 热敷','留存款：80min 深度推拿 + 拔罐 + 中药热敷','升单款：脊柱评估 + 专项调理 + 周期管理卡'],'方案工作坊'],
+              ['15:40–17:30','小儿推拿与家庭健康',['儿童常见不适的推拿手法','以小儿推拿连接家庭健康需求'],'手法教学'],
+              ['19:00–21:00','实战演练：接诊全流程',['模拟客户进店','从评估到成交的全流程角色扮演'],'情景模拟']
+            ]},
+            {title:'流量获取、转化成交与下店落地',theme:'让技术变现',sessions:[
+              ['09:00–10:30','高转化话术体系',['诊断式销售的表达结构','禁忌症话术：专业劝退不适合的客户'],'话术通关'],
+              ['10:40–12:00','线上流量与团购设计',['美团 / 抖音团购套餐与价格区间','短视频选题：服务前后活动度对比'],'案例拆解'],
+              ['13:30–15:00','私域运营与锁客',['离店关怀与居家康复动作指导','会员日与老带新裂变活动策划'],'方案输出'],
+              ['15:00–16:30','毕业路演与签约',['各小组展示本店改造计划','合作政策与后续下店安排'],'路演 + 仪式']
+            ]}
+          ],
+          highlights:['品项分级：低价引流、中价主力、高价利润，形成完整产品阶梯。','人机结合：简单疏通用设备，复杂手法由技师完成，改善人效。','强化产后与少儿板块，连接女性、儿童与家庭健康需求。'],
+          tools:['《中医馆痛症评估表》','《11 项服务标准 SOP 手册》','《常见疼痛话术应答 Q&A》','《居家康复指导视频素材库》']
+        },
+        {
+          id:'course-sport', no:'02', name:'运动表现提升与肌骨疼痛管理实战班', position:'从体能训练到功能康复的升维',
+          institution:'运动康复馆 / 健身房', audience:'健身教练、康复师、普拉提老师、门店店长',
+          objectives:['技术升维：掌握从急性处理到术后康复，再到表现提升的全链路技术。','安全边界：明确医疗与康复的界限，包括术后许可与影像学报告解读。','业绩转化：将单一私教课转化为“评估 + 康复 + 训练”全案服务。'],
+          days:[
+            {title:'精准评估与急性 / 慢性疼痛处理',theme:'建立信任的敲门砖',sessions:[
+              ['09:00–10:30','开营与定位',['健身行业痛点：会员训练后的腰、膝不适','元正脊模式：建立“练得爽且不受伤”的专业壁垒','红线意识：识别需要转诊的严重损伤'],'讲授 + 案例'],
+              ['10:40–12:00','黄金标准评估',['FMS 简化版功能性筛查','骨盆位置、足弓塌陷对膝关节的影响','输出《康复方案》与风险预测'],'实操 + 互评'],
+              ['13:30–15:30','急救与应急处理',['突发扭伤后黄金 48 小时处理流程','肌内效贴的消肿与支持贴法','应急镇痛手法'],'现场贴扎'],
+              ['15:40–17:30','慢性劳损干预',['离心训练在网球肘、跟腱炎中的运用','筋膜枪、冲击波等物理因子应用','高尔夫球肘与网球肘案例拆解'],'器械实操'],
+              ['19:00–20:30','晚课：复盘与答疑',['评估与贴扎手法一对一纠正','实际带课问题答疑'],'小组讨论']
+            ]},
+            {title:'专项康复技术与术后管理',theme:'攻克高客单难点',sessions:[
+              ['09:00–10:30','肩关节专题',['肩袖损伤逻辑：撞击综合征与撕裂的区分','渐进式抗阻与肩关节活动度、稳定性恢复','MRI 报告中高信号与断裂的阅读基础'],'弹力带 / 哑铃'],
+              ['10:40–12:00','膝关节专题（上）',['ACL 重建 / 半月板术后早期消肿与角度打开','与主治医生沟通并获取康复许可','股四头肌激活'],'模型 + 手法'],
+              ['13:30–15:30','膝关节专题（下）与踝关节',['单腿站立、平衡垫训练与本体感觉重建','踝关节稳定性训练','步态分析与膝关节保护'],'平衡训练'],
+              ['15:40–17:30','运动后恢复黑科技',['大腿外侧、小腿三头肌筋膜松解','被动拉伸与关节松动','马拉松 / 高强度比赛后的恢复 SOP'],'互助体验'],
+              ['19:00–20:30','晚课：销售话术演练',['会员因膝痛不想训练时的沟通','康复课程价值解释与高客单成交'],'情景模拟']
+            ]},
+            {title:'运动表现提升与商业落地',theme:'从康复到变现',sessions:[
+              ['09:00–10:30','生物力学与爆发力',['深蹲、硬拉中的发力链条修正','增强式训练与敏捷、爆发力提升','篮球、跑步、CrossFit 等专项体能设计'],'场地实操'],
+              ['10:40–12:00','产品设计与定价',['“评估 + 10 次康复 + 5 次体能”套餐设计','价格锚点与套餐结构','耗材及设备成本控制'],'Workshop'],
+              ['13:30–15:00','流量与获客',['康复对比视频的内容营销','与骨科医生、跑团、球馆建立转介绍机制'],'案例拆解'],
+              ['15:00–16:30','毕业考核与认证',['接待 → 评估 → 制定方案 → 实操演示 → 成交'],'考核'],
+              ['16:30–17:00','结营仪式',['颁发结业证书','公布后续陪跑计划'],'仪式']
+            ]}
+          ],
+          highlights:['覆盖急性期、慢性期、术后恢复期与运动表现提升期的全周期管理。','通过评估报告与生物力学分析强化可视化、数据化表达。','把话术演练与产品设计纳入课程，解决“会技术但不会卖课”。','肩袖与膝关节课程强调影像学报告与主治医生康复许可。'],
+          tools:['《常见运动损伤风险评估表》模板','《术后康复许可确认书》模板','《肌内效贴扎图谱（电子版）》','《运动康复课程销售话术 SOP》']
+        },
+        {
+          id:'course-postpartum', no:'03', name:'产后形体重塑与功能修复实战班', position:'产后全周期形体重塑与功能修复',
+          institution:'月子中心 / 产康店', audience:'产康师、瑜伽 / 普拉提老师、月子中心护理人员、门店店长',
+          objectives:['痛点直击：掌握骨盆、腹直肌、圆肩驼背等常见问题的评估与解决方案。','安全交付：掌握哺乳期、剖腹产伤口等产后特殊生理期的安全训练边界。','升单转化：从单一通乳 / 发汗升级为“体态 + 功能”的全案管理。'],
+          days:[
+            {title:'产后体态评估与核心基础重建',theme:'解决“痛”与“松”',sessions:[
+              ['09:00–10:30','开营与产后趋势',['产后妈妈对“正”与“紧”的真实需求','恶露期、伤口愈合期禁忌症','先评估、后修复的产康理念'],'讲授 + 案例'],
+              ['10:40–12:00','产后专项评估 SOP',['骨盆前倾 / 后倾、肋骨外翻、腹直肌分离自测','呼吸模式与盆底肌力初筛','建立《产后体态健康档案》'],'实操 + 互评'],
+              ['13:30–15:30','骨盆与核心修复（上）',['骨盆前倾 / 后倾的手法调整与激活训练','腹直肌闭合与横腹肌激活','呼吸模式重建'],'手法 + 训练'],
+              ['15:40–17:30','疼痛管理与应急',['产后腰背痛的肌肉与骨盆因素','耻骨联合分离的贴扎与 gentle 手法','慢性疼痛的功能性干预思路'],'研讨 + 练习']
+            ]},
+            {title:'局部精雕与功能性强化',theme:'解决“丑”与“弱”',sessions:[
+              ['09:00–10:30','上半身形态重塑',['圆肩、驼背、头前伸的“妈妈背”训练','背部强化与胸椎灵活性','抱娃姿势与办公环境人体工学'],'动作库建立'],
+              ['10:40–12:00','下半身线条雕刻',['臀中肌激活与下肢力线调整','产后膝超伸、足弓塌陷与 X / O 型腿','步态分析'],'视频 + 实操'],
+              ['13:30–15:30','普拉提与器械应用',['普拉提球、弹力带的深层肌肉控制','60 分钟产后修复流编排','哺乳期关节活动度与柔韧性恢复'],'编排演练'],
+              ['15:40–17:30','儿童体态监测（增值项）',['3–14 岁儿童脊柱侧弯与扁平足早期发现','亲子家庭矫正游戏','从妈妈产康连接全家健康管理'],'话术演练']
+            ]},
+            {title:'全案设计与销售实战',theme:'把技术变成钱',sessions:[
+              ['09:00–10:30','定制化方案设计',['产后 42 天、3 个月、6 个月的分阶段训练重点','评估 + 手法 + 训练 + 居家作业的打包逻辑','宝妈综合案例方案设计'],'分组 PK'],
+              ['10:40–12:00','高客单销售话术',['以评估报告呈现客户问题','从“做个项目”到“买回自信与健康”的价值塑造','嫌贵、嫌累、没时间等异议处理'],'角色扮演'],
+              ['13:30–15:30','考核与通关',['随机抽取产后常见问题进行全流程演示','禁忌症、解剖学基础与服务 SOP 理论笔试'],'考试'],
+              ['15:30–17:00','结营与赋能',['颁发结业证书','布置回店落地第一周计划','督导下店与流量扶持介绍'],'仪式']
+            ]}
+          ],
+          highlights:['形成评估、局部矫正与全案周期管理的产品组合。','加入儿童体态监测，连接“妈妈产康”与“全家健康管理”。','反复强化医疗转诊标准与产后特殊生理期安全边界。','动作训练结合人体工学、抱娃姿势等真实生活场景。'],
+          tools:['《产后体态健康档案模板》','《产后分阶段训练方案库》','《母婴客户话术应答 Q&A》','《居家康复指导视频素材库》']
+        }
+      ];
+
+      // Accordion
+      const accordionButtons = $$('.accordion-trigger');
+      accordionButtons.forEach(button => button.addEventListener('click', () => {
+        const shouldOpen = button.getAttribute('aria-expanded') !== 'true';
+        accordionButtons.forEach(item => {
+          const isOpen = item === button && shouldOpen;
+          item.setAttribute('aria-expanded', String(isOpen));
+          const panel = document.getElementById(item.getAttribute('aria-controls'));
+          if (panel) panel.setAttribute('aria-hidden', String(!isOpen));
+        });
+      }));
+      accordionButtons.forEach(button => {
+        const panel = document.getElementById(button.getAttribute('aria-controls'));
+        if (panel) panel.setAttribute('aria-hidden', String(button.getAttribute('aria-expanded') !== 'true'));
+      });
+
+      // Embedded course syllabus
+      const syllabusEscape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+      const renderSyllabusSession = session => `<div class="syllabus-session"><time>${syllabusEscape(session[0])}</time><h5>${syllabusEscape(session[1])}</h5><ul>${session[2].map(item => `<li>${syllabusEscape(item)}</li>`).join('')}</ul><em>${syllabusEscape(session[3])}</em></div>`;
+      const renderSyllabusDay = (day,index,courseId) => {
+        const panelId = `embedded-${courseId}-day-${index + 1}`;
+        return `<article class="syllabus-day"><button class="syllabus-day-trigger" type="button" aria-expanded="false" aria-controls="${panelId}"><span class="syllabus-day-index">DAY ${index + 1}</span><span><b>${syllabusEscape(day.title)}</b><small>主题：${syllabusEscape(day.theme)}</small></span><span class="syllabus-plus" aria-hidden="true"></span></button><div class="syllabus-day-panel" id="${panelId}" aria-hidden="true"><div><div class="syllabus-schedule">${day.sessions.map(renderSyllabusSession).join('')}</div></div></div></article>`;
+      };
+      const renderSyllabusCourse = course => {
+        const panelId = `embedded-${course.id}-panel`;
+        return `<article class="syllabus-course" id="embedded-${course.id}"><button class="syllabus-course-trigger" type="button" aria-expanded="false" aria-controls="${panelId}"><span class="syllabus-course-number">${course.no}</span><span><b>${syllabusEscape(course.name)}</b><small>${syllabusEscape(course.position)}</small></span><span class="syllabus-plus" aria-hidden="true"></span></button><div class="syllabus-course-panel" id="${panelId}" aria-hidden="true"><div><div class="syllabus-course-inner"><div class="syllabus-meta-grid"><article class="syllabus-meta-card"><b>目标机构</b><p>${syllabusEscape(course.institution)}</p><b>培训对象</b><p>${syllabusEscape(course.audience)}</p></article><article class="syllabus-meta-card"><b>核心目标</b><ol class="syllabus-objectives">${course.objectives.map(item => `<li>${syllabusEscape(item)}</li>`).join('')}</ol></article></div><h5 class="syllabus-section-label">3 天课程日程</h5><div>${course.days.map((day,index) => renderSyllabusDay(day,index,course.id)).join('')}</div><h5 class="syllabus-section-label">课程设计亮点</h5><div class="syllabus-highlight-grid">${course.highlights.map(item => `<article class="syllabus-highlight">${syllabusEscape(item)}</article>`).join('')}</div><h5 class="syllabus-section-label">随课配套工具包</h5><div class="syllabus-tool-grid">${course.tools.map((item,index) => `<article class="syllabus-tool"><b>TOOL ${String(index + 1).padStart(2,'0')}</b><span>${syllabusEscape(item)}</span></article>`).join('')}</div></div></div></div></article>`;
+      };
+      const embeddedCourses = $('#embeddedCourses');
+      if (embeddedCourses) {
+        embeddedCourses.innerHTML = syllabusCourses.map(renderSyllabusCourse).join('');
+        const setSyllabusPanel = (button, isOpen) => {
+          button.setAttribute('aria-expanded', String(isOpen));
+          const panel = document.getElementById(button.getAttribute('aria-controls'));
+          if (panel) panel.setAttribute('aria-hidden', String(!isOpen));
+        };
+        const courseButtons = $$('.syllabus-course-trigger', embeddedCourses);
+        courseButtons.forEach(button => button.addEventListener('click', () => {
+          const shouldOpen = button.getAttribute('aria-expanded') !== 'true';
+          courseButtons.forEach(item => {
+            const isOpen = item === button && shouldOpen;
+            setSyllabusPanel(item, isOpen);
+            if (!isOpen) item.closest('.syllabus-course').querySelectorAll('.syllabus-day-trigger').forEach(day => setSyllabusPanel(day, false));
+          });
+        }));
+        $$('.syllabus-course', embeddedCourses).forEach(course => {
+          const dayButtons = $$('.syllabus-day-trigger', course);
+          dayButtons.forEach(button => button.addEventListener('click', () => {
+            const shouldOpen = button.getAttribute('aria-expanded') !== 'true';
+            dayButtons.forEach(item => setSyllabusPanel(item, item === button && shouldOpen));
+          }));
+        });
+      }
+
+      // Partner fit tabs
+      const fitData = {
+        yoga: { label:'瑜伽 / 普拉提馆', pain:'会员训练后仍有肩颈腰背不适，课程之外的日常养护需求难承接。', solution:'增加非医疗身体养护、姿态观察与功能锻炼指导，形成训练前后更完整的会员服务。' },
+        postpartum: { label:'产后康复中心', pain:'既有服务之外，腰骶不适、骨盆相关困扰等日常养护需求较多。', solution:'在明确禁忌与就医建议边界的前提下，补充产后日常养护和安全训练指导。' },
+        beauty: { label:'医美 / 美容院', pain:'到店频次下降、项目同质化，会员缺少可持续的生活方式服务。', solution:'增加非医疗养护与健康习惯陪伴，丰富到店理由；医疗项目与生活美容服务必须严格分区分责。' },
+        clinic: { label:'综合门诊部', pain:'医护重点在诊疗，患者离院后的健康教育和生活方式执行缺少持续支持。', solution:'在医疗机构授权和专业指导下，承接非诊疗的健康宣教、行为记录与生活方式提醒。' },
+        wellness: { label:'养生馆', pain:'服务依赖个人经验，评估、沟通、禁忌筛查和回访标准不统一。', solution:'用培训与 SOP 统一非医疗服务流程，强化安全边界、客户记录和持续复盘。' },
+        fitness: { label:'健身工作室', pain:'会员出现疼痛或伤情时，教练容易陷入“不敢管”或“越界管”的两难。', solution:'建立风险识别与就医建议机制，补充安全功能训练和日常恢复指导，不替代医疗康复。' }
+      };
+      function renderFit(key) {
+        const data = fitData[key];
+        $('#fitPanel').innerHTML = `<span class="tag">适配方案</span><h3>${data.label}</h3><div class="fit-pair"><div><b>典型缺口</b><p>${data.pain}</p></div><div><b>合作方向</b><p>${data.solution}</p></div></div>`;
+      }
+      $$('.fit-tab').forEach(tab => tab.addEventListener('click', () => {
+        $$('.fit-tab').forEach(t => t.setAttribute('aria-selected','false'));
+        tab.setAttribute('aria-selected','true'); renderFit(tab.dataset.fit);
+      }));
+      renderFit('yoga');
+
+      // Revenue calculator
+      const calcIds = ['customers','rate','unitPrice','coopFee'];
+      const defaults = { customers:200, rate:30, unitPrice:2980, coopFee:69800 };
+      const money = n => new Intl.NumberFormat('zh-CN',{ style:'currency',currency:'CNY',maximumFractionDigits:0 }).format(n);
+      function updateCalc() {
+        const values = Object.fromEntries(calcIds.map(id => [id, Number($('#'+id).value)]));
+        $('#customersOut').textContent = values.customers + ' 人';
+        $('#rateOut').textContent = values.rate + '%';
+        $('#unitPriceOut').textContent = money(values.unitPrice);
+        $('#coopFeeOut').textContent = money(values.coopFee);
+        const converted = Math.floor(values.customers * values.rate / 100);
+        const revenue = converted * values.unitPrice;
+        const breakEven = Math.ceil(values.coopFee / values.unitPrice);
+        $('#convertedResult').textContent = converted + ' 人';
+        $('#revenueResult').textContent = money(revenue);
+        $('#breakEvenResult').textContent = breakEven + ' 人';
+      }
+      calcIds.forEach(id => $('#'+id).addEventListener('input', updateCalc));
+      $('#resetCalc').addEventListener('click', () => { Object.entries(defaults).forEach(([id,v]) => $('#'+id).value = v); updateCalc(); showToast('已恢复示例参数'); });
+      updateCalc();
+
+      // Search dialog
+      const searchDialog = $('#searchDialog');
+      const searchable = $$('[data-search-title]').map(el => ({ el, title:el.dataset.searchTitle }));
+      function renderSearch(query='') {
+        const q = query.trim().toLowerCase();
+        const matched = searchable.filter(item => !q || item.title.toLowerCase().includes(q) || item.el.textContent.toLowerCase().includes(q)).slice(0,12);
+        $('#searchResults').innerHTML = matched.length ? matched.map((item,i) => `<button class="search-result" type="button" data-result="${i}"><b>${item.title}</b><span>前往 →</span></button>`).join('') : '<div class="search-empty">没有找到相关内容，换个关键词试试。</div>';
+        $$('#searchResults [data-result]').forEach((btn,i) => btn.addEventListener('click', () => { searchDialog.close(); matched[i].el.scrollIntoView({behavior:'smooth'}); }));
+      }
+      function openSearch() { renderSearch(); searchDialog.showModal(); setTimeout(() => $('#searchInput').focus(),50); }
+      $('#searchBtn').addEventListener('click', openSearch);
+      $('#closeSearch').addEventListener('click', () => searchDialog.close());
+      $('#searchInput').addEventListener('input', e => renderSearch(e.target.value));
+      searchDialog.addEventListener('click', e => { if (e.target === searchDialog) searchDialog.close(); });
+      document.addEventListener('keydown', e => { if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); openSearch(); } });
+
+      // Copy inquiry script
+      $('#copyInquiry').addEventListener('click', async () => {
+        const active = $('.fit-tab[aria-selected="true"] span')?.textContent || '门店';
+        const copy = `您好，我是${active}经营者，想进一步了解元正脊合作方案。请发我：1）课程与师资资料；2）SOP样例；3）设备明细；4）老师下店交付清单；5）费用与分成口径；6）合同样本及退出机制。谢谢。`;
+        try { await navigator.clipboard.writeText(copy); showToast('咨询话术已复制'); }
+        catch (_) {
+          const area = document.createElement('textarea'); area.value = copy; document.body.append(area); area.select(); document.execCommand('copy'); area.remove(); showToast('咨询话术已复制');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

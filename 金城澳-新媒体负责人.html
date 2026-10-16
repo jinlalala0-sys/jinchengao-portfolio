@@ -1,0 +1,1548 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="金城澳｜新媒体负责人、项目负责人、文案策划简历">
+  <meta property="og:title" content="金城澳｜新媒体负责人简历与作品集">
+  <meta property="og:description" content="新媒体项目统筹、个人IP打造、本地生活运营、策略方案与视觉互动作品。">
+  <meta property="og:type" content="website">
+  <title>金城澳｜新媒体负责人简历</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --ink: #18221d;
+      --muted: #66736c;
+      --line: #dbe3de;
+      --paper: #ffffff;
+      --screen: #edf1ee;
+      --brand: #1f6b4f;
+      --brand-deep: #164b39;
+      --brand-soft: #e7f2ec;
+      --accent: #d6a34b;
+      --card: #f7f9f8;
+      --shadow: 0 18px 52px rgba(30, 55, 43, .14);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--screen);
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    a { color: inherit; }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: rgba(237, 241, 238, .92);
+      border-bottom: 1px solid rgba(119, 139, 127, .22);
+      backdrop-filter: blur(14px);
+    }
+
+    .toolbar button,
+    .toolbar a {
+      min-height: 38px;
+      padding: 0 15px;
+      border: 1px solid #c9d4cd;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .9);
+      color: #31443a;
+      font: 700 13px/1 "Microsoft YaHei", sans-serif;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .toolbar button:hover,
+    .toolbar a:hover {
+      transform: translateY(-1px);
+      border-color: var(--brand);
+    }
+
+    .toolbar .primary {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .resume {
+      width: min(210mm, calc(100vw - 32px));
+      margin: 26px auto 48px;
+    }
+
+    .page {
+      position: relative;
+      width: 210mm;
+      min-height: 297mm;
+      margin-bottom: 22px;
+      padding: 13mm 14mm 12mm;
+      scroll-margin-top: 66px;
+      overflow: hidden;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4.2mm;
+      background: linear-gradient(180deg, var(--brand-deep), var(--brand) 55%, #6ca082);
+    }
+
+    .page::after {
+      content: "";
+      position: absolute;
+      top: -40mm;
+      right: -48mm;
+      width: 105mm;
+      height: 105mm;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(31, 107, 79, .08), rgba(31, 107, 79, 0) 68%);
+      pointer-events: none;
+    }
+
+    .hero {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 22mm 1fr;
+      gap: 6mm;
+      align-items: center;
+      padding-bottom: 7mm;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .monogram {
+      display: grid;
+      place-items: center;
+      width: 22mm;
+      height: 22mm;
+      border-radius: 6mm 2mm 6mm 2mm;
+      background: linear-gradient(145deg, var(--brand-deep), var(--brand));
+      color: #fff;
+      font-size: 26pt;
+      font-weight: 900;
+      letter-spacing: -2px;
+      box-shadow: 0 8px 20px rgba(31, 107, 79, .2);
+    }
+
+    .identity-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 27pt;
+      line-height: 1.05;
+      letter-spacing: 2px;
+    }
+
+    .role {
+      margin-top: 6px;
+      color: var(--brand);
+      font-size: 12.5pt;
+      font-weight: 800;
+      letter-spacing: .8px;
+    }
+
+    .experience-mark {
+      padding: 5px 10px;
+      border: 1px solid #c7d8cf;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand-deep);
+      font-size: 9pt;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 18px;
+      margin-top: 10px;
+      color: #4f5d55;
+      font-size: 9.3pt;
+    }
+
+    .contacts span,
+    .contacts a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex: 0 0 auto;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: 7mm 0 6mm;
+    }
+
+    .stat {
+      padding: 10px 11px 9px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: linear-gradient(180deg, #fff, #f8faf9);
+    }
+
+    .stat b {
+      display: block;
+      color: var(--brand-deep);
+      font-size: 15pt;
+      line-height: 1.1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 8.2pt;
+      line-height: 1.35;
+    }
+
+    .section {
+      margin-top: 6mm;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 3mm;
+      color: var(--brand-deep);
+      font-size: 11.5pt;
+      font-weight: 900;
+      letter-spacing: .8px;
+    }
+
+    .section-title::before {
+      content: "";
+      width: 16px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .summary {
+      margin: 0;
+      color: #35433c;
+      font-size: 9.6pt;
+      line-height: 1.75;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 9px;
+    }
+
+    .skill-tags span {
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand-deep);
+      font-size: 8.2pt;
+      font-weight: 700;
+    }
+
+    .job-card {
+      padding: 4.5mm 5mm;
+      border: 1px solid #dce6e0;
+      border-radius: 13px;
+      background: #fbfdfc;
+      box-shadow: 0 6px 18px rgba(31, 107, 79, .035);
+    }
+
+    .job-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .company {
+      font-size: 11.2pt;
+      font-weight: 900;
+    }
+
+    .job-title {
+      margin-top: 2px;
+      color: var(--brand);
+      font-size: 9.2pt;
+      font-weight: 800;
+    }
+
+    .period {
+      color: #56665d;
+      font-size: 8.5pt;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .job-intro {
+      margin: 8px 0 0;
+      color: #4d5c54;
+      font-size: 8.6pt;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 17px;
+    }
+
+    li {
+      margin: 4px 0;
+      padding-left: 2px;
+      color: #35433c;
+      font-size: 8.75pt;
+      line-height: 1.58;
+    }
+
+    li::marker { color: var(--brand); }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .project {
+      min-height: 27mm;
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--card);
+    }
+
+    .project b {
+      display: block;
+      color: var(--brand-deep);
+      font-size: 8.8pt;
+    }
+
+    .project p {
+      margin: 5px 0 0;
+      color: #647168;
+      font-size: 7.8pt;
+      line-height: 1.55;
+    }
+
+    .page-label {
+      position: absolute;
+      right: 14mm;
+      bottom: 6mm;
+      color: #8c9891;
+      font-size: 7.5pt;
+      letter-spacing: 1px;
+    }
+
+    .subhead {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 5mm;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .subhead h2 {
+      margin: 0;
+      font-size: 18pt;
+      line-height: 1.1;
+      letter-spacing: 1px;
+    }
+
+    .subhead p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 8.5pt;
+    }
+
+    .subhead .name {
+      color: var(--brand);
+      font-size: 9pt;
+      font-weight: 900;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 6mm;
+      padding-left: 7mm;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 1.7mm;
+      top: 3mm;
+      bottom: 2mm;
+      width: 1px;
+      background: #cbd8d0;
+    }
+
+    .history-job {
+      position: relative;
+      padding: 0 0 5mm 1mm;
+    }
+
+    .history-job:last-child { padding-bottom: 0; }
+
+    .history-job::before {
+      content: "";
+      position: absolute;
+      left: -6.2mm;
+      top: 2.2mm;
+      width: 8px;
+      height: 8px;
+      border: 2px solid var(--paper);
+      border-radius: 50%;
+      background: var(--brand);
+      box-shadow: 0 0 0 1px var(--brand);
+    }
+
+    .history-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: baseline;
+    }
+
+    .history-head b {
+      font-size: 10.5pt;
+    }
+
+    .history-role {
+      color: var(--brand);
+      font-size: 8.7pt;
+      font-weight: 800;
+    }
+
+    .history-job ul { margin-top: 4px; }
+
+    .result-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .result-bar span {
+      padding: 4px 8px;
+      border-left: 3px solid var(--accent);
+      background: #f7f5ef;
+      color: #5a503d;
+      font-size: 7.8pt;
+      font-weight: 700;
+    }
+
+    .early-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .early-card {
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fafbfa;
+    }
+
+    .early-card .company { font-size: 9.2pt; }
+    .early-card .period { display: block; margin-top: 2px; font-size: 7.6pt; }
+    .early-card p { margin: 6px 0 0; color: #58665e; font-size: 7.9pt; line-height: 1.55; }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1.03fr .97fr;
+      gap: 10px;
+      margin-top: 6mm;
+    }
+
+    .info-card {
+      padding: 4mm 4.5mm;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fbfcfb;
+    }
+
+    .info-card h3 {
+      margin: 0 0 8px;
+      color: var(--brand-deep);
+      font-size: 9.5pt;
+    }
+
+    .edu {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      font-size: 8.4pt;
+    }
+
+    .edu b { display: block; font-size: 9pt; }
+    .edu span { color: var(--muted); }
+
+    .award-list,
+    .tool-list {
+      display: grid;
+      gap: 6px;
+    }
+
+    .award-list div,
+    .tool-list div {
+      position: relative;
+      padding-left: 12px;
+      color: #4c5a52;
+      font-size: 8pt;
+      line-height: 1.45;
+    }
+
+    .award-list div::before,
+    .tool-list div::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .55em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .tool-list strong { color: var(--ink); }
+
+    .closing {
+      margin-top: 5mm;
+      padding: 3mm 4mm;
+      border-radius: 10px;
+      background: var(--brand-deep);
+      color: rgba(255,255,255,.92);
+      font-size: 8.3pt;
+      line-height: 1.6;
+    }
+
+    .closing b { color: #fff; }
+
+    .portfolio-overview {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-top: 6mm;
+    }
+
+    .portfolio-metric {
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fbfdfc;
+    }
+
+    .portfolio-metric b {
+      display: block;
+      color: var(--brand-deep);
+      font-size: 12pt;
+      line-height: 1.1;
+    }
+
+    .portfolio-metric span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 7.5pt;
+      line-height: 1.4;
+    }
+
+    .portfolio-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 4mm;
+    }
+
+    .portfolio-nav button {
+      padding: 6px 11px;
+      border: 1px solid #cddbd3;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--brand-deep);
+      font: 800 8pt/1 "Microsoft YaHei", sans-serif;
+      cursor: pointer;
+    }
+
+    .portfolio-nav button:hover { border-color: var(--brand); background: var(--brand-soft); }
+
+    .strategy-accordion {
+      display: grid;
+      gap: 7px;
+    }
+
+    .strategy-item {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+
+    .strategy-item[open] {
+      border-color: #9fbdac;
+      box-shadow: 0 8px 22px rgba(31, 65, 48, .08);
+    }
+
+    .strategy-item summary {
+      display: grid;
+      grid-template-columns: 30px minmax(0, 1fr) minmax(154px, .72fr) 18px;
+      gap: 10px;
+      align-items: center;
+      min-height: 46px;
+      padding: 8px 12px;
+      cursor: pointer;
+      list-style: none;
+      outline: none;
+    }
+
+    .strategy-item summary::-webkit-details-marker { display: none; }
+
+    .strategy-item summary:focus-visible {
+      box-shadow: inset 0 0 0 2px var(--brand);
+    }
+
+    .strategy-item summary::after {
+      content: "+";
+      display: grid;
+      place-items: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--brand-soft);
+      color: var(--brand-deep);
+      font-size: 12pt;
+      font-weight: 700;
+      line-height: 1;
+      transition: transform .2s ease;
+    }
+
+    .strategy-item[open] summary::after { transform: rotate(45deg); }
+
+    .strategy-index {
+      color: var(--accent);
+      font-size: 8pt;
+      font-weight: 900;
+      letter-spacing: .5px;
+    }
+
+    .strategy-heading {
+      min-width: 0;
+    }
+
+    .strategy-heading strong {
+      display: inline;
+      color: var(--ink);
+      font-size: 8.5pt;
+      line-height: 1.35;
+    }
+
+    .strategy-heading small {
+      display: block;
+      margin-top: 2px;
+      overflow: hidden;
+      color: var(--muted);
+      font-size: 6.8pt;
+      line-height: 1.35;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .new-badge {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 2px 5px;
+      border-radius: 999px;
+      background: #fff2d8;
+      color: #88601b;
+      font-size: 5.8pt;
+      font-weight: 900;
+      vertical-align: 1px;
+    }
+
+    .strategy-keywords {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .strategy-keywords span {
+      padding: 3px 6px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand-deep);
+      font-size: 5.9pt;
+      font-weight: 800;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .strategy-panel {
+      padding: 9px 14px 11px 52px;
+      border-top: 1px solid #edf1ee;
+      background: #fbfdfc;
+    }
+
+    .strategy-panel p {
+      margin: 0;
+      color: #536159;
+      font-size: 7.35pt;
+      line-height: 1.55;
+    }
+
+    .case-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .case-tags span {
+      padding: 3px 6px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand-deep);
+      font-size: 6.6pt;
+      font-weight: 700;
+    }
+
+    .case-link,
+    .video-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 8px;
+      color: var(--brand);
+      font-size: 7.2pt;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .portfolio-note {
+      margin-top: 5mm;
+      padding: 3mm 4mm;
+      border-left: 3px solid var(--accent);
+      background: #faf8f2;
+      color: #665b45;
+      font-size: 7.7pt;
+      line-height: 1.55;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .proof-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .proof-button {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 51mm;
+      padding: 0;
+      border: 0;
+      background: #eef2ef;
+      cursor: zoom-in;
+      overflow: hidden;
+    }
+
+    .proof-button::after {
+      content: "点击查看完整截图";
+      position: absolute;
+      right: 9px;
+      bottom: 8px;
+      padding: 4px 7px;
+      border-radius: 999px;
+      background: rgba(17, 41, 29, .82);
+      color: #fff;
+      font: 700 6.8pt/1 "Microsoft YaHei", sans-serif;
+    }
+
+    .proof-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform .25s ease;
+    }
+
+    .proof-button:hover .proof-image { transform: scale(1.02); }
+
+    .proof-body { padding: 9px 11px 10px; }
+
+    .proof-body h3 { margin: 0; color: var(--brand-deep); font-size: 9pt; }
+
+    .proof-body p {
+      margin: 5px 0 0;
+      color: #5d6b63;
+      font-size: 7.4pt;
+      line-height: 1.5;
+    }
+
+    .proof-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 7px;
+    }
+
+    .proof-meta span {
+      padding: 3px 6px;
+      border-radius: 5px;
+      background: #f1f5f2;
+      color: #516159;
+      font-size: 6.7pt;
+      font-weight: 700;
+    }
+
+    .recent-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+      margin-top: 6mm;
+    }
+
+    .recent-card {
+      display: grid;
+      grid-template-columns: 45mm minmax(0, 1fr);
+      min-height: 53mm;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fff;
+    }
+
+    .recent-media {
+      position: relative;
+      overflow: hidden;
+      background: #e9efeb;
+    }
+
+    .recent-media::after {
+      content: "VIEW";
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      padding: 3px 6px;
+      border-radius: 999px;
+      background: rgba(20, 48, 35, .82);
+      color: #fff;
+      font-size: 5.8pt;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .recent-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 53mm;
+      object-fit: cover;
+    }
+
+    .recent-body { padding: 11px 12px; }
+    .recent-body h3 { margin: 0; color: var(--brand-deep); font-size: 9.2pt; line-height: 1.35; }
+    .recent-body p { margin: 6px 0 0; color: #5d6b63; font-size: 7.1pt; line-height: 1.5; }
+    .recent-links { display: flex; flex-wrap: wrap; gap: 5px 10px; margin-top: 8px; }
+    .recent-links a { color: var(--brand); font-size: 6.8pt; font-weight: 900; text-decoration: none; }
+
+    .snapshot-note {
+      margin: 5mm 0 0;
+      color: #7a867f;
+      font-size: 7pt;
+      line-height: 1.5;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 6mm;
+    }
+
+    .video-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .video-frame {
+      display: grid;
+      place-items: center;
+      height: 96mm;
+      background: #101512;
+      overflow: hidden;
+    }
+
+    .video-frame video,
+    .video-poster {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #101512;
+    }
+
+    .video-poster { display: none; }
+
+    .video-body { padding: 10px 11px 11px; }
+
+    .video-body h3 { margin: 0; color: var(--ink); font-size: 9pt; }
+
+    .video-body p {
+      margin: 5px 0 0;
+      color: #5d6b63;
+      font-size: 7.3pt;
+      line-height: 1.5;
+    }
+
+    .video-spec {
+      margin-top: 7px;
+      color: var(--brand);
+      font-size: 6.8pt;
+      font-weight: 800;
+    }
+
+    .media-dialog {
+      width: min(900px, calc(100vw - 28px));
+      max-height: calc(100vh - 28px);
+      padding: 44px 14px 14px;
+      border: 0;
+      border-radius: 14px;
+      background: #f8faf9;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .35);
+    }
+
+    .media-dialog::backdrop { background: rgba(13, 25, 19, .78); }
+
+    .media-dialog img {
+      display: block;
+      max-width: 100%;
+      max-height: calc(100vh - 110px);
+      margin: auto;
+      border-radius: 8px;
+    }
+
+    .media-dialog p { margin: 10px 4px 0; color: #4d5b53; font-size: 12px; text-align: center; }
+
+    .dialog-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ccd8d1;
+      border-radius: 50%;
+      background: #fff;
+      color: #25372d;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      z-index: 50;
+      transform: translate(-50%, 16px);
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: #17271f;
+      color: #fff;
+      font-size: 13px;
+      opacity: 0;
+      pointer-events: none;
+      transition: .2s ease;
+    }
+
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    body.dark {
+      --screen: #17221d;
+      --paper: #fdfefd;
+      --shadow: 0 22px 62px rgba(0,0,0,.35);
+    }
+
+    body.focus .past-secondary { opacity: .48; filter: grayscale(.25); }
+    body.focus .current-focus { box-shadow: 0 0 0 3px rgba(214, 163, 75, .14); }
+
+    @media (max-width: 860px) {
+      .toolbar { justify-content: flex-start; overflow-x: auto; }
+      .resume { width: 210mm; margin: 16px; }
+    }
+
+    @media print {
+      @page { size: A4 portrait; margin: 0; }
+      html, body { width: 210mm; background: #fff; }
+      .toolbar, .toast, .portfolio-nav, .media-dialog { display: none !important; }
+      .resume { width: 210mm; margin: 0; }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        height: 297mm;
+        margin: 0;
+        box-shadow: none;
+        break-after: page;
+        page-break-after: always;
+      }
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      body.focus .past-secondary { opacity: 1; filter: none; }
+      .strategy-item, .proof-card, .recent-card, .video-card { box-shadow: none; }
+      .strategy-item:not([open]) .strategy-panel { display: none; }
+      .proof-button { cursor: default; }
+      .proof-button::after { display: none; }
+      .video-frame video { display: none; }
+      .video-poster { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="简历工具栏">
+    <button class="primary" id="printBtn" type="button">打印 / 保存 PDF</button>
+    <a href="金城澳-新媒体负责人.pdf" download>下载 PDF</a>
+    <button id="copyBtn" type="button">复制联系方式</button>
+    <button id="focusBtn" type="button" aria-pressed="false">突出当前经历</button>
+    <button id="themeBtn" type="button" aria-pressed="false">深色背景</button>
+    <a href="#page2">查看完整履历</a>
+    <a href="#portfolio">作品与案例</a>
+  </nav>
+
+  <main class="resume" aria-label="金城澳新媒体负责人简历">
+    <section class="page" id="page1" aria-label="简历第一页">
+      <header class="hero">
+        <div class="monogram" aria-hidden="true">金</div>
+        <div>
+          <div class="identity-row">
+            <div>
+              <h1>金城澳</h1>
+              <div class="role">新媒体负责人 / 项目负责人</div>
+            </div>
+            <div class="experience-mark">5年+ 新媒体与视觉内容经验</div>
+          </div>
+          <div class="contacts">
+            <span><i class="dot"></i>合肥</span>
+            <a href="tel:18712156281"><i class="dot"></i>187 1215 6281</a>
+            <span><i class="dot"></i>微信同号</span>
+            <span><i class="dot"></i>求职方向：新媒体主管 / 项目负责人</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="stats" aria-label="核心数据">
+        <div class="stat"><b>18个</b><span>商户 / 个人IP项目资料与进度统筹</span></div>
+        <div class="stat"><b>4平台</b><span>抖音、美团、淘宝闪购、京东秒送</span></div>
+        <div class="stat"><b>5人</b><span>新媒体运营团队管理经历</span></div>
+        <div class="stat"><b>200单/月</b><span>过往门店账号到店订单成绩</span></div>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title">职业概况</h2>
+        <p class="summary">5年+新媒体运营、内容制作与项目管理经验，当前负责个人IP打造和本地生活项目。能够从业务目标出发，完成IP定位、内容策略、文案脚本、拍摄剪辑、AI视觉、地图动画、轻量3D互动及数据复盘；兼具团队协同、视觉审美和线下商户经营视角，擅长把内容生产推进到可交付、可复盘、可迭代。</p>
+        <div class="skill-tags" aria-label="核心能力">
+          <span>个人IP孵化</span><span>本地生活全域运营</span><span>文案策划与脚本</span><span>AI视觉与动态内容</span><span>拍摄剪辑统筹</span><span>多项目管理</span><span>经营数据复盘</span><span>团队协同</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">当前经历</h2>
+        <article class="job-card current-focus">
+          <div class="job-head">
+            <div>
+              <div class="company">阿熊阿虎网络科技有限公司</div>
+              <div class="job-title">新媒体负责人（项目负责人）</div>
+            </div>
+            <div class="period">2026.05 — 至今｜合肥</div>
+          </div>
+          <p class="job-intro">业务方向：个人IP打造、本地生活全域代运营及商户数字化运营。</p>
+          <ul>
+            <li><strong>业务统筹：</strong>负责从客户需求、内容定位到项目排期和交付验收的完整链路，协同策划、拍摄、剪辑、运营与商户端资源，持续跟进项目卡点和上线节奏。</li>
+            <li><strong>个人IP与文案：</strong>覆盖老板/创始人、白酒、食品工厂、餐饮、房产及农产品等方向，主导账号定位、名称简介、内容主张、栏目策划、选题文案、口播脚本、分镜、拍摄清单及测试内容迭代。</li>
+            <li><strong>本地生活：</strong>统筹18个商户及IP项目资料，涉及餐饮、酒店、娱乐、美业、亲子等行业；推进平台入驻、店铺/蓝V装修、团购套餐、商品上架、短视频及线上经营优化。</li>
+            <li><strong>数据复盘：</strong>搭建9个抖音商户及美团、淘宝闪购、京东秒送门店的数据汇报机制，跟踪成交、曝光、退款、转化、经营分和违规预警，为项目调整提供依据。</li>
+            <li><strong>近期项目：</strong>完成设计联盟年度获客、文旅地接线上运营、北京/武汉房产双IP、京东多门店推广及健康管理招商手册；同步拓展AI美工、地图/房产区位动画和越王勾践剑互动模型等数字内容交付。</li>
+            <li><strong>标准化：</strong>完善项目推进看板、IP内容生产表、代理商销售与交付手册及服务清单，把多项目协作拆解为清晰节点、责任和验收口径。</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">代表性工作</h2>
+        <div class="project-grid">
+          <article class="project"><b>老板 / 创始人IP孵化</b><p>从真实业务和客户痛点提炼人设与内容主张，完成账号包装、选题文案、口播脚本、拍摄到复盘的连续生产。</p></article>
+          <article class="project"><b>餐饮老板食材溯源内容</b><p>基于已有素材重构故事线，将市场采购、回乡找食材与人物关系剪成具有信任感的品牌内容。</p></article>
+          <article class="project"><b>多平台经营复盘机制</b><p>统一抖音、美团、淘宝闪购、京东秒送数据口径，形成日/周报、异常提示和项目优化清单。</p></article>
+        </div>
+      </section>
+      <span class="page-label">01 / 05</span>
+    </section>
+
+    <section class="page past-secondary" id="page2" aria-label="简历第二页">
+      <header class="subhead">
+        <div>
+          <h2>工作履历与专业能力</h2>
+          <p>内容运营 × 视觉制作 × 团队与项目协同</p>
+        </div>
+        <div class="name">金城澳 · 187 1215 6281</div>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title">工作经历</h2>
+        <div class="timeline">
+          <article class="history-job">
+            <div class="history-head">
+              <div><b>杭州岐黄源中医药有限公司</b> <span class="history-role">新媒体主管</span></div>
+              <span class="period">2024.05 — 2026.02</span>
+            </div>
+            <ul>
+              <li>管理5人运营团队，通过周复盘和任务拆解推进内容、直播及门店账号运营；每周协同4家线下门店，持续挖掘员工、顾客与服务场景素材。</li>
+              <li>主导“门店日常故事”系列的选题文案、内容脚本及团购直播方案，将线上内容、直播承接与线下到店转化串联。</li>
+            </ul>
+            <div class="result-bar"><span>门店账号月均到店订单约200单</span><span>系列视频单条最高1.2万赞</span><span>线上订单占比约35%</span></div>
+          </article>
+
+          <article class="history-job">
+            <div class="history-head">
+              <div><b>安徽凡几营销策划有限公司</b> <span class="history-role">新媒体运营</span></div>
+              <span class="period">2023.03 — 2024.03</span>
+            </div>
+            <ul>
+              <li>负责探店账号、自有品牌账号及直播间运营，承担选题文案、探店脚本与直播话术策划，并参与必吃榜项目拍摄协调。</li>
+              <li>为邻几、生鲜传奇等7家商户协调云剪素材和直播运营，积累连锁零售与本地生活项目经验。</li>
+            </ul>
+          </article>
+
+          <div class="early-grid">
+            <article class="early-card">
+              <div class="company">上海蒙达文化传媒有限公司</div>
+              <span class="period">摄影 / 摄像｜2021.10 — 2022.05</span>
+              <p>参与宣传片、活动视频及直播项目的需求梳理、创意构思和文案脚本策划，完成内容结构、采访提纲、拍摄方案与现场执行；参与联泰大型直播、建信住房样板间系列及马斯特宣传片等项目。</p>
+            </article>
+            <article class="early-card">
+              <div class="company">上海若光文化传播有限责任公司</div>
+              <span class="period">内容制作｜2021.07 — 2021.10</span>
+              <p>负责宣传片和活动项目的选题文案、脚本撰写、拍摄执行及后期剪辑；参与依维柯交车视频及医疗教学视频等制作。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom-grid">
+        <section class="info-card">
+          <h3>教育与荣誉</h3>
+          <div class="edu">
+            <div><b>安徽三联学院</b><span>机械设计制造及其自动化 · 本科</span></div>
+            <span>2018 — 2022</span>
+          </div>
+          <div class="award-list" style="margin-top:10px">
+            <div>2019 安徽省大学生金拍技能大赛三等奖</div>
+            <div>第一届安徽省大学生通遥科技大赛一等奖</div>
+            <div>校级优秀学生干部</div>
+          </div>
+        </section>
+
+        <section class="info-card">
+          <h3>专业工具与执行能力</h3>
+          <div class="tool-list">
+            <div><strong>内容：</strong>IP定位、品牌/短视频文案、选题策划、口播与宣传片脚本、分镜设计</div>
+            <div><strong>制作：</strong>短视频、宣传片、活动拍摄、无人机、多机位直播、后期剪辑</div>
+            <div><strong>工具：</strong>Premiere、Photoshop、剪映、AI视觉工具及轻量网页交互制作</div>
+            <div><strong>运营：</strong>抖音来客、本地生活店铺、团购套餐、付费/自然流量、数据复盘</div>
+          </div>
+        </section>
+      </div>
+
+      <div class="closing"><b>工作特点：</b>既能完成内容定位、文案策划与脚本表达，也能下场把拍摄、剪辑和上线推进完成；面对多个商户和IP项目，习惯用节点、数据与验收标准管理进度，减少“只产内容、不出结果”的断层。</div>
+      <span class="page-label">02 / 05</span>
+    </section>
+
+    <section class="page past-secondary" id="portfolio" aria-label="作品与案例第一页">
+      <header class="subhead">
+        <div>
+          <h2>作品与案例</h2>
+          <p>策略策划 × 本地生活运营 × AI视觉与互动内容</p>
+        </div>
+        <div class="name">CASEBOOK · 16份作品</div>
+      </header>
+
+      <div class="portfolio-overview" aria-label="作品概览">
+        <div class="portfolio-metric"><b>9份</b><span>IP、品牌与运营策略方案</span></div>
+        <div class="portfolio-metric"><b>5类</b><span>房产、文旅、餐饮、设计与健康行业</span></div>
+        <div class="portfolio-metric"><b>3条</b><span>汽车、美食与品牌视频样片</span></div>
+        <div class="portfolio-metric"><b>4类</b><span>AI美工、3D模型与地图动画作品</span></div>
+      </div>
+
+      <nav class="portfolio-nav" aria-label="案例导航">
+        <button type="button" data-jump="portfolio">策略方案</button>
+        <button type="button" data-jump="page4">视觉与互动</button>
+        <button type="button" data-jump="page5">视频作品</button>
+      </nav>
+
+      <section class="section">
+        <h2 class="section-title">策略与方案</h2>
+        <div class="strategy-accordion">
+          <details class="strategy-item" name="strategy-case" open>
+            <summary><span class="strategy-index">01</span><span class="strategy-heading"><strong>共美全渠道获客方案</strong><span class="new-badge">最新</span><small>品牌号与个人IP协同，线上内容连接线下合作</small></span><span class="strategy-keywords"><span>双账号运营</span><span>全渠道获客</span><span>企微承接</span></span></summary>
+            <div class="strategy-panel"><p>规划共美品牌号与夏老师个人IP的内容分工，结合短视频、图文、直播试点、老客户转介绍和异业合作，设计企业微信统一承接与客户转交机制。案例展示策划方案，不将预期效果表述为已实现业绩。</p><div class="case-tags"><span>双账号运营</span><span>全渠道获客</span><span>企微承接</span></div><a class="case-link" href="金城澳-作品集资源/方案/共美-全渠道获客方案-20261012.html" target="_blank" rel="noopener">打开完整方案 ↗</a></div>
+          </details>
+          <details class="strategy-item" name="strategy-case">
+            <summary><span class="strategy-index">02</span><span class="strategy-heading"><strong>科大幼图 · 乐可AI线上运营方案</strong><span class="new-badge">最新</span><small>教育AI品牌的四平台内容与活动传播规划</small></span><span class="strategy-keywords"><span>教育AI</span><span>四平台运营</span><span>品牌内容</span></span></summary>
+            <div class="strategy-panel"><p>围绕抖音、视频号、小红书和公众号，规划品牌介绍、师园需求解答、服务现场三类内容，覆盖短视频、图文及活动前中后宣传，明确素材收集、制作审核与发布流程，以及双方服务边界。</p><div class="case-tags"><span>教育AI</span><span>四平台运营</span><span>品牌内容</span></div><a class="case-link" href="金城澳-作品集资源/方案/科大幼图-乐可AI线上运营方案-20261014.html" target="_blank" rel="noopener">打开完整方案 ↗</a></div>
+          </details>
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">03</span>
+              <span class="strategy-heading"><strong>唯品客京东推广执行方案</strong><span class="new-badge">新增</span><small>多门店小预算试投与活动券验证</small></span>
+              <span class="strategy-keywords"><span>京东推广</span><span>多门店</span><span>小预算验证</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>为三家门店设计小预算分批测试、活动券配置和订单复盘路径，以实际订单与到手金额判断是否扩量，降低一次性投入风险。</p>
+              <div class="case-tags"><span>京东推广</span><span>多门店</span><span>预算验证</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/唯品客京东推广执行方案.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">04</span>
+              <span class="strategy-heading"><strong>元正脊招商合作手册</strong><span class="new-badge">新增</span><small>健康管理品牌定位与门店合作体系</small></span>
+              <span class="strategy-keywords"><span>招商手册</span><span>品牌定位</span><span>标准化</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>围绕非医疗健康管理定位，梳理品牌源起、市场机会、服务边界、标准化交付和合作价值，形成可用于招商沟通的完整手册。</p>
+              <div class="case-tags"><span>品牌定位</span><span>招商合作</span><span>标准化</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/元正脊-招商合作手册.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">05</span>
+              <span class="strategy-heading"><strong>旅小皖线上运营方案</strong><span class="new-badge">新增</span><small>安徽文旅地接品牌与创始人内容规划</small></span>
+              <span class="strategy-keywords"><span>文旅地接</span><span>内容规划</span><span>咨询承接</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>从真实业务访谈出发，规划品牌账号、创始人内容、同业合作边界、咨询承接和直播试点，先验证产品与交付能力再扩大传播。</p>
+              <div class="case-tags"><span>文旅地接</span><span>品牌账号</span><span>咨询承接</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/旅小皖_线上运营方案.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">06</span>
+              <span class="strategy-heading"><strong>阿熊阿虎 × 共美设计联盟年度获客合作方案</strong><span class="new-badge">新增</span><small>双账号、设计师IP与KOC协同获客</small></span>
+              <span class="strategy-keywords"><span>年度合作</span><span>设计师IP</span><span>线索获客</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>围绕设计联盟的官方账号、设计师个人IP和KOC协同，规划内容生产、咨询承接、客户跟进及年度合作分工，打通内容到业务线索。</p>
+              <div class="case-tags"><span>设计联盟</span><span>内容矩阵</span><span>线索承接</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/阿熊阿虎×共美_设计联盟年度获客合作方案.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">07</span>
+              <span class="strategy-heading"><strong>北京房产 · 郑总IP完整运营方案</strong><span class="new-badge">新增</span><small>专业号、生活号与小红书协同运营</small></span>
+              <span class="strategy-keywords"><span>房产IP</span><span>双账号</span><span>多平台</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>以真实讲房能力为核心，规划专业视频号、生活内容和小红书图文的分工，并建立一套楼盘多内容、多平台分发的生产方式。</p>
+              <div class="case-tags"><span>个人IP</span><span>内容矩阵</span><span>多平台</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/北京房产-郑总IP完整运营方案.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">08</span>
+              <span class="strategy-heading"><strong>武汉房产获客双IP三发执行方案</strong><span class="new-badge">新增</span><small>同一房源双表达与三平台分发</small></span>
+              <span class="strategy-keywords"><span>双IP</span><span>三平台</span><span>获客执行</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>将同一套高端房源拆成销售转化和生活方式两种内容表达，明确双IP分工、现场拍摄结构和三平台发布节奏。</p>
+              <div class="case-tags"><span>双IP</span><span>房产获客</span><span>执行流程</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/武汉房产获客双IP三发执行方案.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">09</span>
+              <span class="strategy-heading"><strong>李姐懂酒IP账号命名与简介</strong><small>白酒创始人IP差异化表达</small></span>
+              <span class="strategy-keywords"><span>白酒IP</span><span>账号命名</span><span>简介文案</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>围绕白酒创始人IP，输出12组高辨识度账号命名方向及多版主页简介，建立“不劝酒、讲依据、有分寸”的差异化表达。</p>
+              <div class="case-tags"><span>IP定位</span><span>账号命名</span><span>简介文案</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/李姐懂酒IP高辨识度账号名称与简介.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">10</span>
+              <span class="strategy-heading"><strong>萌妈食品线上运营赋能方案</strong><small>平台、直播与交付节点一体化</small></span>
+              <span class="strategy-keywords"><span>平台运营</span><span>直播</span><span>交付设计</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>覆盖蓝V认证、核心平台、统一视觉、中央直播、投流辅助、周度数据复盘、评价管理及分阶段交付计划。</p>
+              <div class="case-tags"><span>平台运营</span><span>直播赋能</span><span>交付设计</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/萌妈食品线上运营赋能方案.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+
+          <details class="strategy-item" name="strategy-case">
+            <summary>
+              <span class="strategy-index">11</span>
+              <span class="strategy-heading"><strong>手工水饺品牌三合一运营方案</strong><small>创始人IP、招商与门店运营协同</small></span>
+              <span class="strategy-keywords"><span>创始人IP</span><span>招商</span><span>全域运营</span></span>
+            </summary>
+            <div class="strategy-panel">
+              <p>将创始人IP、招商获客与线上门店运营合为一套方案，包含双账号规划、内容结构、直播策略与三阶段执行计划。</p>
+              <div class="case-tags"><span>创始人IP</span><span>招商获客</span><span>全域运营</span></div>
+              <a class="case-link" href="金城澳-作品集资源/方案/手工水饺品牌三合一运营方案.html" target="_blank" rel="noopener">打开完整方案 ↗</a>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <div class="portfolio-note"><b>能力体现：</b>能够把客户需求整理为定位、人设、内容、平台、直播、投流、数据和交付节点，并形成可直接沟通与执行的完整方案。方案内的目标指标均按“规划目标”呈现，不作为既有成绩。</div>
+      <span class="page-label">03 / 05</span>
+    </section>
+
+    <section class="page past-secondary" id="page4" aria-label="作品与案例第二页">
+      <header class="subhead">
+        <div>
+          <h2>AI视觉与互动作品</h2>
+          <p>AI美工 × 轻量3D × 地图与房产区位动画</p>
+        </div>
+        <div class="name">VISUAL · INTERACTIVE</div>
+      </header>
+
+      <div class="recent-grid">
+        <article class="recent-card">
+          <a class="recent-media" href="金城澳-作品集资源/近期作品/AI美工图片案例集.html" target="_blank" rel="noopener"><img src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" alt="AI美工团购套餐宣传图"></a>
+          <div class="recent-body">
+            <h3>AI美工图片案例集</h3>
+            <p>围绕团购套餐、房产账号和活动传播，完成视觉方向、版式生成、信息分层与系列化成稿。</p>
+            <div class="case-tags"><span>AI视觉</span><span>商业海报</span><span>系列封面</span></div>
+            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/AI美工图片案例集.html" target="_blank" rel="noopener">打开图片案例集 ↗</a></div>
+          </div>
+        </article>
+
+        <article class="recent-card">
+          <a class="recent-media" href="金城澳-作品集资源/近期作品/越王勾践剑-互动模型.html" target="_blank" rel="noopener"><img src="金城澳-作品集资源/近期作品/越王勾践剑-预览.png" alt="越王勾践剑互动模型预览"></a>
+          <div class="recent-body">
+            <h3>越王勾践剑 · 互动模型</h3>
+            <p>基于多角度资料重建展示模型，支持自由旋转、滚轮缩放、分件爆炸、自动旋转与视角保存。</p>
+            <div class="case-tags"><span>3D模型</span><span>网页交互</span><span>文化展示</span></div>
+            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/越王勾践剑-互动模型.html" target="_blank" rel="noopener">进入互动模型 ↗</a></div>
+          </div>
+        </article>
+
+        <article class="recent-card">
+          <a class="recent-media" href="金城澳-作品集资源/近期作品/地球轨迹动画.html" target="_blank" rel="noopener"><img src="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画-封面.png" alt="地球与地图路线动画预览"></a>
+          <div class="recent-body">
+            <h3>地球轨迹与地图路线动画</h3>
+            <p>把地点、路径和节点转为动态视觉叙事，适用于文旅路线、跨区域连接及竖版信息表达。</p>
+            <div class="case-tags"><span>地球动效</span><span>路线动画</span><span>信息可视化</span></div>
+            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/地球轨迹动画.html" target="_blank" rel="noopener">打开地球动画 ↗</a><a href="金城澳-作品集资源/近期作品/地图路线动画.html" target="_blank" rel="noopener">播放路线动画 ↗</a></div>
+          </div>
+        </article>
+
+        <article class="recent-card">
+          <a class="recent-media" href="金城澳-作品集资源/近期作品/瑞文里房产区位动画.html" target="_blank" rel="noopener"><img src="金城澳-作品集资源/近期作品/地图动画/瑞文里房产动画-封面.jpg" alt="瑞文里房产区位动画成片预览"></a>
+          <div class="recent-body">
+            <h3>瑞文里 · 房产区位动画成片</h3>
+            <p>以阜石路向东为主线，用道路节点、环路关系和车辆推进，完成9秒竖版房产交通区位动画。</p>
+            <div class="case-tags"><span>房产内容</span><span>区位表达</span><span>路线动画</span></div>
+            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/瑞文里房产区位动画.html" target="_blank" rel="noopener">播放正式成片 ↗</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="portfolio-note"><b>能力体现：</b>除常规内容运营外，可将AI视觉、网页互动和动画表达纳入新媒体项目交付，用更直观的形式说明产品、路线、空间与文化内容。</div>
+      <span class="page-label">04 / 05</span>
+    </section>
+
+    <section class="page past-secondary" id="page5" aria-label="作品与案例第三页">
+      <header class="subhead">
+        <div>
+          <h2>视频内容作品</h2>
+          <p>竖版短视频 × 快节奏剪辑 × 横版品牌宣传</p>
+        </div>
+        <div class="name">VIDEO SHOWREEL</div>
+      </header>
+
+      <div class="video-grid">
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls playsinline preload="metadata" poster="金城澳-作品集资源/封面/汽车快闪.png" aria-label="汽车快闪视频">
+              <source src="金城澳-作品集资源/视频/汽车快闪.m4v" type="video/x-m4v">
+            </video>
+            <img class="video-poster" src="金城澳-作品集资源/封面/汽车快闪.png" alt="汽车快闪视频封面">
+          </div>
+          <div class="video-body">
+            <h3>汽车快闪</h3>
+            <p>围绕车型外观与车膜色彩进行竖版快闪表达，通过大字标题、节奏切换和产品特写强化视觉记忆。</p>
+            <div class="video-spec">17.3秒 · 1080×1920 · 竖版</div>
+            <div class="case-tags"><span>产品展示</span><span>节奏剪辑</span></div>
+            <a class="video-link" href="金城澳-作品集资源/视频/汽车快闪.m4v" target="_blank">打开原视频 ↗</a>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls playsinline preload="metadata" poster="金城澳-作品集资源/封面/炫酷蛋包饭.png" aria-label="炫酷蛋包饭视频">
+              <source src="金城澳-作品集资源/视频/炫酷蛋包饭.mp4" type="video/mp4">
+            </video>
+            <img class="video-poster" src="金城澳-作品集资源/封面/炫酷蛋包饭.png" alt="炫酷蛋包饭视频封面">
+          </div>
+          <div class="video-body">
+            <h3>炫酷蛋包饭</h3>
+            <p>以制作过程和食物细节为核心的竖版美食短片，突出步骤变化、近景质感和短时间内的信息密度。</p>
+            <div class="video-spec">10.2秒 · 1080×1920 · 竖版</div>
+            <div class="case-tags"><span>美食内容</span><span>过程特写</span></div>
+            <a class="video-link" href="金城澳-作品集资源/视频/炫酷蛋包饭.mp4" target="_blank">打开原视频 ↗</a>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls playsinline preload="metadata" poster="金城澳-作品集资源/封面/朱光玉宣传片.png" aria-label="朱光玉宣传片视频">
+              <source src="金城澳-作品集资源/视频/朱光玉宣传片.mp4" type="video/mp4">
+            </video>
+            <img class="video-poster" src="金城澳-作品集资源/封面/朱光玉宣传片.png" alt="朱光玉宣传片视频封面">
+          </div>
+          <div class="video-body">
+            <h3>朱光玉宣传片</h3>
+            <p>横版品牌宣传影像，以餐饮品牌氛围和门店形象为主要表达，适用于品牌介绍、门店展示及传播场景。</p>
+            <div class="video-spec">46.4秒 · 2560×1440 · 横版</div>
+            <div class="case-tags"><span>品牌宣传</span><span>横版影像</span></div>
+            <a class="video-link" href="金城澳-作品集资源/视频/朱光玉宣传片.mp4" target="_blank">打开原视频 ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="portfolio-note"><b>说明：</b>以上视频均来自本次提供的案例收集文件夹，用于展示内容形式与制作能力；未在素材中明确的具体岗位分工，不在简历中作独立完成声明。</div>
+      <span class="page-label">05 / 05</span>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const body = document.body;
+    const toast = document.getElementById('toast');
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+
+    document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const value = '金城澳｜18712156281｜微信同号｜合肥';
+      try {
+        await navigator.clipboard.writeText(value);
+      } catch (error) {
+        const input = document.createElement('textarea');
+        input.value = value;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        input.remove();
+      }
+      showToast('联系方式已复制');
+    });
+
+    document.getElementById('focusBtn').addEventListener('click', (event) => {
+      const active = body.classList.toggle('focus');
+      event.currentTarget.setAttribute('aria-pressed', String(active));
+      event.currentTarget.textContent = active ? '恢复完整视图' : '突出当前经历';
+      if (active) document.getElementById('page1').scrollIntoView({ behavior: 'smooth' });
+      showToast(active ? '已突出当前经历' : '已恢复完整视图');
+    });
+
+    document.getElementById('themeBtn').addEventListener('click', (event) => {
+      const active = body.classList.toggle('dark');
+      event.currentTarget.setAttribute('aria-pressed', String(active));
+      event.currentTarget.textContent = active ? '浅色背景' : '深色背景';
+      localStorage.setItem('resume-theme', active ? 'dark' : 'light');
+    });
+
+    document.querySelectorAll('[data-jump]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const target = document.getElementById(button.dataset.jump);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    const strategyItems = [...document.querySelectorAll('.strategy-item')];
+    strategyItems.forEach((item) => {
+      item.addEventListener('toggle', () => {
+        if (!item.open) return;
+        strategyItems.forEach((other) => {
+          if (other !== item) other.removeAttribute('open');
+        });
+      });
+    });
+
+    if (localStorage.getItem('resume-theme') === 'dark') {
+      body.classList.add('dark');
+      const themeBtn = document.getElementById('themeBtn');
+      themeBtn.setAttribute('aria-pressed', 'true');
+      themeBtn.textContent = '浅色背景';
+    }
+  </script>
+</body>
+</html>

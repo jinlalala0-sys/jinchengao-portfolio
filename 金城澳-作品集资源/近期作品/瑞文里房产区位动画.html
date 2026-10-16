@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>金城澳｜瑞文里房产区位动画</title>
+  <style>
+    :root{--green:#214f3b;--gold:#b98b3d;--paper:#f3f1e7;--muted:#77857d}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 76% 20%,#fff 0,#f3f1e7 42%,#e8eee8 100%);color:var(--green);font:15px/1.65 "Microsoft YaHei",sans-serif}
+    main{width:min(1180px,94vw);min-height:100vh;margin:auto;display:grid;grid-template-columns:minmax(280px,1fr) minmax(320px,520px);gap:clamp(32px,7vw,110px);align-items:center;padding:42px 0}
+    .copy small{color:var(--gold);font-weight:800;letter-spacing:3px}.copy h1{margin:14px 0 10px;font-size:clamp(38px,6vw,74px);line-height:1.05;letter-spacing:-3px}.copy p{max-width:470px;margin:0;color:#62736a;font-size:16px}.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:30px 0}.meta div{padding:13px 14px;border:1px solid #cdd8cf;border-radius:10px;background:#ffffff80}.meta b{display:block;font-size:17px}.meta span{color:var(--muted);font-size:11px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tags span{padding:6px 9px;border-radius:999px;background:#e3ece5;font-size:11px;font-weight:800}
+    .actions{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}.actions a,.actions button{border:1px solid #b7c8bc;border-radius:999px;background:#fff;color:var(--green);padding:9px 15px;font:800 12px "Microsoft YaHei",sans-serif;text-decoration:none;cursor:pointer}.actions .primary{background:var(--green);color:#fff;border-color:var(--green)}
+    .device{position:relative;justify-self:center;width:min(420px,80vw);aspect-ratio:3/4;padding:12px;border-radius:30px;background:#183b2f;box-shadow:0 28px 80px #21443135}.device::before{content:"";position:absolute;top:18px;left:50%;z-index:2;transform:translateX(-50%);width:52px;height:5px;border-radius:999px;background:#0d241caa}.device video{display:block;width:100%;height:100%;border-radius:20px;background:#e9e7dc;object-fit:cover}.caption{position:absolute;left:26px;right:26px;bottom:25px;z-index:2;display:flex;justify-content:space-between;gap:10px;color:#fff;font-size:10px;pointer-events:none;text-shadow:0 1px 5px #0008}.playing-dot{display:inline-block;width:6px;height:6px;margin-right:6px;border-radius:50%;background:#8df0c7;box-shadow:0 0 8px #8df0c7}
+    @media(max-width:780px){main{grid-template-columns:1fr;padding:38px 0 28px}.copy{text-align:center}.copy p{margin:auto}.meta{max-width:500px;margin:24px auto}.tags,.actions{justify-content:center}.device{width:min(390px,88vw)}.copy h1{font-size:44px}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="copy"><small>REAL ESTATE MOTION · 2026</small><h1>瑞文里<br>交通区位动画</h1><p>从项目出发，以阜石路向东为主线，用道路节点、环路关系与车辆推进，快速解释房产项目的交通区位。</p><div class="meta"><div><b>9.1秒</b><span>成片时长</span></div><div><b>1080×1440</b><span>3:4竖版</span></div><div><b>30fps</b><span>H.264</span></div></div><div class="tags"><span>房产内容</span><span>区位表达</span><span>路线动画</span><span>信息可视化</span></div><div class="actions"><button class="primary" id="replay">重新播放</button><a download href="地图动画/瑞文里-阜石路向东-9秒.mp4">下载成片</a></div></section>
+    <section class="device"><video id="video" controls autoplay muted loop playsinline poster="地图动画/瑞文里房产动画-封面.jpg"><source src="地图动画/瑞文里-阜石路向东-9秒.mp4" type="video/mp4"></video><div class="caption"><span><i class="playing-dot"></i>正式成片</span><span>阜石路向东 / 交通区位</span></div></section>
+  </main>
+  <script>const video=document.getElementById('video');document.getElementById('replay').onclick=()=>{video.currentTime=0;video.play()};</script>
+</body>
+</html>

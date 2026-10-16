@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>金城澳｜AI美工图片案例集</title>
+  <style>
+    :root{--ink:#172b22;--green:#2d654b;--paper:#f4f3ed;--gold:#c69a47}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 "Microsoft YaHei",sans-serif}
+    header{padding:64px max(24px,8vw) 38px;background:#163c2c;color:#fff}header small{color:#ddc994;letter-spacing:3px}h1{margin:8px 0 6px;font-size:clamp(32px,6vw,64px)}header p{margin:0;max-width:720px;color:#d8e5dd}
+    main{width:min(1180px,92vw);margin:34px auto 70px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}button{border:1px solid #b8c8be;border-radius:999px;background:#fff;color:var(--green);padding:8px 14px;cursor:pointer;font-weight:700}button.active{background:var(--green);color:#fff}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{overflow:hidden;border-radius:16px;background:#fff;box-shadow:0 10px 28px #17362614}.card img{width:100%;aspect-ratio:4/5;display:block;object-fit:cover}.card div{padding:14px 16px}.card b{display:block}.card span{color:#6c786f;font-size:13px}
+    @media(max-width:760px){header{padding-top:42px}.grid{grid-template-columns:1fr 1fr}}@media(max-width:480px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><small>AI VISUAL DESIGN · 2026</small><h1>AI美工图片案例集</h1><p>围绕团购套餐、房产账号与活动传播，把内容定位、版式结构、视觉生成和成稿筛选整合为可交付图片。</p></header>
+  <main>
+    <div class="filters" role="group" aria-label="案例筛选">
+      <button class="active" data-filter="all">全部</button><button data-filter="local">本地生活</button><button data-filter="estate">房产内容</button><button data-filter="event">活动海报</button>
+    </div>
+    <section class="grid">
+      <article class="card" data-kind="local"><img src="AI美工图/团购套餐-01.webp" alt="团购套餐宣传图一"><div><b>团购套餐宣传图</b><span>商品信息分层 / 到店转化</span></div></article>
+      <article class="card" data-kind="local"><img src="AI美工图/团购套餐-02.webp" alt="团购套餐宣传图二"><div><b>团购套餐视觉延展</b><span>同主题多版式 / 渠道适配</span></div></article>
+      <article class="card" data-kind="estate"><img src="AI美工图/房产封面-01.webp" alt="房产账号系列封面一"><div><b>房产账号系列封面 01</b><span>账号统一视觉 / 选题识别</span></div></article>
+      <article class="card" data-kind="estate"><img src="AI美工图/房产封面-02.webp" alt="房产账号系列封面二"><div><b>房产账号系列封面 02</b><span>房产内容包装 / 系列感</span></div></article>
+      <article class="card" data-kind="estate"><img src="AI美工图/房产封面-03.webp" alt="房产账号系列封面三"><div><b>房产账号系列封面 03</b><span>多选题模板 / 快速生产</span></div></article>
+      <article class="card" data-kind="event"><img src="AI美工图/周年海报.webp" alt="周年活动主题海报"><div><b>周年活动主题海报</b><span>主题创意 / 活动传播</span></div></article>
+    </section>
+  </main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('[data-kind]')];
+    buttons.forEach(button=>button.addEventListener('click',()=>{buttons.forEach(item=>item.classList.remove('active'));button.classList.add('active');cards.forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.kind!==button.dataset.filter)}));
+  </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.edgeone/
+.env*
+*.zip
+node_modules/
