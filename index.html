@@ -1011,9 +1011,43 @@
     body.focus .past-secondary { opacity: .48; filter: grayscale(.25); }
     body.focus .current-focus { box-shadow: 0 0 0 3px rgba(214, 163, 75, .14); }
 
-    @media (max-width: 860px) {
-      .toolbar { justify-content: flex-start; overflow-x: auto; }
-      .resume { width: 210mm; margin: 16px; }
+    .toolbar button, .toolbar a { display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; }
+    .toolbar-extra { display: contents; }
+    #moreTools { display: none; }
+    :focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
+    @media screen and (max-width: 860px) {
+      .toolbar { flex-wrap: wrap; padding: 8px 12px; gap: 8px; }
+      .toolbar > a, .toolbar > button { flex: 1; min-width: 0; min-height: 44px; padding: 0 8px; font-size: 12px; }
+      #moreTools { display: inline-flex; flex: 0 0 56px; }
+      .toolbar-extra { display: none; width: 100%; padding-top: 8px; border-top: 1px solid var(--line); }
+      .toolbar-extra.is-open { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+      .toolbar-extra button, .toolbar-extra a { min-height: 44px; padding: 0 8px; font-size: 12px; }
+      .resume { width: auto; margin: 12px; }
+      .page { width: 100%; min-height: 0; padding: 24px 20px; margin-bottom: 16px; scroll-margin-top: 76px; }
+      .page::after { max-width: 70%; }
+      .hero { grid-template-columns: 56px minmax(0,1fr); gap: 12px; padding-bottom: 20px; }
+      .monogram { width: 56px; height: 56px; font-size: 28px; border-radius: 16px 6px; }
+      .identity-row { display: block; }
+      h1 { font-size: 30px; }
+      .role { font-size: 14px; letter-spacing: 0; }
+      .experience-mark { display: inline-block; margin-top: 8px; white-space: normal; font-size: 11px; }
+      .contacts { gap: 6px; font-size: 12px; }
+      .contacts a, .contacts span { overflow-wrap: anywhere; }
+      .stats, .portfolio-overview { grid-template-columns: repeat(2,minmax(0,1fr)); margin: 20px 0; }
+      .project-grid, .early-grid, .bottom-grid, .proof-grid, .recent-grid, .video-grid { grid-template-columns: minmax(0,1fr); }
+      .job-head, .history-head, .edu { grid-template-columns: minmax(0,1fr); gap: 4px; }
+      .period { white-space: normal; }
+      .portfolio-nav { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .portfolio-nav button { min-height: 44px; padding: 8px; }
+      .strategy-item summary { grid-template-columns: 26px minmax(0,1fr) 18px; gap: 8px; }
+      .strategy-keywords { grid-column: 2; grid-row: 2; }
+      .strategy-item summary::after { grid-column: 3; grid-row: 1; }
+      .strategy-panel { padding: 12px; }
+      .recent-card { grid-template-columns: 100px minmax(0,1fr); }
+      .recent-body { padding: 12px; }
+      .recent-links a { font-size: 12px; padding: 6px 0; }
+      .page p, .page li { font-size: 13px; line-height: 1.75; }
+      .page * { min-width: 0; }
     }
 
     @media print {
@@ -1043,14 +1077,25 @@
 </head>
 <body>
   <nav class="toolbar" aria-label="简历工具栏">
+    <button class="primary" id="copyBtn" type="button">复制联系方式</button>
+    <a href="#page2">完整履历</a>
+    <a href="#portfolio">作品案例</a>
+    <button id="moreTools" type="button" aria-expanded="false" aria-controls="extraTools">更多</button>
+    <div class="toolbar-extra" id="extraTools">
     <button class="primary" id="printBtn" type="button">打印 / 保存 PDF</button>
     <a href="金城澳-新媒体负责人.pdf" download>下载 PDF</a>
-    <button id="copyBtn" type="button">复制联系方式</button>
     <button id="focusBtn" type="button" aria-pressed="false">突出当前经历</button>
     <button id="themeBtn" type="button" aria-pressed="false">深色背景</button>
-    <a href="#page2">查看完整履历</a>
-    <a href="#portfolio">作品与案例</a>
+    </div>
   </nav>
+  <script>
+    document.getElementById('moreTools').addEventListener('click', function () {
+      const open = this.getAttribute('aria-expanded') !== 'true';
+      this.setAttribute('aria-expanded', String(open));
+      this.textContent = open ? '收起' : '更多';
+      document.getElementById('extraTools').classList.toggle('is-open', open);
+    });
+  </script>
 
   <main class="resume" aria-label="金城澳新媒体负责人简历">
     <section class="page" id="page1" aria-label="简历第一页">
