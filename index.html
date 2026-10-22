@@ -11,17 +11,17 @@
   <link rel="icon" href="data:,">
   <style>
     :root {
-      --ink: #18221d;
-      --muted: #66736c;
-      --line: #dbe3de;
+      --ink: #202c38;
+      --muted: #657381;
+      --line: #dbe2e9;
       --paper: #ffffff;
-      --screen: #edf1ee;
-      --brand: #1f6b4f;
-      --brand-deep: #164b39;
-      --brand-soft: #e7f2ec;
-      --accent: #d6a34b;
-      --card: #f7f9f8;
-      --shadow: 0 18px 52px rgba(30, 55, 43, .14);
+      --screen: #eef1f5;
+      --brand: #345978;
+      --brand-deep: #203c55;
+      --brand-soft: #eaf0f6;
+      --accent: #927452;
+      --card: #f6f8fa;
+      --shadow: 0 18px 52px rgba(30, 46, 65, .12);
     }
 
     * { box-sizing: border-box; }
@@ -51,8 +51,8 @@
       align-items: center;
       gap: 8px;
       padding: 10px 16px;
-      background: rgba(237, 241, 238, .92);
-      border-bottom: 1px solid rgba(119, 139, 127, .22);
+      background: rgba(238, 242, 247, .95);
+      border-bottom: 1px solid rgba(112, 133, 155, .22);
       backdrop-filter: blur(14px);
     }
 
@@ -60,10 +60,10 @@
     .toolbar a {
       min-height: 38px;
       padding: 0 15px;
-      border: 1px solid #c9d4cd;
+      border: 1px solid #cbd5df;
       border-radius: 999px;
       background: rgba(255, 255, 255, .9);
-      color: #31443a;
+      color: #354657;
       font: 700 13px/1 "Microsoft YaHei", sans-serif;
       text-decoration: none;
       cursor: pointer;
@@ -104,7 +104,7 @@
       position: absolute;
       inset: 0 auto 0 0;
       width: 4.2mm;
-      background: linear-gradient(180deg, var(--brand-deep), var(--brand) 55%, #6ca082);
+      background: linear-gradient(180deg, var(--brand-deep), var(--brand) 55%, #7e96ab);
     }
 
     .page::after {
@@ -115,7 +115,7 @@
       width: 105mm;
       height: 105mm;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(31, 107, 79, .08), rgba(31, 107, 79, 0) 68%);
+      background: radial-gradient(circle, rgba(52, 89, 120, .08), rgba(52, 89, 120, 0) 68%);
       pointer-events: none;
     }
 
@@ -141,7 +141,7 @@
       font-size: 26pt;
       font-weight: 900;
       letter-spacing: -2px;
-      box-shadow: 0 8px 20px rgba(31, 107, 79, .2);
+      box-shadow: 0 8px 20px rgba(52, 89, 120, .2);
     }
 
     .identity-row {
@@ -168,7 +168,7 @@
 
     .experience-mark {
       padding: 5px 10px;
-      border: 1px solid #c7d8cf;
+      border: 1px solid #ccd9e5;
       border-radius: 999px;
       background: var(--brand-soft);
       color: var(--brand-deep);
@@ -182,7 +182,7 @@
       flex-wrap: wrap;
       gap: 5px 18px;
       margin-top: 10px;
-      color: #4f5d55;
+      color: #536171;
       font-size: 9.3pt;
     }
 
@@ -213,7 +213,7 @@
       padding: 10px 11px 9px;
       border: 1px solid var(--line);
       border-radius: 10px;
-      background: linear-gradient(180deg, #fff, #f8faf9);
+      background: linear-gradient(180deg, #fff, #f7f9fc);
     }
 
     .stat b {
@@ -256,7 +256,7 @@
 
     .summary {
       margin: 0;
-      color: #35433c;
+      color: #3b4857;
       font-size: 9.6pt;
       line-height: 1.75;
     }
@@ -279,10 +279,10 @@
 
     .job-card {
       padding: 4.5mm 5mm;
-      border: 1px solid #dce6e0;
+      border: 1px solid #dce4ed;
       border-radius: 13px;
-      background: #fbfdfc;
-      box-shadow: 0 6px 18px rgba(31, 107, 79, .035);
+      background: #fbfcfe;
+      box-shadow: 0 6px 18px rgba(52, 89, 120, .035);
     }
 
     .job-head {
@@ -305,7 +305,7 @@
     }
 
     .period {
-      color: #56665d;
+      color: #5d6b79;
       font-size: 8.5pt;
       font-weight: 800;
       white-space: nowrap;
@@ -313,7 +313,7 @@
 
     .job-intro {
       margin: 8px 0 0;
-      color: #4d5c54;
+      color: #526171;
       font-size: 8.6pt;
     }
 
@@ -325,7 +325,7 @@
     li {
       margin: 4px 0;
       padding-left: 2px;
-      color: #35433c;
+      color: #3b4857;
       font-size: 8.75pt;
       line-height: 1.58;
     }
@@ -354,7 +354,7 @@
 
     .project p {
       margin: 5px 0 0;
-      color: #647168;
+      color: #667582;
       font-size: 7.8pt;
       line-height: 1.55;
     }
@@ -363,7 +363,7 @@
       position: absolute;
       right: 14mm;
       bottom: 6mm;
-      color: #8c9891;
+      color: #7f8a97;
       font-size: 7.5pt;
       letter-spacing: 1px;
     }
@@ -410,7 +410,7 @@
       top: 3mm;
       bottom: 2mm;
       width: 1px;
-      background: #cbd8d0;
+      background: #cdd9e4;
     }
 
     .history-job {
@@ -478,12 +478,12 @@
       padding: 9px 11px;
       border: 1px solid var(--line);
       border-radius: 10px;
-      background: #fafbfa;
+      background: #fafbfd;
     }
 
     .early-card .company { font-size: 9.2pt; }
     .early-card .period { display: block; margin-top: 2px; font-size: 7.6pt; }
-    .early-card p { margin: 6px 0 0; color: #58665e; font-size: 7.9pt; line-height: 1.55; }
+    .early-card p { margin: 6px 0 0; color: #5e6b78; font-size: 7.9pt; line-height: 1.55; }
 
     .bottom-grid {
       display: grid;
@@ -496,7 +496,7 @@
       padding: 4mm 4.5mm;
       border: 1px solid var(--line);
       border-radius: 12px;
-      background: #fbfcfb;
+      background: #fbfcfe;
     }
 
     .info-card h3 {
@@ -525,7 +525,7 @@
     .tool-list div {
       position: relative;
       padding-left: 12px;
-      color: #4c5a52;
+      color: #536171;
       font-size: 8pt;
       line-height: 1.45;
     }
@@ -567,7 +567,7 @@
       padding: 10px 11px;
       border: 1px solid var(--line);
       border-radius: 10px;
-      background: #fbfdfc;
+      background: #fbfcfe;
     }
 
     .portfolio-metric b {
@@ -594,7 +594,7 @@
 
     .portfolio-nav button {
       padding: 6px 11px;
-      border: 1px solid #cddbd3;
+      border: 1px solid #cdd9e4;
       border-radius: 999px;
       background: #fff;
       color: var(--brand-deep);
@@ -618,8 +618,8 @@
     }
 
     .strategy-item[open] {
-      border-color: #9fbdac;
-      box-shadow: 0 8px 22px rgba(31, 65, 48, .08);
+      border-color: #9fb2c5;
+      box-shadow: 0 8px 22px rgba(42, 66, 90, .08);
     }
 
     .strategy-item summary {
@@ -718,13 +718,13 @@
 
     .strategy-panel {
       padding: 9px 14px 11px 52px;
-      border-top: 1px solid #edf1ee;
-      background: #fbfdfc;
+      border-top: 1px solid #eef1f5;
+      background: #fbfcfe;
     }
 
     .strategy-panel p {
       margin: 0;
-      color: #536159;
+      color: #586777;
       font-size: 7.35pt;
       line-height: 1.55;
     }
@@ -787,7 +787,7 @@
       height: 51mm;
       padding: 0;
       border: 0;
-      background: #eef2ef;
+      background: #eef2f6;
       cursor: zoom-in;
       overflow: hidden;
     }
@@ -799,7 +799,7 @@
       bottom: 8px;
       padding: 4px 7px;
       border-radius: 999px;
-      background: rgba(17, 41, 29, .82);
+      background: rgba(22, 40, 59, .82);
       color: #fff;
       font: 700 6.8pt/1 "Microsoft YaHei", sans-serif;
     }
@@ -820,7 +820,7 @@
 
     .proof-body p {
       margin: 5px 0 0;
-      color: #5d6b63;
+      color: #5f6d7b;
       font-size: 7.4pt;
       line-height: 1.5;
     }
@@ -835,8 +835,8 @@
     .proof-meta span {
       padding: 3px 6px;
       border-radius: 5px;
-      background: #f1f5f2;
-      color: #516159;
+      background: #f1f5f9;
+      color: #556777;
       font-size: 6.7pt;
       font-weight: 700;
     }
@@ -861,7 +861,7 @@
     .recent-media {
       position: relative;
       overflow: hidden;
-      background: #e9efeb;
+      background: #e9eff5;
     }
 
     .recent-media::after {
@@ -871,7 +871,7 @@
       bottom: 8px;
       padding: 3px 6px;
       border-radius: 999px;
-      background: rgba(20, 48, 35, .82);
+      background: rgba(25, 44, 65, .82);
       color: #fff;
       font-size: 5.8pt;
       font-weight: 900;
@@ -887,13 +887,13 @@
 
     .recent-body { padding: 11px 12px; }
     .recent-body h3 { margin: 0; color: var(--brand-deep); font-size: 9.2pt; line-height: 1.35; }
-    .recent-body p { margin: 6px 0 0; color: #5d6b63; font-size: 7.1pt; line-height: 1.5; }
+    .recent-body p { margin: 6px 0 0; color: #5f6d7b; font-size: 7.1pt; line-height: 1.5; }
     .recent-links { display: flex; flex-wrap: wrap; gap: 5px 10px; margin-top: 8px; }
     .recent-links a { color: var(--brand); font-size: 6.8pt; font-weight: 900; text-decoration: none; }
 
     .snapshot-note {
       margin: 5mm 0 0;
-      color: #7a867f;
+      color: #788594;
       font-size: 7pt;
       line-height: 1.5;
     }
@@ -923,7 +923,7 @@
       display: grid;
       place-items: center;
       height: 96mm;
-      background: #101512;
+      background: #111b25;
       overflow: hidden;
     }
 
@@ -932,7 +932,7 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
-      background: #101512;
+      background: #111b25;
     }
 
     .video-poster { display: none; }
@@ -943,7 +943,7 @@
 
     .video-body p {
       margin: 5px 0 0;
-      color: #5d6b63;
+      color: #5f6d7b;
       font-size: 7.3pt;
       line-height: 1.5;
     }
@@ -961,11 +961,11 @@
       padding: 44px 14px 14px;
       border: 0;
       border-radius: 14px;
-      background: #f8faf9;
+      background: #f7f9fc;
       box-shadow: 0 24px 80px rgba(0, 0, 0, .35);
     }
 
-    .media-dialog::backdrop { background: rgba(13, 25, 19, .78); }
+    .media-dialog::backdrop { background: rgba(15, 26, 39, .78); }
 
     .media-dialog img {
       display: block;
@@ -975,7 +975,7 @@
       border-radius: 8px;
     }
 
-    .media-dialog p { margin: 10px 4px 0; color: #4d5b53; font-size: 12px; text-align: center; }
+    .media-dialog p { margin: 10px 4px 0; color: #526171; font-size: 12px; text-align: center; }
 
     .dialog-close {
       position: absolute;
@@ -983,10 +983,10 @@
       right: 12px;
       width: 30px;
       height: 30px;
-      border: 1px solid #ccd8d1;
+      border: 1px solid #ccd8e4;
       border-radius: 50%;
       background: #fff;
-      color: #25372d;
+      color: #293e51;
       font-size: 18px;
       cursor: pointer;
     }
@@ -999,7 +999,7 @@
       transform: translate(-50%, 16px);
       padding: 10px 16px;
       border-radius: 999px;
-      background: #17271f;
+      background: #192c3e;
       color: #fff;
       font-size: 13px;
       opacity: 0;
@@ -1010,8 +1010,8 @@
     .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
     body.dark {
-      --screen: #17221d;
-      --paper: #fdfefd;
+      --screen: #17232f;
+      --paper: #fdfdfe;
       --shadow: 0 22px 62px rgba(0,0,0,.35);
     }
 
@@ -1091,8 +1091,8 @@
       .video-poster { display: block; }
     }
   </style>
-  <link rel="stylesheet" href="portfolio-cards.css?v=cards-20261022">
-  <link rel="stylesheet" href="portfolio-media.css?v=cards-20261022">
+  <link rel="stylesheet" href="portfolio-cards.css?v=blue-fold-20261022">
+  <link rel="stylesheet" href="portfolio-media.css?v=blue-fold-20261022">
 </head>
 <body>
   <nav class="toolbar" aria-label="简历工具栏">
@@ -1292,27 +1292,27 @@
       </nav>
 
       <section class="section">
-        <h2 class="section-title">策略与方案</h2>
-        <div class="case-grid plan-grid">
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/共美-全渠道获客方案-20261012.html" target="_blank" rel="noopener" aria-label="查看原文：共美全渠道获客方案"><div class="card-topline"><span>策略方案</span><span>01</span></div><h3>共美全渠道获客方案</h3><p class="card-subtitle">品牌号与个人IP协同，线上内容连接线下合作</p><p class="card-description">规划共美品牌号与夏老师个人IP的内容分工，结合短视频、图文、直播试点、老客户转介绍和异业合作，设计企业微信统一承接与客户转交机制。案例展示策划方案，不将预期效果表述为已实现业绩。</p><div class="case-tags"><span>双账号运营</span><span>全渠道获客</span><span>企微承接</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/科大幼图-乐可AI线上运营方案-20261014.html" target="_blank" rel="noopener" aria-label="查看原文：科大幼图 · 乐可AI线上运营方案"><div class="card-topline"><span>策略方案</span><span>02</span></div><h3>科大幼图 · 乐可AI线上运营方案</h3><p class="card-subtitle">教育AI品牌的四平台内容与活动传播规划</p><p class="card-description">围绕抖音、视频号、小红书和公众号，规划品牌介绍、师园需求解答、服务现场三类内容，覆盖短视频、图文及活动前中后宣传，明确素材收集、制作审核与发布流程，以及双方服务边界。</p><div class="case-tags"><span>教育AI</span><span>四平台运营</span><span>品牌内容</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/唯品客京东推广执行方案.html" target="_blank" rel="noopener" aria-label="查看原文：唯品客京东推广执行方案"><div class="card-topline"><span>策略方案</span><span>03</span></div><h3>唯品客京东推广执行方案</h3><p class="card-subtitle">多门店小预算试投与活动券验证</p><p class="card-description">为三家门店设计小预算分批测试、活动券配置和订单复盘路径，以实际订单与到手金额判断是否扩量，降低一次性投入风险。</p><div class="case-tags"><span>京东推广</span><span>多门店</span><span>预算验证</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+        <h2 class="section-title">策略与方案</h2><p class="case-section-hint">点击标题展开介绍；点击右侧「查看原文」打开完整方案。</p>
+        <div class="plan-list">
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">01</span><span class="plan-heading"><strong>共美全渠道获客方案</strong><small>品牌号与个人IP协同，线上内容连接线下合作</small><span class="plan-keywords"><span>双账号运营</span><span>全渠道获客</span><span>企微承接</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>规划共美品牌号与夏老师个人IP的内容分工，结合短视频、图文、直播试点、老客户转介绍和异业合作，设计企业微信统一承接与客户转交机制。案例展示策划方案，不将预期效果表述为已实现业绩。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/共美-全渠道获客方案-20261012.html" target="_blank" rel="noopener" aria-label="查看原文：共美全渠道获客方案">查看原文 <span aria-hidden="true">↗</span></a></article>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">02</span><span class="plan-heading"><strong>科大幼图 · 乐可AI线上运营方案</strong><small>教育AI品牌的四平台内容与活动传播规划</small><span class="plan-keywords"><span>教育AI</span><span>四平台运营</span><span>品牌内容</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>围绕抖音、视频号、小红书和公众号，规划品牌介绍、师园需求解答、服务现场三类内容，覆盖短视频、图文及活动前中后宣传，明确素材收集、制作审核与发布流程，以及双方服务边界。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/科大幼图-乐可AI线上运营方案-20261014.html" target="_blank" rel="noopener" aria-label="查看原文：科大幼图 · 乐可AI线上运营方案">查看原文 <span aria-hidden="true">↗</span></a></article>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">03</span><span class="plan-heading"><strong>唯品客京东推广执行方案</strong><small>多门店小预算试投与活动券验证</small><span class="plan-keywords"><span>京东推广</span><span>多门店</span><span>预算验证</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>为三家门店设计小预算分批测试、活动券配置和订单复盘路径，以实际订单与到手金额判断是否扩量，降低一次性投入风险。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/唯品客京东推广执行方案.html" target="_blank" rel="noopener" aria-label="查看原文：唯品客京东推广执行方案">查看原文 <span aria-hidden="true">↗</span></a></article>
 
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/元正脊-招商合作手册.html" target="_blank" rel="noopener" aria-label="查看原文：元正脊招商合作手册"><div class="card-topline"><span>策略方案</span><span>04</span></div><h3>元正脊招商合作手册</h3><p class="card-subtitle">健康管理品牌定位与门店合作体系</p><p class="card-description">围绕非医疗健康管理定位，梳理品牌源起、市场机会、服务边界、标准化交付和合作价值，形成可用于招商沟通的完整手册。</p><div class="case-tags"><span>品牌定位</span><span>招商合作</span><span>标准化</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">04</span><span class="plan-heading"><strong>元正脊招商合作手册</strong><small>健康管理品牌定位与门店合作体系</small><span class="plan-keywords"><span>品牌定位</span><span>招商合作</span><span>标准化</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>围绕非医疗健康管理定位，梳理品牌源起、市场机会、服务边界、标准化交付和合作价值，形成可用于招商沟通的完整手册。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/元正脊-招商合作手册.html" target="_blank" rel="noopener" aria-label="查看原文：元正脊招商合作手册">查看原文 <span aria-hidden="true">↗</span></a></article>
 
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/旅小皖_线上运营方案.html" target="_blank" rel="noopener" aria-label="查看原文：旅小皖线上运营方案"><div class="card-topline"><span>策略方案</span><span>05</span></div><h3>旅小皖线上运营方案</h3><p class="card-subtitle">安徽文旅地接品牌与创始人内容规划</p><p class="card-description">从真实业务访谈出发，规划品牌账号、创始人内容、同业合作边界、咨询承接和直播试点，先验证产品与交付能力再扩大传播。</p><div class="case-tags"><span>文旅地接</span><span>品牌账号</span><span>咨询承接</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">05</span><span class="plan-heading"><strong>旅小皖线上运营方案</strong><small>安徽文旅地接品牌与创始人内容规划</small><span class="plan-keywords"><span>文旅地接</span><span>品牌账号</span><span>咨询承接</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>从真实业务访谈出发，规划品牌账号、创始人内容、同业合作边界、咨询承接和直播试点，先验证产品与交付能力再扩大传播。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/旅小皖_线上运营方案.html" target="_blank" rel="noopener" aria-label="查看原文：旅小皖线上运营方案">查看原文 <span aria-hidden="true">↗</span></a></article>
 
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/阿熊阿虎×共美_设计联盟年度获客合作方案.html" target="_blank" rel="noopener" aria-label="查看原文：阿熊阿虎 × 共美设计联盟年度获客合作方案"><div class="card-topline"><span>策略方案</span><span>06</span></div><h3>阿熊阿虎 × 共美设计联盟年度获客合作方案</h3><p class="card-subtitle">双账号、设计师IP与KOC协同获客</p><p class="card-description">围绕设计联盟的官方账号、设计师个人IP和KOC协同，规划内容生产、咨询承接、客户跟进及年度合作分工，打通内容到业务线索。</p><div class="case-tags"><span>设计联盟</span><span>内容矩阵</span><span>线索承接</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">06</span><span class="plan-heading"><strong>阿熊阿虎 × 共美设计联盟年度获客合作方案</strong><small>双账号、设计师IP与KOC协同获客</small><span class="plan-keywords"><span>设计联盟</span><span>内容矩阵</span><span>线索承接</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>围绕设计联盟的官方账号、设计师个人IP和KOC协同，规划内容生产、咨询承接、客户跟进及年度合作分工，打通内容到业务线索。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/阿熊阿虎×共美_设计联盟年度获客合作方案.html" target="_blank" rel="noopener" aria-label="查看原文：阿熊阿虎 × 共美设计联盟年度获客合作方案">查看原文 <span aria-hidden="true">↗</span></a></article>
 
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/北京房产-郑总IP完整运营方案.html" target="_blank" rel="noopener" aria-label="查看原文：北京房产 · 郑总IP完整运营方案"><div class="card-topline"><span>策略方案</span><span>07</span></div><h3>北京房产 · 郑总IP完整运营方案</h3><p class="card-subtitle">专业号、生活号与小红书协同运营</p><p class="card-description">以真实讲房能力为核心，规划专业视频号、生活内容和小红书图文的分工，并建立一套楼盘多内容、多平台分发的生产方式。</p><div class="case-tags"><span>个人IP</span><span>内容矩阵</span><span>多平台</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">07</span><span class="plan-heading"><strong>北京房产 · 郑总IP完整运营方案</strong><small>专业号、生活号与小红书协同运营</small><span class="plan-keywords"><span>个人IP</span><span>内容矩阵</span><span>多平台</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>以真实讲房能力为核心，规划专业视频号、生活内容和小红书图文的分工，并建立一套楼盘多内容、多平台分发的生产方式。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/北京房产-郑总IP完整运营方案.html" target="_blank" rel="noopener" aria-label="查看原文：北京房产 · 郑总IP完整运营方案">查看原文 <span aria-hidden="true">↗</span></a></article>
 
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/武汉房产获客双IP三发执行方案.html" target="_blank" rel="noopener" aria-label="查看原文：武汉房产获客双IP三发执行方案"><div class="card-topline"><span>策略方案</span><span>08</span></div><h3>武汉房产获客双IP三发执行方案</h3><p class="card-subtitle">同一房源双表达与三平台分发</p><p class="card-description">将同一套高端房源拆成销售转化和生活方式两种内容表达，明确双IP分工、现场拍摄结构和三平台发布节奏。</p><div class="case-tags"><span>双IP</span><span>房产获客</span><span>执行流程</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">08</span><span class="plan-heading"><strong>武汉房产获客双IP三发执行方案</strong><small>同一房源双表达与三平台分发</small><span class="plan-keywords"><span>双IP</span><span>房产获客</span><span>执行流程</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>将同一套高端房源拆成销售转化和生活方式两种内容表达，明确双IP分工、现场拍摄结构和三平台发布节奏。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/武汉房产获客双IP三发执行方案.html" target="_blank" rel="noopener" aria-label="查看原文：武汉房产获客双IP三发执行方案">查看原文 <span aria-hidden="true">↗</span></a></article>
 
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/李姐懂酒IP高辨识度账号名称与简介.html" target="_blank" rel="noopener" aria-label="查看原文：李姐懂酒IP账号命名与简介"><div class="card-topline"><span>策略方案</span><span>09</span></div><h3>李姐懂酒IP账号命名与简介</h3><p class="card-subtitle">白酒创始人IP差异化表达</p><p class="card-description">围绕白酒创始人IP，输出12组高辨识度账号命名方向及多版主页简介，建立“不劝酒、讲依据、有分寸”的差异化表达。</p><div class="case-tags"><span>IP定位</span><span>账号命名</span><span>简介文案</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">09</span><span class="plan-heading"><strong>李姐懂酒IP账号命名与简介</strong><small>白酒创始人IP差异化表达</small><span class="plan-keywords"><span>IP定位</span><span>账号命名</span><span>简介文案</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>围绕白酒创始人IP，输出12组高辨识度账号命名方向及多版主页简介，建立“不劝酒、讲依据、有分寸”的差异化表达。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/李姐懂酒IP高辨识度账号名称与简介.html" target="_blank" rel="noopener" aria-label="查看原文：李姐懂酒IP账号命名与简介">查看原文 <span aria-hidden="true">↗</span></a></article>
 
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/萌妈食品线上运营赋能方案.html" target="_blank" rel="noopener" aria-label="查看原文：萌妈食品线上运营赋能方案"><div class="card-topline"><span>策略方案</span><span>10</span></div><h3>萌妈食品线上运营赋能方案</h3><p class="card-subtitle">平台、直播与交付节点一体化</p><p class="card-description">覆盖蓝V认证、核心平台、统一视觉、中央直播、投流辅助、周度数据复盘、评价管理及分阶段交付计划。</p><div class="case-tags"><span>平台运营</span><span>直播赋能</span><span>交付设计</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">10</span><span class="plan-heading"><strong>萌妈食品线上运营赋能方案</strong><small>平台、直播与交付节点一体化</small><span class="plan-keywords"><span>平台运营</span><span>直播赋能</span><span>交付设计</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>覆盖蓝V认证、核心平台、统一视觉、中央直播、投流辅助、周度数据复盘、评价管理及分阶段交付计划。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/萌妈食品线上运营赋能方案.html" target="_blank" rel="noopener" aria-label="查看原文：萌妈食品线上运营赋能方案">查看原文 <span aria-hidden="true">↗</span></a></article>
 
-          <a class="case-card plan-card" href="金城澳-作品集资源/方案/手工水饺品牌三合一运营方案.html" target="_blank" rel="noopener" aria-label="查看原文：手工水饺品牌三合一运营方案"><div class="card-topline"><span>策略方案</span><span>11</span></div><h3>手工水饺品牌三合一运营方案</h3><p class="card-subtitle">创始人IP、招商与门店运营协同</p><p class="card-description">将创始人IP、招商获客与线上门店运营合为一套方案，包含双账号规划、内容结构、直播策略与三阶段执行计划。</p><div class="case-tags"><span>创始人IP</span><span>招商获客</span><span>全域运营</span></div><span class="card-action">查看方案原文 <span aria-hidden="true">↗</span></span></a>
+          <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">11</span><span class="plan-heading"><strong>手工水饺品牌三合一运营方案</strong><small>创始人IP、招商与门店运营协同</small><span class="plan-keywords"><span>创始人IP</span><span>招商获客</span><span>全域运营</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>将创始人IP、招商获客与线上门店运营合为一套方案，包含双账号规划、内容结构、直播策略与三阶段执行计划。</p></div></details><a class="plan-original" href="金城澳-作品集资源/方案/手工水饺品牌三合一运营方案.html" target="_blank" rel="noopener" aria-label="查看原文：手工水饺品牌三合一运营方案">查看原文 <span aria-hidden="true">↗</span></a></article>
         </div>
       </section>
 
@@ -1329,12 +1329,12 @@
         <div class="name">VISUAL · INTERACTIVE</div>
       </header>
 
-      <h3 class="video-category" id="image-cases">AI美工 · 图片作品</h3><p class="case-section-hint">点击任意卡片查看单张大图；放大后可切换原尺寸。</p><div class="case-grid image-grid"><a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" data-media-title="团购套餐海报 · 01" aria-label="放大图片：团购套餐海报 · 01"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" alt="团购套餐海报 · 01" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>团购套餐海报 · 01</h3><span class="card-action">查看大图 ↗</span></div></a>
-<a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" data-media-title="团购套餐海报 · 02" aria-label="放大图片：团购套餐海报 · 02"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" alt="团购套餐海报 · 02" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>团购套餐海报 · 02</h3><span class="card-action">查看大图 ↗</span></div></a>
-<a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" data-media-title="房产账号封面 · 01" aria-label="放大图片：房产账号封面 · 01"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" alt="房产账号封面 · 01" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>房产账号封面 · 01</h3><span class="card-action">查看大图 ↗</span></div></a>
+      <h3 class="video-category" id="image-cases">AI美工 · 图片作品</h3><p class="case-section-hint">按项目整理为3组图片；每张都可单独放大并查看原尺寸。</p><div class="image-collections"><section class="image-collection"><header class="collection-heading"><h4>团购套餐海报</h4><p>同系列套餐图 · 2张</p><small>点击单张图片放大查看</small></header><div class="collection-grid" data-count="2"><a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" data-media-title="团购套餐海报 · 01" aria-label="放大图片：团购套餐海报 · 01"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" alt="团购套餐海报 · 01" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>团购套餐海报 · 01</h3><span class="card-action">查看大图 ↗</span></div></a>
+<a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" data-media-title="团购套餐海报 · 02" aria-label="放大图片：团购套餐海报 · 02"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" alt="团购套餐海报 · 02" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>团购套餐海报 · 02</h3><span class="card-action">查看大图 ↗</span></div></a></div></section>
+<section class="image-collection"><header class="collection-heading"><h4>房产账号封面</h4><p>交通、配套与户型 · 3张</p><small>点击单张图片放大查看</small></header><div class="collection-grid" data-count="3"><a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" data-media-title="房产账号封面 · 01" aria-label="放大图片：房产账号封面 · 01"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" alt="房产账号封面 · 01" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>房产账号封面 · 01</h3><span class="card-action">查看大图 ↗</span></div></a>
 <a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/房产封面-02.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/房产封面-02.webp" data-media-title="房产账号封面 · 02" aria-label="放大图片：房产账号封面 · 02"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/房产封面-02.webp" alt="房产账号封面 · 02" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>房产账号封面 · 02</h3><span class="card-action">查看大图 ↗</span></div></a>
-<a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" data-media-title="房产账号封面 · 03" aria-label="放大图片：房产账号封面 · 03"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" alt="房产账号封面 · 03" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>房产账号封面 · 03</h3><span class="card-action">查看大图 ↗</span></div></a>
-<a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" data-media-title="周年活动海报" aria-label="放大图片：周年活动海报"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" alt="周年活动海报" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>周年活动海报</h3><span class="card-action">查看大图 ↗</span></div></a></div><h3 class="video-category">互动模型与动画</h3><div class="recent-grid">
+<a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" data-media-title="房产账号封面 · 03" aria-label="放大图片：房产账号封面 · 03"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" alt="房产账号封面 · 03" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>房产账号封面 · 03</h3><span class="card-action">查看大图 ↗</span></div></a></div></section>
+<section class="image-collection"><header class="collection-heading"><h4>周年活动海报</h4><p>活动视觉 · 1张</p><small>点击单张图片放大查看</small></header><div class="collection-grid" data-count="1"><a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" data-media-title="周年活动海报" aria-label="放大图片：周年活动海报"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" alt="周年活动海报" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>周年活动海报</h3><span class="card-action">查看大图 ↗</span></div></a></div></section></div><h3 class="video-category">互动模型与动画</h3><div class="recent-grid">
         <article class="recent-card case-card">
           <a class="recent-media" href="金城澳-作品集资源/近期作品/越王勾践剑-预览.png" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/越王勾践剑-预览.png" data-media-title="越王勾践剑互动模型预览" aria-label="放大图片：越王勾践剑互动模型预览"><img src="金城澳-作品集资源/近期作品/越王勾践剑-预览.png" alt="越王勾践剑互动模型预览" loading="lazy"></a>
           <div class="recent-body">
@@ -1483,6 +1483,13 @@
       themeBtn.textContent = '浅色背景';
     }
   </script>
-  <script src="portfolio-media.js?v=cards-20261022" defer></script>
+  <script>
+    document.querySelectorAll('.plan-fold').forEach((item) => {
+      item.addEventListener('toggle', () => {
+        if (item.open) document.querySelectorAll('.plan-fold').forEach((other) => { if (other !== item) other.open = false; });
+      });
+    });
+  </script>
+  <script src="portfolio-media.js?v=blue-fold-20261022" defer></script>
 </body>
 </html>
