@@ -912,6 +912,13 @@
       background: #fff;
     }
 
+    .video-category { margin: 24px 0 12px; color: var(--brand-deep); font-size: 16px; }
+    .ai-video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0; }
+    .ai-video-grid .video-card { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); align-items: center; }
+    .ai-video-grid .video-frame { height: 260px; }
+    .ai-video-grid .video-body { padding: 14px 12px; }
+    .video-link { display: inline-block; padding: 8px 0; }
+
     .video-frame {
       display: grid;
       place-items: center;
@@ -1046,11 +1053,17 @@
       .recent-card { grid-template-columns: 100px minmax(0,1fr); }
       .recent-body { padding: 12px; }
       .recent-links a { font-size: 12px; padding: 6px 0; }
+      .ai-video-grid .video-card { display: block; }
+      .ai-video-grid .video-frame { height: auto; aspect-ratio: 9 / 16; max-height: 520px; }
       .page p, .page li { font-size: 13px; line-height: 1.75; }
       .page * { min-width: 0; }
     }
 
     @media print {
+      #page5 .video-frame { height: 52mm; }
+      #page5 .ai-video-grid .video-frame { height: 55mm; }
+      #page5 .video-category { margin: 12px 0 8px; }
+      #page5 .video-grid { margin-top: 8px; }
       #page1 .hero { padding-bottom: 5mm; }
       #page1 .stats { margin: 5mm 0 4mm; }
       #page1 .section { margin-top: 4mm; }
@@ -1465,11 +1478,46 @@
       <header class="subhead">
         <div>
           <h2>视频内容作品</h2>
-          <p>竖版短视频 × 快节奏剪辑 × 横版品牌宣传</p>
+          <p>AI辅助剪辑 × 竖版短视频 × 品牌宣传</p>
         </div>
         <div class="name">VIDEO SHOWREEL</div>
       </header>
 
+      <h3 class="video-category" id="ai-editing">AI剪辑</h3>
+      <div class="video-grid ai-video-grid" aria-label="AI辅助剪辑作品">
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls playsinline preload="none" poster="金城澳-作品集资源/封面/AI剪辑-共美设计师口播.jpg" aria-label="AI剪辑：共美设计师口播">
+              <source src="金城澳-作品集资源/视频/AI剪辑-共美设计师口播.mp4" type="video/mp4">
+            </video>
+            <img class="video-poster" src="金城澳-作品集资源/封面/AI剪辑-共美设计师口播.jpg" alt="共美设计师口播成片封面">
+          </div>
+          <div class="video-body">
+            <h3>共美 · 设计师口播</h3>
+            <p>AI辅助整理口播、精剪与字幕制作，结合反馈调整画面和收尾，并完成首帧封面与平台列表裁切适配。</p>
+            <div class="video-spec">67.6秒 · 竖版 · 2026.10</div>
+            <div class="case-tags"><span>口播精剪</span><span>字幕排版</span><span>封面适配</span></div>
+            <a class="video-link" href="金城澳-作品集资源/视频/AI剪辑-共美设计师口播.mp4" target="_blank" rel="noopener">打开成片 ↗</a>
+          </div>
+        </article>
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls playsinline preload="none" poster="金城澳-作品集资源/封面/AI剪辑-知识口播.jpg" aria-label="AI剪辑：中医知识口播">
+              <source src="金城澳-作品集资源/视频/AI剪辑-知识口播.mp4" type="video/mp4">
+            </video>
+            <img class="video-poster" src="金城澳-作品集资源/封面/AI剪辑-知识口播.jpg" alt="中医知识口播剪辑成片封面">
+          </div>
+          <div class="video-body">
+            <h3>中医知识 · 口播剪辑</h3>
+            <p>AI辅助转写与剪辑，完成字幕、重点提示和音量调整；结合复核修正重复姓名条与背景抖动。</p>
+            <div class="video-spec">58.3秒 · 竖版 · 2026.09</div>
+            <div class="case-tags"><span>AI转写</span><span>重点提示</span><span>音画优化</span></div>
+            <a class="video-link" href="金城澳-作品集资源/视频/AI剪辑-知识口播.mp4" target="_blank" rel="noopener">打开成片 ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="video-category">其他视频作品</h3>
       <div class="video-grid">
         <article class="video-card">
           <div class="video-frame">
@@ -1520,7 +1568,7 @@
         </article>
       </div>
 
-      <div class="portfolio-note"><b>说明：</b>以上视频均来自本次提供的案例收集文件夹，用于展示内容形式与制作能力；未在素材中明确的具体岗位分工，不在简历中作独立完成声明。</div>
+      <div class="portfolio-note"><b>说明：</b>AI剪辑栏目展示AI辅助完成并经过人工复核的实际成片，不表示画面由AI生成；其他作品保留原有案例展示。网页版共美视频采用轻量播放副本，原始成片保留。未明确的岗位分工不作独立完成声明。</div>
       <span class="page-label">05 / 05</span>
     </section>
   </main>
