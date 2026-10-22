@@ -1,6 +1,7 @@
 /* One editorial canvas across all five chapters. Print remains separately A4. */
 :root{--accent-soft:#f4e6dc;--warm-rule:#d6cfc1}
 .chapter-kicker{display:none}
+.plan-footer{display:contents}.plan-keywords.mobile-keywords{display:none}
 @media screen{
   .resume{width:min(1040px,calc(100% - 48px));margin:24px auto 64px}
   #page1,#page2,#portfolio,#page4,#page5{width:100%;min-height:0;height:auto;padding:44px 48px;margin:0 0 24px;border:1px solid var(--line);border-radius:3px;box-shadow:0 4px 20px #2b241208}
@@ -56,7 +57,10 @@
   .chapter-kicker{gap:8px;font-size:9px;margin-bottom:24px;letter-spacing:.06em}.chapter-number{flex-basis:24px;height:24px;font-size:15px}.chapter-sign{display:none}
   .hero{grid-template-columns:1fr;gap:18px}.monogram{width:48px;height:48px;font-size:28px}.identity-row{display:block}h1{font-size:40px}.role{font-size:14px;letter-spacing:0}.experience-mark{margin-top:14px}.contacts{font-size:11px;line-height:1.8}.hero{padding-bottom:24px}
   .stat b{font-size:24px}.stat span{font-size:10px}.summary,.job-card li,.history-job li{font-size:13px;line-height:1.9}.job-card{padding:16px}.company{font-size:16px}.project-grid{gap:12px}.subhead h2{font-size:24px}
-  .plan-row{gap:12px;padding:14px}.plan-heading strong{font-size:14px}.plan-original{font-size:12px}.plan-keywords>span{font-size:10px;padding:3px 6px}.plan-heading small{font-size:11px}
+  .plan-list{gap:8px}.plan-row{display:block;padding:12px 14px}.plan-heading strong{font-size:14px;line-height:1.55}.plan-fold summary{grid-template-columns:18px minmax(0,1fr) 24px;gap:8px;align-items:center;min-height:28px}
+  .plan-heading>.plan-keywords{display:none}.plan-fold:not([open]) .plan-heading small{display:none}.plan-heading small{font-size:11px}
+  .plan-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}.plan-footer .mobile-keywords{display:flex;flex:1;gap:4px;margin:0}.plan-keywords>span{font-size:10px;padding:3px 5px}
+  .plan-footer .plan-original{flex-shrink:0;min-width:86px;min-height:44px;margin:0;padding:6px 10px;gap:5px;font-size:11px;border-color:#b7ad9b;background:transparent;color:var(--ink)}.plan-footer .plan-original:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
   .image-collection{padding:20px 0}.portfolio-note{font-size:10px}.collection-grid .image-card-body{padding:10px 0}
 }
 @media(prefers-reduced-motion:reduce){.plan-toggle{transition:none}}
