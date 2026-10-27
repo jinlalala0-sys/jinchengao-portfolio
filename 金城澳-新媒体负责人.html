@@ -1295,7 +1295,7 @@
       </nav>
 
       <details class="section plan-library" id="strategy-plans">
-        <summary class="plan-library-summary"><h2 class="section-title">策略与方案</h2><span class="plan-library-count">11份方案</span><span class="plan-library-action">展开目录 <span aria-hidden="true">＋</span></span></summary>
+        <summary class="plan-library-summary"><h2 class="section-title">策略与方案</h2><span class="plan-library-count">11份方案</span><span class="plan-library-action"><span class="plan-library-label">展开目录</span><span class="plan-library-symbol" aria-hidden="true">＋</span></span></summary>
         <p class="case-section-hint">点标题展开，点「查看原文」阅读完整方案。</p>
         <div class="plan-list">
           <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">01</span><span class="plan-heading"><strong>共美全渠道获客方案</strong><small>品牌号与个人IP协同，线上内容连接线下合作</small><span class="plan-keywords"><span>双账号运营</span><span>全渠道获客</span><span>企微承接</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>规划共美品牌号与夏老师个人IP的内容分工，结合短视频、图文、直播试点、老客户转介绍和异业合作，设计企业微信统一承接与客户转交机制。案例展示策划方案，不将预期效果表述为已实现业绩。</p></div></details><div class="plan-footer"><span class="plan-keywords mobile-keywords"><span>双账号运营</span><span>全渠道获客</span><span>企微承接</span></span><a class="plan-original" href="金城澳-作品集资源/方案/共美-全渠道获客方案-20261012.html" target="_blank" rel="noopener" aria-label="查看原文：共美全渠道获客方案">查看原文 <span aria-hidden="true">↗</span></a></div></article>
@@ -1450,6 +1450,21 @@
     }
 
     document.getElementById('printBtn').addEventListener('click', () => window.print());
+    let printLibraryState = null;
+    window.addEventListener('beforeprint', () => {
+      if (printLibraryState) return;
+      printLibraryState = [...document.querySelectorAll('.plan-library')].map(item => [item, item.open]);
+      printLibraryState.forEach(([item]) => { item.open = true; });
+    });
+    window.addEventListener('afterprint', () => {
+      printLibraryState?.forEach(([item, open]) => { item.open = open; });
+      printLibraryState = null;
+    });
+    document.querySelectorAll('.plan-library').forEach(item => {
+      item.addEventListener('toggle', () => {
+        item.querySelector('.plan-library-label').textContent = item.open ? '收起目录' : '展开目录';
+      });
+    });
 
     document.getElementById('copyBtn').addEventListener('click', async () => {
       const value = '金城澳｜18712156281｜微信同号｜合肥';
