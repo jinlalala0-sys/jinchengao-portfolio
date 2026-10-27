@@ -15,6 +15,11 @@
     <div class="portfolio-media-stage" tabindex="0" role="region" aria-label="作品预览"></div>
     <div class="portfolio-media-footer">
       <p class="portfolio-media-status" role="status" aria-live="polite"></p>
+      <div class="portfolio-gallery-controls" hidden aria-label="图集翻页">
+        <button type="button" class="portfolio-gallery-prev" aria-label="上一张图片">←</button>
+        <span class="portfolio-gallery-count" aria-live="polite"></span>
+        <button type="button" class="portfolio-gallery-next" aria-label="下一张图片">→</button>
+      </div>
       <div class="portfolio-media-actions">
         <button type="button" class="portfolio-media-zoom" aria-pressed="false">查看原尺寸</button>
         <a class="portfolio-media-original" target="_blank" rel="noopener">打开原文件 ↗</a>
@@ -28,12 +33,19 @@
   const status = dialog.querySelector('.portfolio-media-status');
   const zoomButton = dialog.querySelector('.portfolio-media-zoom');
   const original = dialog.querySelector('.portfolio-media-original');
+  const galleryControls = dialog.querySelector('.portfolio-gallery-controls');
+  const galleryPrevious = dialog.querySelector('.portfolio-gallery-prev');
+  const galleryNext = dialog.querySelector('.portfolio-gallery-next');
+  const galleryCount = dialog.querySelector('.portfolio-gallery-count');
   const lockedProperties = ['position', 'top', 'left', 'right', 'width', 'overflow'];
   let trigger = null;
   let media = null;
   let scrollState = null;
   let activeSession = 0;
   let backdropPressed = false;
+  let gallery = [];
+  let galleryIndex = 0;
+  let swipeStart = null;
 
   function lockPage() {
     scrollState = {
@@ -72,6 +84,8 @@
     zoomButton.setAttribute('aria-pressed', 'false');
     zoomButton.textContent = '查看原尺寸';
     original.removeAttribute('href');
+    gallery = [];
+    galleryControls.hidden = true;
     releasePage();
     if (trigger?.isConnected) trigger.focus({ preventScroll: true });
     trigger = null;
@@ -83,20 +97,42 @@
     cleanup();
   }
 
-  function open(triggerElement, source) {
+  function open(triggerElement, source, switchingImage = false) {
     const session = ++activeSession;
     const isVideo = triggerElement.dataset.mediaKind === 'video';
-    trigger = triggerElement;
+    const isInteractive = triggerElement.dataset.mediaKind === 'interactive';
+    if (!switchingImage) {
+      trigger = triggerElement;
+      const album = !isVideo && !isInteractive && triggerElement.closest('.image-collection');
+      gallery = album ? [...album.querySelectorAll('a[data-media-kind="image"]')] : [];
+      galleryIndex = Math.max(0, gallery.indexOf(triggerElement));
+    }
+    galleryControls.hidden = gallery.length < 2;
+    galleryCount.textContent = `${galleryIndex + 1} / ${gallery.length}`;
+    galleryPrevious.disabled = galleryIndex === 0;
+    galleryNext.disabled = galleryIndex >= gallery.length - 1;
+    stage.classList.remove('is-zoomed');
+    stage.classList.toggle('is-interactive', isInteractive);
+    zoomButton.setAttribute('aria-pressed', 'false');
+    zoomButton.textContent = '查看原尺寸';
     title.textContent = triggerElement.dataset.mediaTitle || (isVideo ? '视频作品' : '图片作品');
     original.href = source;
-    zoomButton.hidden = isVideo;
+    zoomButton.hidden = isVideo || isInteractive;
     zoomButton.disabled = true;
-    status.textContent = isVideo ? '正在加载视频…' : '正在加载图片…';
+    status.textContent = isInteractive ? '正在加载互动作品…' : isVideo ? '正在加载视频…' : '正在加载图片…';
     stage.setAttribute('aria-busy', 'true');
     stage.scrollTo(0, 0);
-    media = document.createElement(isVideo ? 'video' : 'img');
+    media = document.createElement(isInteractive ? 'iframe' : isVideo ? 'video' : 'img');
     const currentMedia = media;
-    if (isVideo) {
+    if (isInteractive) {
+      currentMedia.title = title.textContent;
+      currentMedia.allowFullscreen = true;
+      currentMedia.addEventListener('load', () => {
+        if (session !== activeSession) return;
+        stage.removeAttribute('aria-busy');
+        status.textContent = '可直接操作作品；也可在独立页面中打开。';
+      });
+    } else if (isVideo) {
       currentMedia.controls = true;
       currentMedia.playsInline = true;
       currentMedia.preload = 'metadata';
@@ -116,7 +152,7 @@
         if (session !== activeSession) return;
         stage.removeAttribute('aria-busy');
         zoomButton.disabled = false;
-        status.textContent = '完整图片 · 可切换原尺寸查看细节。';
+        status.textContent = gallery.length > 1 ? '左右切换或滑动，查看整套图片。' : '完整图片 · 可切换原尺寸查看细节。';
       });
     }
     currentMedia.addEventListener('error', () => {
@@ -126,6 +162,7 @@
     });
     currentMedia.src = source;
     stage.replaceChildren(currentMedia);
+    if (switchingImage) return true;
     lockPage();
     try {
       dialog.showModal();
@@ -143,10 +180,43 @@
     return true;
   }
 
+  function changeImage(direction) {
+    const nextIndex = galleryIndex + direction;
+    if (nextIndex < 0 || nextIndex >= gallery.length) return;
+    const item = gallery[nextIndex];
+    let source;
+    try {
+      source = new URL(item.dataset.mediaSrc, document.baseURI);
+      if (!['http:', 'https:', 'file:', 'blob:'].includes(source.protocol)) return;
+    } catch (error) { return; }
+    galleryIndex = nextIndex;
+    open(item, source.href, true);
+    stage.focus({ preventScroll: true });
+  }
+  galleryPrevious.addEventListener('click', () => changeImage(-1));
+  galleryNext.addEventListener('click', () => changeImage(1));
+  dialog.addEventListener('keydown', event => {
+    if (gallery.length < 2 || stage.classList.contains('is-zoomed')) return;
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      changeImage(event.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+  stage.addEventListener('pointerdown', event => {
+    swipeStart = event.pointerType === 'touch' && gallery.length > 1 && !stage.classList.contains('is-zoomed') ? { x: event.clientX, y: event.clientY } : null;
+  });
+  stage.addEventListener('pointerup', event => {
+    if (!swipeStart) return;
+    const dx = event.clientX - swipeStart.x, dy = event.clientY - swipeStart.y;
+    swipeStart = null;
+    if (Math.abs(dx) > 48 && Math.abs(dy) < Math.abs(dx) * .6) changeImage(dx < 0 ? 1 : -1);
+  });
+  stage.addEventListener('pointercancel', () => { swipeStart = null; });
+
   document.addEventListener('click', event => {
     const target = event.target instanceof Element ? event.target.closest('a[data-media-kind], button[data-media-kind]') : null;
     if (!target || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    if (!['image', 'video'].includes(target.dataset.mediaKind) || !target.dataset.mediaSrc) return;
+    if (!['image', 'video', 'interactive'].includes(target.dataset.mediaKind) || !target.dataset.mediaSrc) return;
     let source;
     try {
       source = new URL(target.dataset.mediaSrc, document.baseURI);
@@ -177,4 +247,16 @@
     status.textContent = zoomed ? '原尺寸 · 可滚动或滑动查看图片细节。' : '完整图片 · 可切换原尺寸查看细节。';
     stage.scrollTo(0, 0);
   });
+  document.querySelectorAll('.image-collection').forEach(album => {
+    const items = album.querySelectorAll('.image-card');
+    const cover = items[0]?.querySelector('.card-cover');
+    if (!cover) return;
+    const badge = document.createElement('span');
+    badge.className = 'album-count';
+    badge.textContent = `图集 · ${items.length}张`;
+    cover.append(badge);
+    const name = album.querySelector('h4')?.textContent || '图片作品';
+    items[0].setAttribute('aria-label', `打开图集：${name}，共${items.length}张`);
+  });
+  document.body.classList.add('portfolio-gallery-ready');
 })();

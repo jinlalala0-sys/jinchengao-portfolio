@@ -1091,9 +1091,9 @@
       .video-poster { display: block; }
     }
   </style>
-  <link rel="stylesheet" href="portfolio-cards.css?v=compact-20261022">
-  <link rel="stylesheet" href="portfolio-media.css?v=compact-20261022">
-  <link rel="stylesheet" href="portfolio-editorial.css?v=compact-20261022">
+  <link rel="stylesheet" href="portfolio-cards.css?v=albums-20261027">
+  <link rel="stylesheet" href="portfolio-media.css?v=albums-20261027">
+  <link rel="stylesheet" href="portfolio-editorial.css?v=albums-20261027">
 </head>
 <body>
   <nav class="toolbar" aria-label="简历工具栏">
@@ -1103,8 +1103,8 @@
     <a class="ai-entry" href="#ai-editing">AI剪辑<span class="ai-count">2</span></a>
     <button id="moreTools" type="button" aria-expanded="false" aria-controls="extraTools">更多</button>
     <div class="toolbar-extra" id="extraTools">
-    <button class="primary" id="printBtn" type="button">打印 / 保存 PDF</button>
-    <a href="金城澳-新媒体负责人.pdf" download>下载 PDF</a>
+    <a class="primary" href="金城澳-新媒体负责人.pdf?v=albums-20261027" download title="含章节书签、页内导航及作品链接">下载互动 PDF</a>
+    <button id="printBtn" type="button">打印纸质版</button>
     <button id="focusBtn" type="button" aria-pressed="false">突出当前经历</button>
     <button id="themeBtn" type="button" aria-pressed="false">深色背景</button>
     </div>
@@ -1267,7 +1267,6 @@
         </section>
       </div>
 
-      <div class="closing"><b>工作特点：</b>既能完成内容定位、文案策划与脚本表达，也能下场把拍摄、剪辑和上线推进完成；面对多个商户和IP项目，习惯用节点、数据与验收标准管理进度，减少“只产内容、不出结果”的断层。</div>
       <span class="page-label">02 / 05</span>
     </section>
 
@@ -1290,13 +1289,14 @@
 
       <nav class="portfolio-nav" aria-label="案例导航">
         <button type="button" data-jump="ai-editing" class="ai-entry">AI剪辑 · 2条</button>
-        <button type="button" data-jump="portfolio">方案原文 · 11份</button>
+        <button type="button" data-jump="strategy-plans">方案原文 · 11份</button>
         <button type="button" data-jump="page4">视觉与互动</button>
         <button type="button" data-jump="page5">视频作品</button>
       </nav>
 
-      <section class="section">
-        <h2 class="section-title">策略与方案</h2><p class="case-section-hint">点标题展开，点「查看原文」阅读完整方案。</p>
+      <details class="section plan-library" id="strategy-plans">
+        <summary class="plan-library-summary"><h2 class="section-title">策略与方案</h2><span class="plan-library-count">11份方案</span><span class="plan-library-action">展开目录 <span aria-hidden="true">＋</span></span></summary>
+        <p class="case-section-hint">点标题展开，点「查看原文」阅读完整方案。</p>
         <div class="plan-list">
           <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">01</span><span class="plan-heading"><strong>共美全渠道获客方案</strong><small>品牌号与个人IP协同，线上内容连接线下合作</small><span class="plan-keywords"><span>双账号运营</span><span>全渠道获客</span><span>企微承接</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>规划共美品牌号与夏老师个人IP的内容分工，结合短视频、图文、直播试点、老客户转介绍和异业合作，设计企业微信统一承接与客户转交机制。案例展示策划方案，不将预期效果表述为已实现业绩。</p></div></details><div class="plan-footer"><span class="plan-keywords mobile-keywords"><span>双账号运营</span><span>全渠道获客</span><span>企微承接</span></span><a class="plan-original" href="金城澳-作品集资源/方案/共美-全渠道获客方案-20261012.html" target="_blank" rel="noopener" aria-label="查看原文：共美全渠道获客方案">查看原文 <span aria-hidden="true">↗</span></a></div></article>
           <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">02</span><span class="plan-heading"><strong>科大幼图 · 乐可AI线上运营方案</strong><small>教育AI品牌的四平台内容与活动传播规划</small><span class="plan-keywords"><span>教育AI</span><span>四平台运营</span><span>品牌内容</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>围绕抖音、视频号、小红书和公众号，规划品牌介绍、师园需求解答、服务现场三类内容，覆盖短视频、图文及活动前中后宣传，明确素材收集、制作审核与发布流程，以及双方服务边界。</p></div></details><div class="plan-footer"><span class="plan-keywords mobile-keywords"><span>教育AI</span><span>四平台运营</span><span>品牌内容</span></span><a class="plan-original" href="金城澳-作品集资源/方案/科大幼图-乐可AI线上运营方案-20261014.html" target="_blank" rel="noopener" aria-label="查看原文：科大幼图 · 乐可AI线上运营方案">查看原文 <span aria-hidden="true">↗</span></a></div></article>
@@ -1318,9 +1318,7 @@
 
           <article class="plan-row"><details class="plan-fold" name="portfolio-plans"><summary><span class="plan-index">11</span><span class="plan-heading"><strong>手工水饺品牌三合一运营方案</strong><small>创始人IP、招商与门店运营协同</small><span class="plan-keywords"><span>创始人IP</span><span>招商获客</span><span>全域运营</span></span></span><span class="plan-toggle" aria-hidden="true">＋</span></summary><div class="plan-description"><p>将创始人IP、招商获客与线上门店运营合为一套方案，包含双账号规划、内容结构、直播策略与三阶段执行计划。</p></div></details><div class="plan-footer"><span class="plan-keywords mobile-keywords"><span>创始人IP</span><span>招商获客</span><span>全域运营</span></span><a class="plan-original" href="金城澳-作品集资源/方案/手工水饺品牌三合一运营方案.html" target="_blank" rel="noopener" aria-label="查看原文：手工水饺品牌三合一运营方案">查看原文 <span aria-hidden="true">↗</span></a></div></article>
         </div>
-      </section>
-
-      <div class="portfolio-note"><b>能力体现：</b>能够把客户需求整理为定位、人设、内容、平台、直播、投流、数据和交付节点，并形成可直接沟通与执行的完整方案。方案内的目标指标均按“规划目标”呈现，不作为既有成绩。</div>
+      </details>
       <span class="page-label">03 / 05</span>
     </section>
 
@@ -1334,34 +1332,44 @@
         <div class="name">VISUAL · INTERACTIVE</div>
       </header>
 
-      <h3 class="video-category" id="image-cases">AI美工 · 图片作品</h3><p class="case-section-hint">按项目整理为3组图片；每张都可单独放大并查看原尺寸。</p><div class="image-collections"><section class="image-collection"><header class="collection-heading"><h4>团购套餐海报</h4><p>同系列套餐图 · 2张</p><small>点击单张图片放大查看</small></header><div class="collection-grid" data-count="2"><a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" data-media-title="团购套餐海报 · 01" aria-label="放大图片：团购套餐海报 · 01"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" alt="团购套餐海报 · 01" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>团购套餐海报 · 01</h3><span class="card-action">查看大图 ↗</span></div></a>
+      <h3 class="video-category" id="image-cases">AI美工 · 图片作品</h3><p class="case-section-hint">3组图集 · 点击封面查看整套图片。</p><div class="image-collections"><section class="image-collection"><header class="collection-heading"><h4>团购套餐海报</h4><p>同系列套餐图 · 2张</p><small>点击单张图片放大查看</small></header><div class="collection-grid" data-count="2"><a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" data-media-title="团购套餐海报 · 01" aria-label="放大图片：团购套餐海报 · 01"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-01.webp" alt="团购套餐海报 · 01" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>团购套餐海报 · 01</h3><span class="card-action">查看大图 ↗</span></div></a>
 <a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" data-media-title="团购套餐海报 · 02" aria-label="放大图片：团购套餐海报 · 02"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/团购套餐-02.webp" alt="团购套餐海报 · 02" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>团购套餐海报 · 02</h3><span class="card-action">查看大图 ↗</span></div></a></div></section>
 <section class="image-collection"><header class="collection-heading"><h4>房产账号封面</h4><p>交通、配套与户型 · 3张</p><small>点击单张图片放大查看</small></header><div class="collection-grid" data-count="3"><a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" data-media-title="房产账号封面 · 01" aria-label="放大图片：房产账号封面 · 01"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/房产封面-01.webp" alt="房产账号封面 · 01" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>房产账号封面 · 01</h3><span class="card-action">查看大图 ↗</span></div></a>
 <a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/房产封面-02.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/房产封面-02.webp" data-media-title="房产账号封面 · 02" aria-label="放大图片：房产账号封面 · 02"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/房产封面-02.webp" alt="房产账号封面 · 02" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>房产账号封面 · 02</h3><span class="card-action">查看大图 ↗</span></div></a>
 <a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" data-media-title="房产账号封面 · 03" aria-label="放大图片：房产账号封面 · 03"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/房产封面-03.webp" alt="房产账号封面 · 03" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>房产账号封面 · 03</h3><span class="card-action">查看大图 ↗</span></div></a></div></section>
 <section class="image-collection"><header class="collection-heading"><h4>周年活动海报</h4><p>活动视觉 · 1张</p><small>点击单张图片放大查看</small></header><div class="collection-grid" data-count="1"><a class="case-card image-card" href="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" data-media-title="周年活动海报" aria-label="放大图片：周年活动海报"><div class="card-cover"><img src="金城澳-作品集资源/近期作品/AI美工图/周年海报.webp" alt="周年活动海报" loading="lazy"><span class="card-type">AI美工</span></div><div class="image-card-body"><h3>周年活动海报</h3><span class="card-action">查看大图 ↗</span></div></a></div></section></div><h3 class="video-category">互动模型与动画</h3><div class="recent-grid">
         <article class="recent-card case-card">
-          <a class="recent-media" href="金城澳-作品集资源/近期作品/越王勾践剑-预览.png" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/越王勾践剑-预览.png" data-media-title="越王勾践剑互动模型预览" aria-label="放大图片：越王勾践剑互动模型预览"><img src="金城澳-作品集资源/近期作品/越王勾践剑-预览.png" alt="越王勾践剑互动模型预览" loading="lazy"></a>
+          <a class="recent-media" href="金城澳-作品集资源/近期作品/越王勾践剑-互动模型.html" data-media-kind="interactive" data-media-src="金城澳-作品集资源/近期作品/越王勾践剑-互动模型.html" data-media-title="越王勾践剑 · 互动模型" aria-label="放大体验：越王勾践剑互动模型"><img src="金城澳-作品集资源/近期作品/越王勾践剑-预览.png" alt="越王勾践剑互动模型预览" loading="lazy"></a>
           <div class="recent-body">
             <h3>越王勾践剑 · 互动模型</h3>
             <p>基于多角度资料重建展示模型，支持自由旋转、滚轮缩放、分件爆炸、自动旋转与视角保存。</p>
             <div class="case-tags"><span>3D模型</span><span>网页交互</span><span>文化展示</span></div>
-            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/越王勾践剑-互动模型.html" target="_blank" rel="noopener">进入互动模型 ↗</a></div>
+            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/越王勾践剑-互动模型.html" data-media-kind="interactive" data-media-src="金城澳-作品集资源/近期作品/越王勾践剑-互动模型.html" data-media-title="越王勾践剑 · 互动模型">放大体验 ↗</a></div>
           </div>
         </article>
 
         <article class="recent-card case-card">
-          <a class="recent-media" href="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画-封面.png" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画-封面.png" data-media-title="地球与地图路线动画预览" aria-label="放大图片：地球与地图路线动画预览"><img src="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画-封面.png" alt="地球与地图路线动画预览" loading="lazy"></a>
+          <a class="recent-media" href="金城澳-作品集资源/近期作品/地球轨迹动画.html" data-media-kind="interactive" data-media-src="金城澳-作品集资源/近期作品/地球轨迹动画.html" data-media-title="地球轨迹 · 全球连接动画" aria-label="放大体验：地球轨迹动画"><img src="金城澳-作品集资源/近期作品/地球轨迹动画-封面.jpg" alt="真实地球与城市飞线动画预览" loading="lazy"></a>
           <div class="recent-body">
-            <h3>地球轨迹与地图路线动画</h3>
-            <p>把地点、路径和节点转为动态视觉叙事，适用于文旅路线、跨区域连接及竖版信息表达。</p>
-            <div class="case-tags"><span>地球动效</span><span>路线动画</span><span>信息可视化</span></div>
-            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/地球轨迹动画.html" target="_blank" rel="noopener">打开地球动画 ↗</a><a href="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画.mp4" data-media-title="枞阳沿江路线动画">播放路线动画 ↗</a></div>
+            <h3>地球轨迹 · 全球连接</h3>
+            <p>真实地球纹理、城市节点与动态飞线，支持旋转、缩放和视角复位。</p>
+            <div class="case-tags"><span>地球动效</span><span>3D交互</span></div>
+            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/地球轨迹动画.html" data-media-kind="interactive" data-media-src="金城澳-作品集资源/近期作品/地球轨迹动画.html" data-media-title="地球轨迹 · 全球连接动画">放大体验 ↗</a></div>
           </div>
         </article>
 
         <article class="recent-card case-card">
-          <a class="recent-media" href="金城澳-作品集资源/近期作品/地图动画/瑞文里房产动画-封面.jpg" data-media-kind="image" data-media-src="金城澳-作品集资源/近期作品/地图动画/瑞文里房产动画-封面.jpg" data-media-title="瑞文里房产区位动画成片预览" aria-label="放大图片：瑞文里房产区位动画成片预览"><img src="金城澳-作品集资源/近期作品/地图动画/瑞文里房产动画-封面.jpg" alt="瑞文里房产区位动画成片预览" loading="lazy"></a>
+          <a class="recent-media" href="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画.mp4" data-media-title="枞阳沿江路线动画" aria-label="放大播放：枞阳沿江路线动画"><img src="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画-封面.png" alt="枞阳沿江路线动画预览" loading="lazy"></a>
+          <div class="recent-body">
+            <h3>枞阳沿江 · 地图路线</h3>
+            <p>用路线推进、地名节点和动态标注，呈现沿江行程与区位信息。</p>
+            <div class="case-tags"><span>路线动画</span><span>信息可视化</span></div>
+            <div class="recent-links"><a href="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/近期作品/地图动画/枞阳沿江路线动画.mp4" data-media-title="枞阳沿江路线动画">放大观看 ↗</a></div>
+          </div>
+        </article>
+
+        <article class="recent-card case-card">
+          <a class="recent-media" href="金城澳-作品集资源/近期作品/地图动画/瑞文里-阜石路向东-9秒.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/近期作品/地图动画/瑞文里-阜石路向东-9秒.mp4" data-media-title="瑞文里房产区位动画" aria-label="放大播放：瑞文里房产区位动画"><img src="金城澳-作品集资源/近期作品/地图动画/瑞文里房产动画-封面.jpg" alt="瑞文里房产区位动画成片预览" loading="lazy"></a>
           <div class="recent-body">
             <h3>瑞文里 · 房产区位动画成片</h3>
             <p>以阜石路向东为主线，用道路节点、环路关系和车辆推进，完成9秒竖版房产交通区位动画。</p>
@@ -1371,7 +1379,6 @@
         </article>
       </div>
 
-      <div class="portfolio-note"><b>能力体现：</b>除常规内容运营外，可将AI视觉、网页互动和动画表达纳入新媒体项目交付，用更直观的形式说明产品、路线、空间与文化内容。</div>
       <span class="page-label">04 / 05</span>
     </section>
 
@@ -1387,45 +1394,44 @@
 
       <h3 class="video-category" id="ai-editing">AI剪辑 <span class="section-count">2条成片</span></h3><p class="case-section-hint">AI辅助剪辑，不是AI生成画面。点击卡片，在大窗口观看。</p>
       <div class="video-grid ai-video-grid" aria-label="AI辅助剪辑作品">
-        <a class="case-card video-card ai-video-card" href="金城澳-作品集资源/视频/AI剪辑-共美设计师口播.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/AI剪辑-共美设计师口播.mp4" data-media-title="共美 · 设计师口播" data-media-poster="金城澳-作品集资源/封面/AI剪辑-共美设计师口播.jpg" aria-label="放大播放：共美 · 设计师口播"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/AI剪辑-共美设计师口播.jpg" alt="共美 · 设计师口播封面" loading="lazy"><span class="card-type">AI辅助剪辑</span><span class="play-mark" aria-hidden="true">▶</span><span class="cover-caption">点击放大播放</span></div><div class="video-body">
+        <a class="case-card video-card ai-video-card" href="金城澳-作品集资源/视频/AI剪辑-共美设计师口播.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/AI剪辑-共美设计师口播.mp4" data-media-title="共美 · 设计师口播" data-media-poster="金城澳-作品集资源/封面/AI剪辑-共美设计师口播.jpg" aria-label="放大播放：共美 · 设计师口播"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/AI剪辑-共美设计师口播.jpg" alt="共美 · 设计师口播封面" loading="lazy"><span class="card-type">AI辅助剪辑</span><span class="play-mark" aria-hidden="true">▶</span><span class="video-watch">放大观看 <span aria-hidden="true">↗</span></span></div><div class="video-body">
             <h3>共美 · 设计师口播</h3>
             <p>AI辅助整理口播、精剪与字幕制作，结合反馈调整画面和收尾，并完成首帧封面与平台列表裁切适配。</p>
             <div class="video-spec">67.6秒 · 竖版 · 2026.10</div>
             <div class="case-tags"><span>口播精剪</span><span>字幕排版</span><span>封面适配</span></div>
-            <span class="card-action">放大观看 <span aria-hidden="true">↗</span></span></div></a>
-        <a class="case-card video-card ai-video-card" href="金城澳-作品集资源/视频/AI剪辑-知识口播.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/AI剪辑-知识口播.mp4" data-media-title="中医知识 · 口播剪辑" data-media-poster="金城澳-作品集资源/封面/AI剪辑-知识口播.jpg" aria-label="放大播放：中医知识 · 口播剪辑"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/AI剪辑-知识口播.jpg" alt="中医知识 · 口播剪辑封面" loading="lazy"><span class="card-type">AI辅助剪辑</span><span class="play-mark" aria-hidden="true">▶</span><span class="cover-caption">点击放大播放</span></div><div class="video-body">
+            </div></a>
+        <a class="case-card video-card ai-video-card" href="金城澳-作品集资源/视频/AI剪辑-知识口播.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/AI剪辑-知识口播.mp4" data-media-title="中医知识 · 口播剪辑" data-media-poster="金城澳-作品集资源/封面/AI剪辑-知识口播.jpg" aria-label="放大播放：中医知识 · 口播剪辑"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/AI剪辑-知识口播.jpg" alt="中医知识 · 口播剪辑封面" loading="lazy"><span class="card-type">AI辅助剪辑</span><span class="play-mark" aria-hidden="true">▶</span><span class="video-watch">放大观看 <span aria-hidden="true">↗</span></span></div><div class="video-body">
             <h3>中医知识 · 口播剪辑</h3>
             <p>AI辅助转写与剪辑，完成字幕、重点提示和音量调整；结合复核修正重复姓名条与背景抖动。</p>
             <div class="video-spec">58.3秒 · 竖版 · 2026.09</div>
             <div class="case-tags"><span>AI转写</span><span>重点提示</span><span>音画优化</span></div>
-            <span class="card-action">放大观看 <span aria-hidden="true">↗</span></span></div></a>
+            </div></a>
       </div>
 
       <h3 class="video-category">其他视频作品</h3>
       <div class="video-grid">
-        <a class="case-card video-card" href="金城澳-作品集资源/视频/汽车快闪.m4v" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/汽车快闪.m4v" data-media-title="汽车快闪" data-media-poster="金城澳-作品集资源/封面/汽车快闪.png" aria-label="放大播放：汽车快闪"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/汽车快闪.png" alt="汽车快闪封面" loading="lazy"><span class="card-type">视频作品</span><span class="play-mark" aria-hidden="true">▶</span><span class="cover-caption">点击放大播放</span></div><div class="video-body">
+        <a class="case-card video-card" href="金城澳-作品集资源/视频/汽车快闪.m4v" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/汽车快闪.m4v" data-media-title="汽车快闪" data-media-poster="金城澳-作品集资源/封面/汽车快闪.png" aria-label="放大播放：汽车快闪"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/汽车快闪.png" alt="汽车快闪封面" loading="lazy"><span class="card-type">视频作品</span><span class="play-mark" aria-hidden="true">▶</span><span class="video-watch">放大观看 <span aria-hidden="true">↗</span></span></div><div class="video-body">
             <h3>汽车快闪</h3>
             <p>围绕车型外观与车膜色彩进行竖版快闪表达，通过大字标题、节奏切换和产品特写强化视觉记忆。</p>
             <div class="video-spec">17.3秒 · 1080×1920 · 竖版</div>
             <div class="case-tags"><span>产品展示</span><span>节奏剪辑</span></div>
-            <span class="card-action">放大观看 <span aria-hidden="true">↗</span></span></div></a>
+            </div></a>
 
-        <a class="case-card video-card" href="金城澳-作品集资源/视频/炫酷蛋包饭.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/炫酷蛋包饭.mp4" data-media-title="炫酷蛋包饭" data-media-poster="金城澳-作品集资源/封面/炫酷蛋包饭.png" aria-label="放大播放：炫酷蛋包饭"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/炫酷蛋包饭.png" alt="炫酷蛋包饭封面" loading="lazy"><span class="card-type">视频作品</span><span class="play-mark" aria-hidden="true">▶</span><span class="cover-caption">点击放大播放</span></div><div class="video-body">
+        <a class="case-card video-card" href="金城澳-作品集资源/视频/炫酷蛋包饭.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/炫酷蛋包饭.mp4" data-media-title="炫酷蛋包饭" data-media-poster="金城澳-作品集资源/封面/炫酷蛋包饭.png" aria-label="放大播放：炫酷蛋包饭"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/炫酷蛋包饭.png" alt="炫酷蛋包饭封面" loading="lazy"><span class="card-type">视频作品</span><span class="play-mark" aria-hidden="true">▶</span><span class="video-watch">放大观看 <span aria-hidden="true">↗</span></span></div><div class="video-body">
             <h3>炫酷蛋包饭</h3>
             <p>以制作过程和食物细节为核心的竖版美食短片，突出步骤变化、近景质感和短时间内的信息密度。</p>
             <div class="video-spec">10.2秒 · 1080×1920 · 竖版</div>
             <div class="case-tags"><span>美食内容</span><span>过程特写</span></div>
-            <span class="card-action">放大观看 <span aria-hidden="true">↗</span></span></div></a>
+            </div></a>
 
-        <a class="case-card video-card" href="金城澳-作品集资源/视频/朱光玉宣传片.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/朱光玉宣传片.mp4" data-media-title="朱光玉宣传片" data-media-poster="金城澳-作品集资源/封面/朱光玉宣传片.png" aria-label="放大播放：朱光玉宣传片"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/朱光玉宣传片.png" alt="朱光玉宣传片封面" loading="lazy"><span class="card-type">视频作品</span><span class="play-mark" aria-hidden="true">▶</span><span class="cover-caption">点击放大播放</span></div><div class="video-body">
+        <a class="case-card video-card" href="金城澳-作品集资源/视频/朱光玉宣传片.mp4" data-media-kind="video" data-media-src="金城澳-作品集资源/视频/朱光玉宣传片.mp4" data-media-title="朱光玉宣传片" data-media-poster="金城澳-作品集资源/封面/朱光玉宣传片.png" aria-label="放大播放：朱光玉宣传片"><div class="card-cover video-cover"><img src="金城澳-作品集资源/封面/朱光玉宣传片.png" alt="朱光玉宣传片封面" loading="lazy"><span class="card-type">视频作品</span><span class="play-mark" aria-hidden="true">▶</span><span class="video-watch">放大观看 <span aria-hidden="true">↗</span></span></div><div class="video-body">
             <h3>朱光玉宣传片</h3>
             <p>横版品牌宣传影像，以餐饮品牌氛围和门店形象为主要表达，适用于品牌介绍、门店展示及传播场景。</p>
             <div class="video-spec">46.4秒 · 2560×1440 · 横版</div>
             <div class="case-tags"><span>品牌宣传</span><span>横版影像</span></div>
-            <span class="card-action">放大观看 <span aria-hidden="true">↗</span></span></div></a>
+            </div></a>
       </div>
 
-      <div class="portfolio-note"><b>说明：</b>AI剪辑栏目展示AI辅助完成并经过人工复核的实际成片，不表示画面由AI生成；其他作品保留原有案例展示。网页版共美视频采用轻量播放副本，原始成片保留。未明确的岗位分工不作独立完成声明。</div>
       <span class="page-label">05 / 05</span>
     </section>
   </main>
@@ -1478,7 +1484,10 @@
     document.querySelectorAll('[data-jump]').forEach((button) => {
       button.addEventListener('click', () => {
         const target = document.getElementById(button.dataset.jump);
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (target) {
+          if (target instanceof HTMLDetailsElement) target.open = true;
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
     });
 
@@ -1496,6 +1505,6 @@
       });
     });
   </script>
-  <script src="portfolio-media.js?v=compact-20261022" defer></script>
+  <script src="portfolio-media.js?v=albums-20261027" defer></script>
 </body>
 </html>
