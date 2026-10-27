@@ -248,6 +248,7 @@
     stage.scrollTo(0, 0);
   });
   document.querySelectorAll('.image-collection').forEach(album => {
+    if (!album.dataset.galleryId) album.dataset.galleryId = album.querySelector('h4')?.textContent.trim() || 'images';
     const items = album.querySelectorAll('.image-card');
     const cover = items[0]?.querySelector('.card-cover');
     if (!cover) return;
@@ -259,4 +260,10 @@
     items[0].setAttribute('aria-label', `打开图集：${name}，共${items.length}张`);
   });
   document.body.classList.add('portfolio-gallery-ready');
+  const requestedAlbum = new URL(window.location.href).searchParams.get('album');
+  if (requestedAlbum) {
+    const album = [...document.querySelectorAll('.image-collection')].find(item => item.dataset.galleryId === requestedAlbum);
+    const first = album?.querySelector('a[data-media-kind="image"]');
+    if (first) open(first, new URL(first.dataset.mediaSrc, document.baseURI).href);
+  }
 })();
