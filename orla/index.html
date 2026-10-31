@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="ORLA 金陈城｜展台与活动视觉设计师、美术指导。教育与任职履历、设计工具及三维视觉作品。">
+  <meta property="og:title" content="ORLA 金陈城｜简历与三维美指作品集">
+  <meta property="og:description" content="展台与活动视觉设计。点击浏览项目、展开详情、放大作品。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jinlalala0-sys.github.io/jinchengao-portfolio/orla/">
+  <meta property="og:image" content="https://jinlalala0-sys.github.io/jinchengao-portfolio/orla/assets/works/p05-03.webp">
+  <link rel="canonical" href="https://jinlalala0-sys.github.io/jinchengao-portfolio/orla/">
+  <title>ORLA 金陈城｜简历与三维美指作品集</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23d9ad42'/%3E%3Ctext x='32' y='46' font-family='Arial' font-size='44' font-weight='700' text-anchor='middle' fill='%23252521'%3EO%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/photoswipe.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data.js"></script>
+  <script defer src="assets/manifest.js"></script>
+  <script defer src="vendor/photoswipe.umd.min.js"></script>
+  <script defer src="vendor/photoswipe-lightbox.umd.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#works">跳到作品</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ORLA 首页">ORLA<span>RESUME / PORTFOLIO 2026</span></a>
+    <nav aria-label="主导航"><a href="#about">履历</a><a href="#works">作品</a><a href="#contact">联系 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="top">
+    <div id="load-state" class="load-state" role="status">正在载入作品集…</div>
+    <div id="portfolio" hidden>
+      <section class="hero section-shell" aria-labelledby="person-name">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="accent-line"></span>简历与作品集 / 2026</p>
+          <h1 id="person-name"></h1>
+          <p id="person-role" class="hero-role"></p>
+          <p id="hero-education" class="hero-education"></p>
+          <div id="hero-bio" class="hero-bio"></div>
+          <div id="hero-direct-contact" class="hero-direct-contact" aria-label="快速联系"></div>
+          <div class="hero-actions"><a class="button button-dark" href="assets/ORLA-portfolio-web.pdf" download="ORLA-作品集.pdf">下载简历作品集 <span aria-hidden="true">↓</span></a><a class="button" href="#works">查看作品 <span aria-hidden="true">↗</span></a></div>
+          <div id="hero-stats" class="hero-stats" aria-label="作品概览"></div>
+        </div>
+        <figure class="hero-visual"><div class="visual-frame"><div id="hero-gallery" class="gallery"></div><span class="visual-index" aria-hidden="true">01 / SPATIAL DESIGN</span></div><div id="hero-secondary" class="hero-secondary gallery"></div><figcaption><span id="hero-caption"></span><span class="image-hint">点开放大 ↗</span></figcaption></figure>
+      </section>
+
+      <section id="about" class="about-section section-shell" aria-labelledby="about-heading">
+        <div class="section-heading"><div><p class="eyebrow">01 / RESUME</p><h2 id="about-heading">教育与职业经历</h2></div><span class="section-aside">三维设计 / 美术指导</span></div>
+        <div id="profile-highlights" class="profile-highlights"></div>
+        <div class="about-layout"><div class="about-intro"><div id="portrait-slot"></div><div class="about-person"><p class="eyebrow">ORLA</p><p id="about-intro-text"></p><a href="#contact" class="text-link">联系与简历下载 ↗</a></div></div><div id="resume-sections" class="resume-sections"></div></div>
+      </section>
+
+      <section id="works" class="works-section section-shell" aria-labelledby="works-heading">
+        <div class="section-heading"><div><p class="eyebrow">02 / SELECTED PROJECTS</p><h2 id="works-heading">三维视觉作品</h2></div><p class="section-aside">活动视觉 / 展台设计<br>展开项目，查看完整画面</p></div>
+        <div class="works-layout">
+          <aside class="works-tools" aria-label="作品筛选">
+            <div class="filter-tabs" role="group" aria-label="按项目类别筛选"><button type="button" data-filter="all" aria-pressed="true">全部 <span id="count-all"></span></button><button type="button" data-filter="event" aria-pressed="false">活动视觉 <span id="count-event"></span></button><button type="button" data-filter="booth" aria-pressed="false">展台设计 <span id="count-booth"></span></button></div>
+            <label class="search-label" for="project-search">查找项目</label><div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input type="search" id="project-search" placeholder="项目或品牌名称" autocomplete="off"></div>
+            <div class="expand-controls"><button type="button" id="expand-all">全部展开 <span aria-hidden="true">＋</span></button><button type="button" id="collapse-all">全部收起 <span aria-hidden="true">－</span></button></div>
+            <p class="tools-note">图片可点开放大，<br>支持左右滑动浏览。</p>
+            <a class="download-link" href="assets/ORLA-portfolio-web.pdf" download="ORLA-作品集.pdf">下载轻量 PDF <span aria-hidden="true">↓</span></a>
+          </aside>
+          <div class="works-content"><p id="result-count" class="result-count" role="status" aria-live="polite"></p><div id="project-list"></div><div id="empty-state" class="empty-state" hidden><p>没有找到匹配的项目。</p><button type="button" id="clear-search" class="button">清空搜索，查看全部</button></div></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section-shell" aria-labelledby="contact-heading">
+        <div><p class="eyebrow">03 / CONTACT & RESUME</p><h2 id="contact-heading">联系与简历下载</h2><p class="contact-lead">电话、微信与邮箱均可联系。</p><a class="button contact-download" href="assets/ORLA-portfolio-web.pdf" download="ORLA-作品集.pdf">下载简历作品集 · PDF <span aria-hidden="true">↓</span></a></div>
+        <div id="contact-methods" class="contact-methods"></div>
+        <div class="share-row"><button type="button" id="copy-link" class="button button-dark">复制作品集链接 <span aria-hidden="true">↗</span></button><button type="button" id="wechat-share" class="button">微信分享提示</button><span>发给对方，点开即可浏览。</span></div>
+      </section>
+
+      <section class="notes-section section-shell" aria-label="原稿与内容说明">
+        <details class="note-fold" id="source-pages"><summary><div><span class="fold-kicker">SOURCE / ORIGINAL</span><h2>原稿整页索引 <span id="original-count"></span></h2><p>保留原版布局，便于对照阅读</p></div><span class="fold-plus" aria-hidden="true">＋</span></summary><div class="note-body"><p class="note-intro">以下按原 PDF 页序展示；点击整页可放大查看。轻量 PDF 保留 27 页内容，适合下载。</p><div id="original-pages" class="original-pages gallery"></div><a class="button" href="assets/ORLA-portfolio-web.pdf" download="ORLA-作品集.pdf">下载轻量 PDF ↓</a></div></details>
+        <details class="note-fold" id="content-changes"><summary><div><span class="fold-kicker">EDITORIAL NOTES</span><h2>内容修改说明</h2><p>本次网页整理涉及的重组、改写与保留事项</p></div><span class="fold-plus" aria-hidden="true">＋</span></summary><div id="changes-list" class="note-body change-list"></div></details>
+      </section>
+      <footer class="site-footer section-shell"><a class="footer-brand" href="#top">ORLA</a><span>金陈城 / 2026 简历与作品集</span><a href="#top">回到顶部 ↑</a></footer>
+    </div>
+    <noscript><div class="noscript-note">此页的分类与图片浏览需要 JavaScript。你仍可<a href="assets/ORLA-portfolio-web.pdf">打开 PDF 作品集</a>。</div></noscript>
+  </main>
+  <a id="back-to-top" class="back-to-top" href="#top" aria-label="回到顶部" hidden>↑</a>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="share-dialog" class="share-dialog" aria-labelledby="dialog-title"><button type="button" id="dialog-close" class="dialog-close" aria-label="关闭">×</button><p class="eyebrow">SHARE / CONTACT</p><h2 id="dialog-title">分享作品集</h2><p id="dialog-message"></p><label id="dialog-input-label" for="dialog-copy-input">作品集链接</label><input id="dialog-copy-input" readonly><button type="button" id="dialog-confirm" class="button button-dark">我知道了</button></dialog>
+</body>
+</html>
